@@ -175,6 +175,10 @@ footer {
 	.socials {
 		width: 100%;
 	}
+	
+	.contacts {
+		margin-top: 30px;
+	}
 }
 
 @media screen and (max-width: 720px) {
