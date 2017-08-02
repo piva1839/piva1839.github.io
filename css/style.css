@@ -114,6 +114,7 @@ footer {
 .contacts,
 .socials {
 	width: 30%;
+	min-width: 280px;
 	margin: 0 10px;
 	
 	text-align: center;
@@ -131,6 +132,8 @@ footer {
 	background: url("../img/socials_45.png") no-repeat;
 	border-bottom: 3px solid #4cc1d6;
 	border-radius: 3px;
+	
+	vertical-align: top;
 	
 	cursor: pointer;
 }
@@ -151,12 +154,26 @@ footer {
 	border-bottom: 3px solid #ffffff;
 }
 
-@media screen and (max-width: 365px) {
-	.site {
+.social-link {
+		display: inline-block;
+		width: 47px;
+		height: 45px;
+		
+		vertical-align: top;
+		text-decoration: none;
+		font-size: 0px;
+}
+
+@media screen and (max-width: 940px) {
+	.contact-me {
+		display: flex;
+		flex-direction: column;
+	}
+	
+	.my-contact-name,
+	.contacts,
+	.socials {
 		width: 100%;
-		min-width: 300px;
-		max-height: 285px;
-		margin-bottom: 80px;
 	}
 }
 
@@ -170,5 +187,14 @@ footer {
 	.contacts,
 	.socials {
 		width: 100%;
+	}
+}
+
+@media screen and (max-width: 365px) {
+	.site {
+		width: 100%;
+		min-width: 300px;
+		max-height: 285px;
+		margin-bottom: 80px;
 	}
 }
