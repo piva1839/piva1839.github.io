@@ -70,6 +70,24 @@ h2 {
 	border: 1px solid #dcf5fa;
 }
 
+.site-title {
+	display: block;
+	padding-bottom: 5px;
+	
+	text-align: center;
+}
+
+.site-name {
+	display: block;
+	width: 365px;
+	max-width: 365px;
+	padding: 20px 0;
+	
+	color: #ffffff;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
 .site-name {
 	display: none;
 	position: absolute;
@@ -82,19 +100,12 @@ h2 {
 	text-align: center;
 }
 
-.to-site {
-	display: inline-block;
-	width: 365px;
-	max-width: 365px;
-	padding: 20px 0;
-	
-	color: #ffffff;
-	text-transform: uppercase;
-	text-decoration: none;
-}
-
 .site:hover .site-name {
 	display: block;
+}
+
+.site:hover .site-title {
+	color: #00b4d9;
 }
 
 footer {
@@ -119,6 +130,10 @@ footer {
 	
 	text-align: center;
 	
+	color: #e5e6e8;
+}
+
+.username {
 	color: #ffffff;
 }
 
