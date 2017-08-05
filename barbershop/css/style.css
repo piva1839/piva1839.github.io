@@ -1,0 +1,36 @@
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+.content-box-component {
+	box-sizing: content-box;
+}
+
+
+body {
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 14px;
+	line-height: 24px;
+	color: #000000;
+	font-weight: 600;
+}
+
+h1 {
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 30px;
+	line-height: 42px;
+	color: #000000;
+	font-weight: 600;
+}
+
+h2 {
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 30px;
+	line-height: 42px;
+	color: #000000;
+	font-weight: 600;
+}
