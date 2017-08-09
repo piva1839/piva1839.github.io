@@ -220,14 +220,6 @@ footer {
 	.socials {
 		width: 100%;
 	}
-	
-	.site-name {
-		display: none;
-	}
-	
-	.site:hover .site-name {
-		display: none;
-	}
 }
 
 @media screen and (max-width: 365px) {
@@ -236,5 +228,13 @@ footer {
 		min-width: 300px;
 		max-height: 285px;
 		margin-bottom: 115px;
+	}
+	
+	.site-name {
+		display: none;
+	}
+	
+	.site:hover .site-name {
+		display: none;
 	}
 }
