@@ -221,8 +221,12 @@ footer {
 		width: 100%;
 	}
 	
+	.site-name {
+		display: none;
+	}
+	
 	.site:hover .site-name {
-	display: none;
+		display: none;
 	}
 }
 
