@@ -220,9 +220,13 @@ footer {
 	.socials {
 		width: 100%;
 	}
+	
+	.site:hover .site-name {
+	display: none;
+	}
 }
 
-@media screen and (max-width: 370px) {
+@media screen and (max-width: 365px) {
 	.site {
 		width: 100%;
 		min-width: 300px;
