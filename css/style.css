@@ -230,6 +230,10 @@ footer {
 		margin-bottom: 115px;
 	}
 	
+	.site-title {
+		color: #00b4d9;
+	}
+	
 	.site-name {
 		display: none;
 	}
