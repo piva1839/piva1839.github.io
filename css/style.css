@@ -222,11 +222,11 @@ footer {
 	}
 }
 
-@media screen and (max-width: 365px) {
+@media screen and (max-width: 370px) {
 	.site {
 		width: 100%;
 		min-width: 300px;
 		max-height: 285px;
-		margin-bottom: 80px;
+		margin-bottom: 115px;
 	}
 }
