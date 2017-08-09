@@ -1,0 +1,232 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.clearfix::after {
+    content: "";
+	display: table;
+	clear: both;
+}
+
+.webmaster-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    height: 100vh;
+    min-height: 435px;
+    padding: 0 5px;
+    
+    background: #00b4d9;
+    
+    color: #fff;
+    text-align: center;
+}
+
+.my-photo {
+	max-width: 220px;
+	height: 220px;
+	
+    border: 10px solid #4cc1d6;
+    border-radius: 50%;
+    /* box-shadow: 0px 2px 30px 0px rgba(21, 63, 91, 0.2); */
+}
+
+.portfolio-title {
+	text-align: center;
+}
+
+h2 {
+	margin: 0;
+	margin: 80px 0 100px;
+}
+
+.my-works {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  
+  margin-bottom: 100px;
+}
+
+.site {
+	position: relative;
+	width: 30%;
+	min-width: 365px;
+	margin: 0 14px;
+	margin-bottom: 20px;
+}
+
+.my-site {
+	width: 100%;
+	border: 1px solid #dcf5fa;
+}
+
+.site-title {
+	display: block;
+	padding-bottom: 5px;
+	
+	text-align: center;
+}
+
+.site-name {
+	display: block;
+	width: 365px;
+	max-width: 365px;
+	padding: 20px 0;
+	
+	color: #ffffff;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.site-name {
+	display: none;
+	position: absolute;
+	left: 0px;
+	bottom: 4px;
+	
+	background: rgba(0, 180, 217, 0.7);
+	border-bottom: 5px solid rgba(3, 174, 208, 0.7);
+	
+	text-align: center;
+}
+
+.site:hover .site-name {
+	display: block;
+}
+
+.site:hover .site-title {
+	color: #00b4d9;
+}
+
+footer {
+	background: #00b4d9;
+}
+
+.contact-me {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	
+	padding: 25px 0;
+}
+
+.my-contact-name,
+.contacts,
+.socials {
+	width: 30%;
+	min-width: 280px;
+	margin: 0 10px;
+	
+	text-align: center;
+	
+	color: #e5e6e8;
+}
+
+.username {
+	color: #ffffff;
+}
+
+.social-icon {
+	display: inline-block;
+	
+	width: 47px;
+	height: 45px;
+	margin-right: 5px;
+	
+	background: url("../img/socials_45.png") no-repeat;
+	border-bottom: 3px solid #4cc1d6;
+	border-radius: 3px;
+	
+	vertical-align: top;
+	
+	cursor: pointer;
+}
+
+.vk {
+	background-position: -94px 0;
+}
+
+.gh {
+	background-position: -140px 0;
+}
+
+.ln {
+	background-position: -46px 0;
+}
+
+.social-icon:hover {
+	border-bottom: 3px solid #ffffff;
+}
+
+.social-link {
+		display: inline-block;
+		width: 47px;
+		height: 45px;
+		
+		vertical-align: top;
+		text-decoration: none;
+		font-size: 0px;
+}
+
+.contacts {
+	font-weight: 600;
+}
+
+@media screen and (max-width: 940px) {
+	.contact-me {
+		display: flex;
+		flex-direction: column;
+	}
+	
+	.my-contact-name,
+	.contacts,
+	.socials {
+		width: 100%;
+	}
+	
+	.my-contact-name {
+		margin-bottom: 20px;
+	}
+	
+	.username {
+		font-weight: 600;
+		text-transform: uppercase;
+	}
+	
+	.contacts {
+		margin-top: 30px;
+	}
+}
+
+@media screen and (max-width: 720px) {
+	.contact-me {
+		display: flex;
+		flex-direction: column;
+	}
+	
+	.my-contact-name,
+	.contacts,
+	.socials {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 365px) {
+	.site {
+		width: 100%;
+		min-width: 300px;
+		max-height: 285px;
+		margin-bottom: 120px;
+	}
+}
