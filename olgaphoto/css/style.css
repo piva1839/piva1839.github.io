@@ -96,8 +96,16 @@ h2 {
 		padding: 50px 0;
 	}
 	
-	h1 {
-		font-size: 64px;
+	h1	{
+		font-size: 5vw;
+	}
+	
+	h2	{
+		font-size: 2.5vw;
+	}
+	
+	.slogan {
+		font-size: 2.3vw;
 	}
 }
 
