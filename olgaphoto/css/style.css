@@ -1,31 +1,30 @@
-/*
-
-@font-face {
-	font-family: "aMavickFont";
-	src: url("../fonts/aMavickFont.ttf") format("truetype");
-}
-
-font-family: "aMavickFont", sans-serif;
- 
-*/
-
 @font-face {
 	font-family: "BebasNeueRegular";
 	src: url("../fonts/BebasNeueRegular.otf") format("truetype");
+	src: local("BebasNeueRegular"), url(../fonts/BebasNeueRegular.otf);
 }
 
 @font-face {
 	font-family: "OpenSans-Regular";
 	src: url("../fonts/OpenSans-Regular.ttf") format("truetype");
+	src: local("OpenSans-Regular"), url(../fonts/OpenSans-Regular.ttf);
 }
 
 @font-face {
 	font-family: "OpenSans-SemiBold";
 	src: url("../fonts/OpenSans-SemiBold.ttf") format("truetype");
+	src: local("OpenSans-SemiBold"), url(../fonts/OpenSans-SemiBold.ttf);
+}
+
+@font-face {
+	font-family: "BebasNeueBold";
+	src: url("../fonts/BebasNeue Bold.otf") format("truetype");
+	src: local("BebasNeueBold"), url(../fonts/BebasNeueBold.otf);
 }
 
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 	
 	border: 0px solid black;
 }
@@ -58,8 +57,7 @@ img {
 .header {
 	height: 100%;
 	min-height: 100vh;
-  
-  padding-top: 1px;
+	padding: 200px 0;
 	
 	background: url("../img/headbg.jpg") no-repeat;
 	background-size: cover;
@@ -68,28 +66,26 @@ img {
 
 .header-inner {
   max-width: 970px;
-  margin: 10% auto 16%;
-  padding-bottom: 1px;
 }
 
 h1 {
 	margin-bottom: 55px;
 	
-  font-family: "BebasNeueRegular", sans-serif;
+  font-family: "BebasNeueBold", sans-serif;
   font-size: 90px;
   color: #ffffff;
   text-transform: uppercase;
 }
 
 h2 {
-	font-family: "BebasNeueRegular", sans-serif;
+	font-family: "BebasNeueBold", sans-serif;
   font-size: 36px;
   color: #ffffff;
   text-transform: uppercase;
 }
 
 .slogan {
-	font-family: "BebasNeueRegular", sans-serif;
+	font-family: "BebasNeueBold", sans-serif;
   font-size: 24px;
   color: #65ba99;
   text-transform: uppercase;
@@ -104,11 +100,9 @@ h2 {
 /* menu */
 
 .menu {
+	padding: 20px 0;
+	
 	background: #252222;
-}
-
-.menu .container {
-  padding: 19px 15px;
 }
 
 h3 {
@@ -116,7 +110,7 @@ h3 {
   
   margin-right: 30px;
   
-  font-family: "BebasNeueRegular", sans-serif;
+  font-family: "BebasNeueBold", sans-serif;
   font-size: 48px;
   color: #ffffff;
   text-transform: uppercase;
@@ -128,8 +122,6 @@ h3 {
 
 .main-menu {
   float: left;
-  
-  margin-right: 30px;
   
   font-family: "BebasNeueRegular", sans-serif;
   font-size: 18px;
@@ -146,6 +138,10 @@ h3 {
   padding: 15px 0px 15px 0px;
 }
 
+.main-menu li:last-child {
+  margin-right: 0;
+}
+
 .main-menu a {
   padding: 15px 5px 15px 5px;
   
@@ -160,6 +156,10 @@ h3 {
   color: #65ba99;
   text-decoration: none;
   
+  -webkit-transition: 0.4s;
+  
+  -o-transition: 0.4s;
+  
   transition: 0.4s;
 }
 
@@ -171,10 +171,10 @@ h3 {
 
 .socials {
   float: right;
+	
+	margin-left: 30px;
   
   list-style-type: none;
-	
-	border: 1px solid blue;
 }
 
 .socials li {
@@ -225,6 +225,10 @@ h3 {
   background: url("../img/socials_h.png") no-repeat;
   background-position: -6px -5px;
   
+	-webkit-transition: 0.2s;
+  
+	-o-transition: 0.2s;
+  
 	transition: 0.2s;
 }
 
@@ -232,12 +236,20 @@ h3 {
   background: url("../img/socials_h.png") no-repeat;
   background-position: -94px -5px;
   
+	-webkit-transition: 0.2s;
+  
+	-o-transition: 0.2s;
+  
 	transition: 0.2s;
 }
 
 .socials .in:hover {
   background: url("../img/socials_h.png") no-repeat;
   background-position: -6px -137px;
+  
+	-webkit-transition: 0.2s;
+  
+	-o-transition: 0.2s;
   
 	transition: 0.2s;
 }
@@ -266,20 +278,15 @@ h3 {
 /* portfolio */
 
 .portfolio {
-  min-height: 1840px;
-	padding-top: 1px;
-  
-	background: #65ba99;
-}
-
-.gallery {
-	padding-bottom: 50px;
+	padding-bottom: 70px;
+	
+  background: #65ba99;
 }
 
 h4 {
-	margin: 45px 0;
+	padding: 50px 0;
 	
-	font-family: "BebasNeueRegular", sans-serif;
+	font-family: "BebasNeueBold", sans-serif;
   font-size: 48px;
   color: #ffffff;
 	text-align: center;
@@ -296,48 +303,61 @@ h4 {
 }
 
 .gallery ul {
+	text-align: center;
 	list-style-type: none;
-}
-
-.col {
-	display: inline-block;
 }
 
 .gallery li {
 	display: inline-block;
-	text-align: center;
 }
 
 .gallery img {
-	margin-right: -5px;
-	margin-bottom: -1px;
+	margin-left: -5px;
+	margin-bottom: -5px;
+	
+  -webkit-transition: all 0.5s;
+	
+  -o-transition: all 0.5s;
 	
   transition: all 0.5s;
 }
 
 .gallery img:hover {
-	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	        box-shadow: 0 0 10px rgba(0,0,0,0.5);
 	cursor: pointer;
 	opacity: 0.8;
-	transform: scale(1.1);
+	-webkit-transform: scale(1.05);
+	    -ms-transform: scale(1.05);
+	        transform: scale(1.05);
 }
 
 @media screen and (max-width: 520px) {
 	.gallery img {
 		width: 100%;
 		height: 100%;
+		margin-left: 0;
 	}
 }
 
 /* promo */
 
 .promo {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   
-  min-height: 300px;
+  padding: 100px 0;
   
 	background: url("../img/promobg.jpg") no-repeat;
 	background-size: cover;
@@ -345,7 +365,7 @@ h4 {
 }
 
 .promotext {
-  font-family: "BebasNeueRegular", sans-serif;
+  font-family: "BebasNeueBold", sans-serif;
   font-size: 36px;
   color: #ffffff;
   text-align: center;
@@ -373,10 +393,6 @@ h4 {
 /* projects */
 
 .projects {
-  min-height: 680px;
-	padding-top: 1px;
-	padding-bottom: 1px;
-  
 	background: #cdcdcd;
 }
 
@@ -385,7 +401,7 @@ h4 {
 }
 
 .project {
-	margin-bottom: 50px;
+	padding-bottom: 50px;
 }
 
 .project ul{
@@ -483,8 +499,7 @@ h4 {
 /* partners */
 
 .partners {
-  min-height: 200px;
-	padding: 50px;
+	padding: 100px 0;
   
 	background: #ffffff;
 }
@@ -508,12 +523,17 @@ h4 {
 	
 	vertical-align: middle;
 	
-	filter: grayscale(100%);
+	-webkit-filter: grayscale(100%);
+	
+	        filter: grayscale(100%);
 }
 
 .partners img:hover {
 	cursor: pointer;
-	filter: none;
+	-webkit-filter: none;
+	        filter: none;
+	-webkit-transition: 0.7s;
+	-o-transition: 0.7s;
 	transition: 0.7s;
 }
 
@@ -526,9 +546,7 @@ h4 {
 /* bio */
 
 .bio {
-  min-height: 600px;
-	padding-top: 1px;
-	padding-bottom: 50px;
+	padding: 50px 0;
   
 	background: #e2534b;
 }
@@ -538,6 +556,8 @@ h4 {
 }
 
 .bio h4 {
+	padding: 0 0 50px 0;
+	
 	color: #252222;
 }
 
@@ -551,7 +571,7 @@ h4 {
 .my-name {
   margin-bottom: 20px;
   
-  font-family: "BebasNeueRegular", sans-serif;
+  font-family: "BebasNeueBold", sans-serif;
   font-size: 36px;
   color: #ffffff;
   text-transform: uppercase;
@@ -586,12 +606,16 @@ h4 {
 }
 
 .bio-socials a:hover {
-  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
   transition: 0.5s;
 }
 
 .me-more {
-  padding: 0 15px 0 25px; 
+  padding: 0 0 0 25px; 
   
   float: right;
   width: 50%;
@@ -600,7 +624,7 @@ h4 {
 .my-principle {
   margin-bottom: 10px;
   
-  font-family: "BebasNeueRegular", sans-serif;
+  font-family: "BebasNeueBold", sans-serif;
   font-size: 18px;
   color: #ffffff;
   text-transform: uppercase;
@@ -627,6 +651,10 @@ h4 {
 		margin-bottom: 50px;
 	}
 	
+	.me-more {
+		padding: 0; 
+	}
+	
 	.my-principle {
 		margin-bottom: 20px;
 		
@@ -637,10 +665,9 @@ h4 {
 /* contacts */
 
 .contacts {
-  min-height: 530px;
-  padding-top: 1px;
-  
-	background: url("../img/contactbg.jpg") no-repeat;
+	padding-bottom: 70px;
+	
+  background: url("../img/contactbg.jpg") no-repeat;
 	background-size: cover;
   background-position: center;
 }
@@ -660,7 +687,7 @@ h4 {
 .my-phone {
   margin-bottom: 15px;
   
-  font-family: "BebasNeueRegular", sans-serif;
+  font-family: "BebasNeueBold", sans-serif;
   font-size: 48px;
   color: #ffffff;
   text-transform: uppercase;
@@ -674,7 +701,7 @@ h4 {
   
   border: 5px solid #ffffff;
   
-  font-family: "BebasNeueRegular", sans-serif;
+  font-family: "BebasNeueBold", sans-serif;
   font-size: 68px;
   color: #ffffff;
 	text-align: center;
