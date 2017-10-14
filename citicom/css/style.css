@@ -1,0 +1,488 @@
+@font-face {
+    font-family: "Alien-Encounters-Bold_0.ttf";
+    src: url("../fonts/Alien-Encounters-Bold_0.ttf");
+    src: local("Alien-Encounters-Bold_0"), url("../fonts/Alien-Encounters-Bold_0.ttf");
+}
+
+@font-face {
+    font-family: "Alien-Encounters-Regular_0.ttf";
+    src: url("../fonts/Alien-Encounters-Regular_0.ttf");
+    src: local("Alien-Encounters-Regular_0"), url("../fonts/Alien-Encounters-Regular_0.ttf");
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+	
+	border: 0px solid black;
+}
+
+.clearfix::after {
+  content: "";
+	display: table;
+	clear: both;
+}
+
+.container {
+	width: 100%;
+	max-width: 980px;
+
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, li {
+	margin: 0;
+	padding: 0;
+}
+
+/* header */
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+    
+  min-height: 100vh;
+	padding: 20px 0;
+  
+  background: url("../img/headerbg.jpg") no-repeat;
+  background-size: cover;
+	background-position: right;
+}
+
+.main-atributes {
+	float: left;
+	
+	width: 290px;
+	height: 248px;
+	margin: 0 auto;
+  
+  background: #ffffff url("../img/vintiki.png") no-repeat;
+	background-size: 100% 100%;
+	background-position: center;
+  
+	border: 3px solid #323233;
+  border-radius: 15px;
+	box-shadow: 0 0 0 3px #018dd2; 
+	
+	text-align: center;
+  
+  opacity: 0.95;
+}
+
+.main-logo {
+  width: 210px;
+  height: 140px;
+  margin-bottom: 0px;
+  margin-top: 20px;
+}
+
+.company-name {
+	font-family: "Alien-Encounters-Regular_0.ttf", "Arial", sans-serif;
+	font-size: 30px;
+	font-weight: 400;
+  color: #018dd2;
+}
+
+.company-specific {
+	font-size: 14px;
+	font-weight: 400;
+  color: #919394;
+}
+
+.main-description {
+	float: right;
+	
+	width: 65%;
+	
+	color: #ffffff;
+}
+
+.main-idea {
+	margin-bottom: 30px;
+	padding: 0 15px 0 40px;
+	
+	font-size: 24px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.main-idea-content {
+	padding: 0 15px 0 40px;
+	
+	line-height: 24px;
+	font-weight: 600;
+	
+	color: #ffffff;
+}
+
+.about-company {
+	padding-top: 80px;
+	padding-bottom: 75px;
+}
+
+.section-title {
+	margin-bottom: 50px;
+	
+	font-family: "Alien-Encounters-Regular_0.ttf", "Arial", sans-serif;
+	font-size: 24px;
+	font-weight: 500;
+  color: #018dd2;
+}
+
+p {
+	margin-bottom: 30px;
+	
+	line-height: 24px;
+	font-weight: 500;
+	color: #5a5a5a;
+}
+
+.level-title {
+	display: block;
+	
+	margin-top: 90px;
+	margin-bottom: 30px;
+	
+	font-size: 18px;
+	font-weight: 600;
+  color: #015ba1;
+}
+
+.advantages {
+  list-style-position: inside;
+}
+
+.advantages li {
+	margin-bottom: 5px;
+	
+	color: #5a5a5a;
+}
+
+.facilities {
+	padding-top: 80px;
+	padding-bottom: 80px;
+  
+  background: url("../img/bg.jpg") no-repeat;
+  background-size: cover;
+}
+
+.main-facilities {
+	list-style-type: none;
+	text-align: center;
+}
+
+.main-facilities li {
+	display: inline-block;
+	vertical-align: top;
+	width: calc(100% / 3 - 10px);
+	min-height: 120px;
+	margin-right: 10px;
+	
+	line-height: 24px;
+	font-weight: 500;
+	color: #5a5a5a;
+}
+
+.main-facilities li:last-child {
+	margin-right: 0;
+}
+
+.main-facilities img {
+	margin-bottom: 15px;
+}
+
+.facilitie {
+	display: block;
+}
+
+.gallery {
+	padding: 80px 0 0 0;
+}
+
+.pictures {
+	list-style-type: none;
+	text-align: center;
+}
+
+.pictures li {
+	position: relative;
+	display: inline-block;
+	width: calc(100% / 3);
+	margin-right: -6px;
+}
+
+.pictures li:last-child {
+	margin-right: 0;
+}
+
+.pictures img {
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+	
+	vertical-align: bottom;
+}
+
+.picture-description {
+	display: block;
+	position: absolute;
+	bottom: 0;
+	
+	width: 100%;
+	padding: 10px 15px;
+	
+	background: #c7c7c7;
+	
+	color: #ffffff;
+	text-align: center;
+	
+	opacity: 0.9;
+}
+
+.certification {
+	padding-top: 80px;
+	padding-bottom: 75px;
+}
+
+.our-certificates {
+	list-style-type: none;
+}
+
+.our-certificates li {
+	margin-bottom: 15px;
+}
+
+.our-certificates a {
+	color: #018dd2;
+}
+
+.partners {
+	padding: 80px 0;
+	
+	border-top: 2px solid gray;
+	border-bottom: 2px solid gray;
+}
+
+.partner-logos {
+	text-align: center;
+}
+
+.partner-logos li {
+	display: inline-block;
+	width: calc(100% / 4 - 20px);
+	margin-right: 20px;
+	
+	text-align: center;
+}
+
+.partner-logos li:last-child {
+	margin-right: 0px;
+}
+
+.contacts {
+	padding-top: 80px;
+	padding-bottom: 30px;
+  
+  background: url("../img/bg.jpg") no-repeat;
+  background-size: cover;
+}
+
+.contact-list {
+  list-style-type: none;
+}
+
+.contact-list li {
+	display: inline-block;
+	width: calc(100% / 3 - 10px);
+  margin-right: 10px;
+	margin-bottom: 50px;
+	
+	text-align: left;
+	vertical-align: top;
+}
+
+.contact-list li:nth-child(3n) {
+  margin-right: 0;
+}
+
+.worker {
+	width: 100%;
+	min-height: 220px;
+	
+  border: 1px solid gray;
+  border-radius: 3px;
+	
+	list-style-type: none;
+}
+
+.worker li {
+  display: block;
+	width: 100%;
+	margin: 0;
+	padding-bottom: 3px;
+	
+	text-align: center;
+}
+
+.worker .worker-post {
+	margin-bottom: 20px;
+  padding: 15px;
+	
+	font-size: 21px;
+	font-weight: 600;
+	color: #015ba1;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.worker .worker-name {
+	font-weight: 600;
+}
+
+.worker .lighter-text {
+	opacity: 0.7;
+}
+
+.worker .worker-mail {
+	text-decoration: underline;
+}
+
+@media screen and (max-width: 1265px) {
+	.main-atributes,
+	.main-description {
+		float: none;
+	}
+	
+	.main-atributes {
+		margin-bottom: 50px;
+	}
+	
+	.main-description {
+		width: 70%;
+		margin: 0 auto;
+	}
+	
+	.main-idea,
+	.main-idea-content {
+		padding: 0;
+	}
+	
+	.pictures li {
+		width: calc(100% / 1);
+		margin-right: 0;
+	}
+	
+	.partner-logos li {
+		width: calc(100% / 2 - 20px);
+		margin-right: 12px;
+		margin-bottom: 30px;
+	}
+	
+	.partner-logos li:nth-child(2n) {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 980px) {
+	.contact-list li {
+    width: calc(100% / 2 - 10px);
+    text-align: center;
+  }
+  
+  .contact-list li:nth-child(3n) {
+    margin-right: 10px;
+  }
+	
+	.contact-list li:nth-child(2n) {
+    margin-right: 0;
+  }
+  
+  .worker li {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 540px) {
+	.main-idea {
+		padding: 0 15px;
+		
+		text-align: center;
+	}
+	
+	.main-idea-content {
+		display: none;
+	}
+	
+	.about-company {
+		padding-top: 50px;
+		padding-bottom: 60px;
+	}
+	
+	.section-title {
+		text-align: center;
+		text-decoration: underline;
+	}
+	
+	.level-title {
+		margin-top: 50px;
+		margin-bottom: 30px;
+	}
+	
+	.contacts {
+		padding-top: 50px;
+	}
+	
+	.contact-list li {
+    width: calc(100% / 1);
+		
+    text-align: center;
+  }
+	
+	.contact-list li:nth-child(3n) {
+    margin-right: 0;
+  }
+	
+	.contact-list li:nth-child(2n) {
+    margin-right: 0;
+  }
+	
+	.worker {
+		width: 100%;
+		min-height: 220px;
+		
+		border: none;
+		border-bottom: 2px solid gray;
+		border-radius: 0;
+	}
+	
+	.main-facilities li {
+		display: inline-block;
+		width: calc(100% / 1);
+		margin: 0 0 20px 0;
+	}
+	
+	.facilities {
+		padding-top: 50px;
+		padding-bottom: 10px;
+	}
+	
+	.certification {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+	
+	.partners {
+		padding: 50px 0 30px;
+		
+		border-top: 2px solid gray;
+		border-bottom: 2px solid gray;
+		}
+	
+	.partner-logos li img {
+		width: 100%;
+		height: auto;
+	}
+}
