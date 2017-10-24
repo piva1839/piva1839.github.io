@@ -39,11 +39,21 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
 /* header */
 
 header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
     
+  height: 100vh;
   min-height: 100vh;
 	padding: 20px 0;
   
@@ -65,7 +75,8 @@ header {
   
 	border: 3px solid #323233;
   border-radius: 15px;
-	box-shadow: 0 0 0 3px #018dd2; 
+	-webkit-box-shadow: 0 0 0 3px #018dd2;
+	        box-shadow: 0 0 0 3px #018dd2; 
 	
 	text-align: center;
   
@@ -128,8 +139,9 @@ header {
 	
 	font-family: "Alien-Encounters-Regular_0.ttf", "Arial", sans-serif;
 	font-size: 24px;
-	font-weight: 500;
+	font-weight: 600;
   color: #018dd2;
+	text-transform: uppercase;
 }
 
 p {
@@ -156,7 +168,7 @@ p {
 }
 
 .advantages li {
-	margin-bottom: 5px;
+	margin-bottom: 15px;
 	
 	color: #5a5a5a;
 }
@@ -198,8 +210,19 @@ p {
 	display: block;
 }
 
-.gallery {
-	padding: 80px 0 0 0;
+.manufacture {
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+
+.our-production {
+	list-style-position: inside;
+}
+
+.our-production li {
+	margin-bottom: 15px;
+	
+	color: #5a5a5a;
 }
 
 .pictures {
@@ -465,8 +488,17 @@ p {
 	}
 	
 	.facilities {
+		padding-top: 60px;
+		padding-bottom: 0px;
+	}
+	
+	.facilitie {
+		margin-bottom: 50px;
+	}
+	
+	.manufacture {
 		padding-top: 50px;
-		padding-bottom: 10px;
+		padding-bottom: 50px;
 	}
 	
 	.certification {
@@ -483,6 +515,7 @@ p {
 	
 	.partner-logos li img {
 		width: 100%;
+		Max-width: 100px;
 		height: auto;
 	}
 }
