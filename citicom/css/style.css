@@ -119,12 +119,12 @@ nav {
 .menu {
 	position: fixed;
   top: 0;
-	right: -210px;
+	right: -250px;
 	z-index: 2;
   
   display: block;
   list-style-type: none;
-	width: 210px;
+	width: 250px;
 	height: 100%;
   margin: 0;
 	padding: 18px 10px 0 10px;
@@ -197,8 +197,7 @@ nav {
 	margin-top: 0;
 }
 
-.hidden-menu:checked ~ .burger,
-.hidden-menu:checked ~ .to-header {
+.hidden-menu:checked ~ .burger {
 	right: 160px;
 }
 
@@ -224,12 +223,12 @@ nav {
 
 .to-header {
 	position: fixed;
-	top: 80px;
-	right: 45px;
+	top: 35px;
+	right: 90px;
   z-index: 3;
 	
 	width: 40px;
-	height: 38px;
+	height: 37px;
 	
 	background: #018dd2 url("../img/arrowtop.png") no-repeat;
 	background-size: 100% 100%;
@@ -240,6 +239,10 @@ nav {
   cursor: pointer;
   
 	transition: 0.4s;
+}
+
+.hidden-menu:checked ~ .to-header {
+	right: 205px;
 }
 
 @media screen and (max-width: 750px) {
@@ -762,11 +765,9 @@ p {
 	}
 }
 
-/*
 @media screen and (orientation:landscape) {
 	header {	
 		height: auto;
 		padding-top: 50px;
 	}
 }
-*/
