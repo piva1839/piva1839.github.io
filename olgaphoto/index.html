@@ -33,6 +33,29 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script>
+      $(function(){
+           // высота "шапки", px
+           var h_hght = $(".header").outerHeight();
+           // высота блока с меню, px
+           var h_nav = $(".menu").outerHeight();
+           var top;
+           $(window).scroll(function(){
+               // отступ сверху
+               top = $(this).scrollTop();
+               if((h_hght-top) <= h_nav){
+                   $(".menu").css("top","0");
+               }
+               else if(top < h_hght && top > 0){
+                   $(".menu").css({"bottom" : top, "top":""});
+               }
+               else if(top < h_nav){
+                   $(".menu").css({"top":"","bottom":"-95px"});
+               }
+           });
+       });     
+    </script>
     </head>
     <body>
 		
@@ -307,7 +330,5 @@
 
  -->	
 			
-		<script src="js/script.js">
-		</script>
     </body>
 </html>
