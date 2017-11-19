@@ -8,54 +8,16 @@
 		<meta name="keywords" content="Фотограф, фотограф Ольга Обоянская, свадебный фотограф, семейная фотосессия, художественная фотография, индивидуальная фотосессия, заказать фотосессию, фотограф на свадьбу, сертификат на фотосессию">
 		<meta name="author" content="Ольга Обоянская">
 		<meta name="copyright" content="Ольга Обоянская">
-		<meta itemprop="name" content="Фотограф Ольга Обоянская">
-		<meta itemprop="description" content="Фотограф Ольга Обоянская. Индивидуальная съемка, свадебная съемка, семейная съемка, художественная съемка.">
-		<meta itemprop="image" content="favicon.png">
-		<meta name="twitter:site" content="Фотограф Ольга Обоянская">
-		<meta name="twitter:title" content="Фотограф Ольга Обоянская">
-		<meta name="twitter:description" content="Фотограф Ольга Обоянская. Индивидуальная съемка, свадебная съемка, семейная съемка, художественная съемка.">
-		<meta name="twitter:creator" content="Фотограф Ольга Обоянская">
-		<meta name="twitter:image:src" content="favicon.png">
-		<meta name="twitter:domain" content="http://piva1839.github.io">
-    <meta property="og:type" content="website">
-		<meta property="profile:first_name" content="Ольга">
-		<meta property="profile:last_name" content="Обоянская">
-		<meta property="profile:username" content="">
-		<meta property="og:title" content="Фотограф Ольга Обоянская">
-		<meta property="og:description" content="Фотограф Ольга Обоянская. Индивидуальная съемка, свадебная съемка, семейная съемка, художественная съемка.">
-		<meta property="og:image" content="favicon.png">
-		<meta property="og:url" content="http://piva1839.github.io">
-		<meta property="og:site_name" content="Фотограф Ольга Обоянская">
-		<meta property="og:see_also" content="http://piva1839.github.io">
-		<meta property="article:author" content="Фотограф Ольга Обоянская">
-		<meta name="yandex-verification" content="d27eb5fa7e97a571" />
     <title>Фотограф Ольга Обоянская - Портфолио</title>
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
     <script type="text/javascript" src="js/jquery.js"></script>
-    <script>
-      $(function(){
-           // высота "шапки", px
-           var h_hght = $(".header").outerHeight();
-           // высота блока с меню, px
-           var h_nav = $(".menu").outerHeight();
-           var top;
-           $(window).scroll(function(){
-               // отступ сверху
-               top = $(this).scrollTop();
-               if((h_hght-top) <= h_nav){
-                   $(".menu").css("top","0");
-               }
-               else if(top < h_hght && top > 0){
-                   $(".menu").css({"bottom" : top, "top":""});
-               }
-               else if(top < h_nav){
-                   $(".menu").css({"top":"","bottom":"-95px"});
-               }
-           });
-       });     
-    </script>
+    <script type="text/javascript" src="slick/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="slick/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
     </head>
     <body>
 		
@@ -103,13 +65,20 @@
       </div>
 
 <!-- portfolio -->
-
+      
       <div class="portfolio">
         <div class="container">
           <h4>
             Портфолио /<br>
 						<span class="my-photos-style">Индивидуальная, семейная, свадебная фотосъемка</span>
           </h4>
+          
+          <div class="slider">
+            <div><img src="img/slider/1.jpg" width="800" height="533"></div>
+            <div><img src="img/slider/2.jpg" width="800" height="533"></div>
+            <div><img src="img/slider/3.jpg" width="800" height="533"></div>
+          </div>
+          
           <div class="gallery">
 						<ul>
 							<li>
@@ -331,6 +300,7 @@
 				</div>
 			</div>
 
- -->	
+ -->
+    <script type="text/javascript" src="js/script.js"></script>   
     </body>
 </html>
