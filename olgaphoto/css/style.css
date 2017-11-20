@@ -183,7 +183,7 @@ h3 {
   transition: 0.4s;
 }
 
-.main-menu a.active {
+.active {
   border-bottom: 2px solid #65ba99;
   
   color: #65ba99;

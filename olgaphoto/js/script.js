@@ -14,6 +14,19 @@ $(document).ready(function(){
       $(".menu").css({"top":"","bottom":"-95px"});
     }
   });
+	
+	$(".main-menu").on("click", "a", function(){
+		if ($(".main-menu a").hasClass("active")) {
+			$(".main-menu a").removeClass("active");
+		}
+		$(this).addClass("active");
+	});
+	
+	$(".main-menu").on("click", ".to-top", function(){
+		if ($(".main-menu a").hasClass("active")) {
+			$(".main-menu a").removeClass("active");
+		}
+	});
 });
 
 $(document).ready(function(){
