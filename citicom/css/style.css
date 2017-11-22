@@ -483,12 +483,14 @@ p {
 
 .contact-list {
   list-style-type: none;
+	
+	text-align: center;
 }
 
 .contact-list li {
-	display: inline-block;
-	width: calc(100% / 3 - 10px);
-  margin-right: 10px;
+	/* display: inline-block; */
+	/* width: calc(100% / 3 - 10px); */
+  /* margin-right: 10px; */
 	margin-bottom: 50px;
 	
 	text-align: center;
@@ -515,8 +517,13 @@ p {
   text-transform: lowercase;
 }
 
+.footer {
+	background: url("../img/bg.jpg") no-repeat;
+  background-size: cover;
+}
+
 .footer-inner {
-  padding-top: 18px;
+  padding: 18px 0 15px;
 }
 
 .advertising {
