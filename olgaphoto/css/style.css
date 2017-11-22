@@ -784,4 +784,56 @@ h4 {
 	}
 }
 
-/* footer */
+/* oboyan adsense start */
+
+.oboyan-pr {
+  padding: 20px 10px;
+  
+  background: #fdfdfd;
+  
+  font-size: 16px;
+  color: #000000;
+}
+
+.oboyan-adsense {
+  float: left;
+  width: 50%;
+}
+
+.oboyan-developer {
+  float: right;
+  width: 50%;
+  
+  text-align: right;
+}
+
+.oboyan-link {
+  margin: 0;
+  padding: 0;
+}
+
+.oboyan-portfolio {
+  font-weight: 600;
+  color: red;
+  text-decoration: none;
+}
+
+.oboyan-portfolio:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 520px) {
+  .oboyan-adsense,
+  .oboyan-developer {
+    float: none;
+    width: 100%;
+    
+    text-align: center;
+  }
+  
+  .oboyan-adsense {
+    margin-bottom: 20px;
+  }
+}
+
+/* oboyan adsense end */
