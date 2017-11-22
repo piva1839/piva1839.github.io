@@ -257,7 +257,7 @@ header {
 
 .about-company {
 	padding-top: 80px;
-	padding-bottom: 80px;
+	padding-bottom: 50px;
 }
 
 .section-title {
@@ -482,39 +482,26 @@ p {
 }
 
 .contact-list {
+	width: 100%;
+	
   list-style-type: none;
 	
 	text-align: center;
 }
 
-.contact-list li {
-	/* display: inline-block; */
-	/* width: calc(100% / 3 - 10px); */
-  /* margin-right: 10px; */
-	margin-bottom: 50px;
+.contact-list {
+	margin-bottom: 40px;
 	
 	text-align: center;
-	vertical-align: top;
-}
-
-.contact-list li:nth-child(3n) {
-  margin-right: 0;
 }
 
 .worker-post {
-	margin-bottom: 20px;
+	margin-bottom: 10px;
   padding: 15px;
 	
 	font-size: 14px;
 	font-weight: 600;
 	color: #015ba1;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-}
-
-.mail {
-  color: #000000;
-  text-transform: lowercase;
 }
 
 .footer {
