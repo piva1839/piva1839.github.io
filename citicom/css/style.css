@@ -257,7 +257,7 @@ header {
 
 .about-company {
 	padding-top: 80px;
-	padding-bottom: 40px;
+	padding-bottom: 80px;
 }
 
 .section-title {
@@ -475,7 +475,7 @@ p {
 
 .contacts {
 	padding-top: 80px;
-	padding-bottom: 30px;
+	padding-bottom: 1px;
   
   background: url("../img/bg.jpg") no-repeat;
   background-size: cover;
@@ -616,7 +616,7 @@ p {
 	
 	.about-company {
 		padding-top: 50px;
-		padding-bottom: 60px;
+		padding-bottom: 0px;
 	}
 	
 	.section-title {
@@ -646,15 +646,6 @@ p {
 	.contact-list li:nth-child(2n) {
     margin-right: 0;
   }
-	
-	.worker {
-		width: 100%;
-		min-height: 220px;
-		
-		border: none;
-		border-bottom: 2px solid gray;
-		border-radius: 0;
-	}
 	
 	.main-facilities li {
 		display: inline-block;
