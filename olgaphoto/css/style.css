@@ -316,7 +316,8 @@ h3 {
 	transition: 0.4s;
 }
 
-.menu-mob .menu-item:hover {
+.menu-mob .menu-item:hover,
+.menu-mob .menu-item:active {
 	background: #65ba99;
 }
 
