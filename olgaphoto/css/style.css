@@ -206,27 +206,20 @@ h3 {
   vertical-align: middle;
 }
 
-.socials a {
-  display: block;
-  width: 38px;
-  height: 38px;
-  
-  font-size: 0px;
-  
-  list-style-type: none;
-}
-
-.socials .fb {
+.socials .fb,
+.socials-mob .fb {
   background: url("../img/socials.png") no-repeat;
   background-position: -6px -5px;
 }
 
-.socials .vk {
+.socials .vk,
+.socials-mob .vk {
   background: url("../img/socials.png") no-repeat;
   background-position: -94px -5px;
 }
 
-.socials .in {
+.socials .in,
+.socials-mob .in {
   background: url("../img/socials.png") no-repeat;
   background-position: -6px -137px;
 }
@@ -241,7 +234,8 @@ h3 {
   list-style-type: none;
 }
 
-.socials .fb:hover {
+.socials .fb:hover,
+.socials-mob .fb:hover {
   background: url("../img/socials_h.png") no-repeat;
   background-position: -6px -5px;
   
@@ -252,7 +246,8 @@ h3 {
 	transition: 0.2s;
 }
 
-.socials .vk:hover {
+.socials .vk:hover,
+.socials-mob .vk:hover {
   background: url("../img/socials_h.png") no-repeat;
   background-position: -94px -5px;
   
@@ -263,7 +258,8 @@ h3 {
 	transition: 0.2s;
 }
 
-.socials .in:hover {
+.socials .in:hover,
+.socials-mob .in:hover {
   background: url("../img/socials_h.png") no-repeat;
   background-position: -6px -137px;
   
@@ -274,7 +270,7 @@ h3 {
 	transition: 0.2s;
 }
 
-.menu-mob {
+.burger {
   position: fixed;
   top: 25px;
   right: 25px;
@@ -291,12 +287,59 @@ h3 {
   cursor: pointer;
 }
 
+.menu-mob {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  
+  display: none;
+  width: 100%;
+  height: 100%;
+	padding-top: 50px;
+  
+  background: #000000;
+  
+  text-align: center;
+  
+  opacity: 0.9;
+}
+
+.menu-mob .menu-item {
+	display: block;
+	padding: 20px;
+	
+	font-weight: 600;
+	color: #ffffff;
+	text-decoration: none;
+	text-transform: uppercase;
+	
+	transition: 0.4s;
+}
+
+.menu-mob .menu-item:hover {
+	background: #65ba99;
+}
+
+.socials-mob {
+	padding-top: 10px;
+}
+
+.socials-mob a {
+  display: inline-block;
+  width: 38px;
+  height: 38px;
+  
+  font-size: 0px;
+  
+  list-style-type: none;
+}
+
 @media screen and (max-width: 1024px) {
 	.menu {
     display: none;
   }
   
-  .menu-mob {
+  .burger {
     display: block;
   }
 }
@@ -319,6 +362,20 @@ h3 {
 		float: none;
 		
 		margin-right: 0;
+	}
+}
+
+@media screen and (max-width: 736px) and (orientation: landscape) {
+	.menu-mob {
+		padding-top: 5px;
+	}
+	
+	.menu-mob .menu-item {
+		padding: 10px;
+	}
+	
+	.socials-mob {
+		padding-top: 0;
 	}
 }
 
@@ -789,7 +846,7 @@ h4 {
 .oboyan-pr {
   padding: 20px 10px;
   
-  background: #fdfdfd;
+  background: #65ba99;
   
   font-size: 16px;
   color: #000000;
@@ -798,13 +855,15 @@ h4 {
 .oboyan-adsense {
   float: left;
   width: 50%;
+  
+  text-align: center;
 }
 
 .oboyan-developer {
   float: right;
   width: 50%;
   
-  text-align: right;
+  text-align: center;
 }
 
 .oboyan-link {
@@ -814,7 +873,7 @@ h4 {
 
 .oboyan-portfolio {
   font-weight: 600;
-  color: red;
+  color: #e2534b;
   text-decoration: none;
 }
 

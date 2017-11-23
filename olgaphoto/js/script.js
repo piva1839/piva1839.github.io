@@ -27,10 +27,16 @@ $(document).ready(function(){
 			$(".main-menu a").removeClass("active");
 		}
 	});
-});
-
-$(document).ready(function(){
-  $(".slider").slick({
+	
+	$(".slider").slick({
     dots: true
   });
+	
+	$(".burger").click(function() {
+		$(".menu-mob").css("display","block");
+	});
+	
+	$(".menu-mob a").click(function() {
+		$(".menu-mob").css("display","none");
+	});
 });
