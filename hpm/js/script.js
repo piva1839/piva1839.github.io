@@ -19,6 +19,6 @@ $(document).ready(function(){
 		$(".menu-mob").css("display","none");
 	});
 	
-	$(document).ready(function() { if (navigator.userAgent.match(/Android/i)) { window.scrollTo(0,0); var nPageH = $(document).height(); var nViewH = window.outerHeight; if (nViewH > nPageH) { nViewH -= 250; $('BODY').css('height',nViewH + 'px'); } window.scrollTo(0,1); } }); 
+	var page_size_check = null, q_body; (q_body = $('#body')).bind('DOMSubtreeModified', function() { if (page_size_check === null) { return; } page_size_check = setTimeout(function() { q_body.css('height', ''); if (q_body.height() < window.innerHeight) { q_body.css('height', window.innerHeight + 'px'); } if (!(window.pageYOffset > 1)) { window.scrollTo(0, 1); } page_size_check = null; }, 400); });
 });
 
