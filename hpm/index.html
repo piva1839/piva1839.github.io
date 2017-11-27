@@ -20,12 +20,12 @@
     <script type="text/javascript" src="slick/slick.min.js"></script>
   </head>
   <body>
-<!-- header -->
-    <a name="start"></a>
+  <a name="top"> </a>
+<!-- headerr -->
 		<header class="main-header">
 			<div class="container clearfix">
         <div class="main-header__logo">
-          <a href="index.html">
+          <a href="#top">
             <img class="main-header__logo_img" src="img/headerlogo.png" alt="header logo" width="186" height="38">
           </a>
         </div>
@@ -33,13 +33,13 @@
         <nav class="main-header__menu">
           <ul class="main-header__menu__items">
             <li>
-              <a href="#">Услуги</a>
+              <a class="menu-item active" href="#services">Услуги</a>
             </li>
             <li>
               <a href="#">Компания</a>
             </li>
             <li>
-              <a href="#">Проекты</a>
+              <a class="menu-item" href="#projects">Проекты</a>
             </li>
             <li>
               <a href="#">Лицензии</a>
@@ -51,7 +51,7 @@
               <a href="#">Новости</a>
             </li>
             <li>
-              <a href="#">Контакты</a>
+              <a class="menu-item" href="#contacts">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -59,26 +59,26 @@
         <div class="burger">
         </div>
         <ul class="menu-mob">
-          <li><a class="menu-item" href="#start"><img src="favicon.png" alt="фотограф" width="70" height="70"></a></li>
+          <li><a class="menu-item" href="#top"><img src="favicon.png" alt="Высокоточные измерения" width="70" height="70"></a></li>
           <li><a class="menu-item" href="#services">Услуги</a></li>
           <li><a class="menu-item" href="#projects">Проекты</a></li>
           <li><a class="menu-item" href="#contacts">Контакты</a></li>
         </ul>
         <!-- mobile menu -->
 			</div>
-      <div class="main-header__address-bar">
-        <div class="container">
-          <ul class="main-header__address-bar__items">
-            <li class="marker-icon">
-              г. Луганск, кв. Шевченко, д. 67, оф. 125
-            </li>
-            <li class="phone-icon">
-              (0642) 71 73 06
-            </li>
-          </ul>
-        </div>
-			</div>
 		</header>
+    <div class="main-header__address-bar">
+      <div class="container">
+        <ul class="main-header__address-bar__items">
+          <li class="marker-icon">
+            г. Луганск, кв. Шевченко, д. 67, оф. 125
+          </li>
+          <li class="phone-icon">
+            (0642) 71 73 06
+          </li>
+        </ul>
+      </div>
+    </div>
 <!-- slider -->
 		<div class="main-slider">
 			<div class="main-slider__inner">
@@ -137,12 +137,11 @@
       </div>
 		</div>
 <!-- services -->
-    <a name="services"></a>
     <div class="our-services">
       <div class="container">
         <div class="section-title-wrapper">
           <h3 class="section-title">
-            Наши услуги
+            <a name="services">Наши услуги</a>
           </h3>
         </div>
         <div class="our-services__items">
@@ -177,31 +176,86 @@
       </div>
     </div>
 <!-- projects -->
-    <a name="projects"></a>
     <div class="our-projects">
       <div class="section-title-wrapper">
         <h3 class="section-title">
-          Наши проекты
+          <a name="projects">Наши проекты</a>
         </h3>
       </div>
       <div class="our-projects__items clearfix">
         <div class="our-projects__items__left-side clearfix">
           <div class="column">
-            <div><img src="img/project1.jpg" alt="project" width="397" height="267"></div>
-            <div><img src="img/project3.jpg" alt="project" width="397" height="534"></div>
+            <div class="our-projects__items__item">
+              <img src="img/project1.jpg" alt="project" width="397" height="267">
+              <div class="our-projects__items__item-effect">
+              </div>
+              <div class="our-projects__items__item-desc">
+                <h4>Lorem ipsum</h4>
+                <p>Lorem ipsum dolor set amet</p>
+              </div>
+            </div>
+            <div class="our-projects__items__item">
+              <img src="img/project3.jpg" alt="project" width="397" height="534">
+              <div class="our-projects__items__item-effect">
+              </div>
+              <div class="our-projects__items__item-desc">
+                <h4>Lorem ipsum</h4>
+                <p>Lorem ipsum dolor set amet</p>
+              </div>
+            </div>
           </div>
           <div class="column column_mob">
-            <div><img src="img/project2.jpg" alt="project" width="397" height="267"></div>
+            <div class="our-projects__items__item">
+              <img src="img/project2.jpg" alt="project" width="397" height="267">
+              <div class="our-projects__items__item-effect">
+              </div>
+              <div class="our-projects__items__item-desc">
+                <h4>Lorem ipsum</h4>
+                <p>Lorem ipsum dolor set amet</p>
+              </div>
+            </div>
           </div>
         </div>
         <div class="our-projects__items__right-side clearfix">
           <div class="column">
-            <div><img src="img/project4.jpg" alt="project" width="397" height="267"></div>
-            <div><img src="img/project6.jpg" alt="project" width="397" height="267"></div>
+            <div class="our-projects__items__item">
+              <img src="img/project4.jpg" alt="project" width="397" height="267">
+              <div class="our-projects__items__item-effect">
+              </div>
+              <div class="our-projects__items__item-desc">
+                <h4>Lorem ipsum</h4>
+                <p>Lorem ipsum dolor set amet</p>
+              </div>
+            </div>
+            <div class="our-projects__items__item">
+              <img src="img/project6.jpg" alt="project" width="397" height="267">
+              <div class="our-projects__items__item-effect">
+              </div>
+              <div class="our-projects__items__item-desc">
+                <h4>Lorem ipsum</h4>
+                <p>Lorem ipsum dolor set amet</p>
+              </div>
+            </div>
           </div>
           <div class="column">
-            <div><img src="img/project5.jpg" alt="project" width="397" height="267"></div>
-            <div><img src="img/project7.jpg" alt="project" width="397" height="267"></div>
+            <div class="our-projects__items__item">
+              <img src="img/project5.jpg" alt="project" width="397" height="267">
+              <div class="our-projects__items__item-effect">
+              </div>
+              <div class="our-projects__items__item-desc">
+                <h4>Lorem ipsum</h4>
+                <p>Lorem ipsum dolor set amet</p>
+              </div>
+            </div>
+            <div class="our-projects__items__item">
+              <img src="img/project7.jpg" alt="project" width="397" height="267">
+              <div class="our-projects__items__item-effect">
+              </div>
+              <div class="our-projects__items__item-desc">
+                <h4>Lorem ipsum</h4>
+                <p>Lorem ipsum dolor set amet</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -212,12 +266,11 @@
       </div>
     </div>
 <!-- contacts -->
-    <a name="contacts"></a>
     <div class="contacts">
       <div class="container">
         <div class="section-title-wrapper">
           <h3 class="section-title">
-            Контакты
+            <a name="contacts">Контакты</a>
           </h3>
         </div>
         <div class="contacts__address-bar">
@@ -266,14 +319,15 @@
       <div class="container clearfix">
         <div class="footer__submenu">
           <ul class="footer__submenu__items">
+            <ul class="main-header__menu__items">
             <li>
-              <a href="#">Услуги</a>
+              <a href="#services">Услуги</a>
             </li>
             <li>
               <a href="#">Компания</a>
             </li>
             <li>
-              <a href="#">Проекты</a>
+              <a class="menu-item" href="#projects">Проекты</a>
             </li>
             <li>
               <a href="#">Лицензии</a>
@@ -285,8 +339,9 @@
               <a href="#">Новости</a>
             </li>
             <li>
-              <a href="#">Контакты</a>
+              <a class="menu-item" href="#contacts">Контакты</a>
             </li>
+          </ul>
           </ul>
         </div>
         <div class="footer__socials">

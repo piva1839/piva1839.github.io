@@ -27,6 +27,18 @@ img {
 
 /* header */
 
+.main-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  
+  width: 100%;
+  
+  background: #ffffff;
+  border-bottom: 1px solid #000000;
+}
+
 .main-header__logo {
   float: left;
   
@@ -119,6 +131,10 @@ img {
 	background: #2b2b2b;
 }
 
+.main-header__menu .active {
+  color: #db001b;
+}
+
 .main-header__address-bar__items {
   list-style-type: none;
   
@@ -128,6 +144,10 @@ img {
 }
 
 .main-header__address-bar {
+  position: absolute;
+  top: 75px;
+  z-index: 10;
+  width: 100%;
   background: #2b2b2b;
 }
 
@@ -253,32 +273,10 @@ img {
 .main-slider__img {
 	width: 100%;
 	height: auto;
-	height: calc(100vh - 127px);
-}
-
-@media screen and (max-width: 970px) {
-  .main-slider__img {
-    width: 100%;
-    height: auto;
-    height: calc(100vh - 213px);
-  }
-}
-
-@media screen and (max-width: 786px) {
-  .main-slider__img {
-    width: 100%;
-    height: auto;
-    height: calc(100vh - 86px);
-  }
+	height: 100vh;
 }
 
 @media screen and (max-width: 432px) {
-  .main-slider__img {
-    width: 100%;
-    height: auto;
-    height: calc(100vh - 68px);
-  }
-  
   .main-slider__content {
     width: 236px;
     min-height: 154px;
@@ -479,6 +477,69 @@ img {
 
 .our-projects__more-projects {
   background: #2b2b2b;
+}
+
+ .our-projects__items__item {
+  position: relative;
+ }
+
+.our-projects__items__item-effect {
+  position: absolute;
+  left: 0;
+  top: 0;
+  
+  display: none;
+  width: 100%;
+  height: 100%;
+  
+  background: #000000;
+  
+  color: #ffffff;
+  
+  opacity: 0.6;
+}
+
+.our-projects__items__item-desc {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  
+  display: none;
+  width: 100%;
+  height: 40%;
+}
+
+.our-projects__items__item-desc h4 {
+  margin-top: 10px;
+  margin-bottom: 17px;
+  
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.our-projects__items__item-desc p {
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #ababab;
+  text-transform: uppercase;
+}
+
+.our-projects__items__item:hover .our-projects__items__item-effect {
+  display: block;
+  
+  cursor: pointer;
+}
+
+.our-projects__items__item:hover .our-projects__items__item-desc {
+  display: block;
+  
+  cursor: pointer;
 }
 
 @media screen and (max-width: 786px) {
