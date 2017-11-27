@@ -18,7 +18,7 @@ $(document).ready(function(){
 	$(".menu-mob a").click(function() {
 		$(".menu-mob").css("display","none");
 	});
+	
+	window.addEventListener("load", function() { window. scrollTo(0, 0); });
 });
-
-window.addEventListener("load", function() { window. scrollTo(0, 0); });
 
