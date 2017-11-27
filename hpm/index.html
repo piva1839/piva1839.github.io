@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="description" content="Высокоточные измерения">
 		<meta name="keywords" content="Высокоточные измерения">
 		<meta name="author" content="Алексей Обоянский">
@@ -36,7 +36,12 @@
               <a class="menu-item active" href="#services">Услуги</a>
             </li>
             <li>
-              <a href="#">Компания</a>
+              <a class="more-menu-items" href="#">Компания</a>
+              <ul class="subitems">
+                <li class="subitems__item"><a href="#top">О нас</a></li>
+                <li class="subitems__item"><a href="#top">Награды</a></li>
+                <li class="subitems__item"><a href="#contacts">Сотрудничество</a></li>
+              </ul>
             </li>
             <li>
               <a class="menu-item" href="#projects">Проекты</a>
@@ -79,6 +84,10 @@
         </ul>
       </div>
     </div>
+    <ul class="fixed-contacts">
+      <li><a class="fixed-contact fixed-mail" href="#">Email</a></li>
+      <li><a class="fixed-contact fixed-skype" href="#">Skype</a></li>
+    </ul>
 <!-- slider -->
 		<div class="main-slider">
 			<div class="main-slider__inner">
@@ -350,7 +359,39 @@
         </div>
       </div>
     </footer>
-    
+    <!-- popup -->
+    <div class="popup-overlay">
+		</div>
+		<div class="modal-contact-block">
+			<form class="contact-form" name="contact-form" id="contact-form" method="post">
+				<fieldset class="contact-us">
+					<legend class="contact-form-title">
+						Напишите нам
+					</legend>
+						<div class="user-contact-info clearfix">
+							<div class="user-contact-name">
+								<label for="name">Ваше имя:</label>
+								<input type="text" name="name" id="name" value="" placeholder="Представьтесь, пожалуйста">
+							</div>
+							<div class="user-contact-email">
+								<label for="email">Ваш e-mail:</label>
+								<input type="email" name="email" id="email" value="" placeholder="Для отправки ответа">
+							</div>
+						</div>
+						<div class="user-message">
+							<label for="message-area">Текст письма:</label>
+							<textarea class="message-area" id="message-area" form="contact-form" name="message-area" placeholder="В свободной форме"></textarea>
+						</div>
+						<button class="btn feedback-us__feedback-form__submit-button" type="submit">
+							Отправить
+						</button>
+				</fieldset>
+			</form>
+			<button class="close-modal-block" type="button">
+				Закрыть
+			</button>
+		</div>
+    <!-- popup -->
   <script type="text/javascript" src="js/script.js">
 	</script>   
   </body>
