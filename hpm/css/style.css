@@ -1,5 +1,6 @@
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .clearfix::after {
@@ -156,6 +157,10 @@ img {
 	color: #ffffff;
 	text-decoration: none;
 	text-transform: uppercase;
+	
+	-webkit-transition: 0.4s;
+	
+	-o-transition: 0.4s;
 	
 	transition: 0.4s;
 }
@@ -433,11 +438,21 @@ img {
 }
 
 .our-services__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: top;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: top;
+      -ms-flex-align: top;
+          align-items: top;
 	
 	margin-bottom: 65px;
 	padding: 0 10px;
@@ -577,7 +592,7 @@ img {
 }
 
  .our-projects__items__item {
-  position: relative;
+   position: relative;
  }
 
 .our-projects__items__item-effect {
@@ -732,8 +747,6 @@ img {
   .contacts__address-bar__items li:last-child {
     margin-bottom: 0;
   }
-  
-  
 }
 
 /* feedback */
@@ -777,6 +790,21 @@ img {
 	border: 2px solid #000000;
 	
 	outline: none;
+}
+
+.feedback-us__feedback-form__user-info input:focus::-webkit-input-placeholder,
+.feedback-us__feedback-form__user-comment textarea:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.feedback-us__feedback-form__user-info input:focus:-ms-input-placeholder,
+.feedback-us__feedback-form__user-comment textarea:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+.feedback-us__feedback-form__user-info input:focus::-ms-input-placeholder,
+.feedback-us__feedback-form__user-comment textarea:focus::-ms-input-placeholder {
+  color: transparent;
 }
 
 .feedback-us__feedback-form__user-info input:focus::placeholder,
@@ -941,7 +969,8 @@ img {
 }
 
 .modal-contact-block {
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 	position: fixed;
 	z-index: 1001; 
 	bottom: 50%;
@@ -955,9 +984,48 @@ img {
 	padding: 65px 100px 85px;
 	
 	background: #ffffff;
-	box-shadow: 0 20px 40px rgba(0, 1, 1, 0.75);
+	-webkit-box-shadow: 0 20px 40px rgba(0, 1, 1, 0.75);
+	        box-shadow: 0 20px 40px rgba(0, 1, 1, 0.75);
 	
 	color: #000000;
+}
+
+@-webkit-keyframes appearance {
+	0% {
+		-webkit-transform: rotate(3deg);
+		-ms-transform: rotate(3deg);
+		transform: rotate(3deg);		
+	}
+	
+	20% {	
+		-webkit-transform: rotate(-3deg);
+		-ms-transform: rotate(-3deg);
+		transform: rotate(-3deg);	
+	}
+	
+	40% {
+		-webkit-transform: rotate(2deg);
+		-ms-transform: rotate(2deg);
+		transform: rotate(2deg);			
+	}
+	
+	60% {
+		-webkit-transform: rotate(-2deg);
+		-ms-transform: rotate(-2deg);
+		transform: rotate(-2deg); 
+	}
+	
+	80% {
+		-webkit-transform: rotate(1deg);
+		-ms-transform: rotate(1deg);
+		transform: rotate(1deg);
+		
+	}
+	100% {
+		-webkit-transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+		transform: rotate(0); 
+	}
 }
 
 @keyframes appearance {
@@ -1001,8 +1069,11 @@ img {
 .modal-contact-block-open {
 	display: block;
 	
-	animation-name: appearance;
-	animation-duration: 0.5s;
+	-webkit-animation-name: appearance;
+	
+	        animation-name: appearance;
+	-webkit-animation-duration: 0.5s;
+	        animation-duration: 0.5s;
 }
 
 .modal-contact-block .contact-form {
