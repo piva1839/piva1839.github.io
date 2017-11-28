@@ -10,6 +10,10 @@ $(document).ready(function(){
     dots: true,
     dotsClass: "my-dots",
   });
+	
+	$(".more-menu-items").click(function(event) {
+		event.preventDefault();
+  });
   
   $(".more-menu-items").mouseover(function() {
     $(".subitems").css("display","block");
@@ -38,13 +42,12 @@ $(document).ready(function(){
 	$(".menu-mob a").click(function() {
 		$(".menu-mob").css("display","none");
 	});
-  
-  $(".fixed-mail").click(function() {
+	
+	$(".fixed-mail").click(function() {
     $(".modal-contact-block").css("display","block");
   });
   
   $(".close-modal-block").click(function() {
     $(".modal-contact-block").css("display","none");
   });
-  
 });
