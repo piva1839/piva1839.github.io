@@ -1,53 +1,59 @@
 $(document).ready(function(){
-	$(".main-header__menu").on("click", "a", function(){
-		if ($(".main-header__menu a").hasClass("active")) {
-			$(".main-header__menu a").removeClass("active");
-		}
-		$(this).addClass("active");
-	});
-	
-  $(".main-slider").slick({
+	$(".main-slider").slick({
     dots: true,
     dotsClass: "my-dots",
   });
 	
-	$(".more-menu-items").click(function(event) {
+	$(".drop-menu-marker").click(function(event) {
 		event.preventDefault();
   });
   
-  $(".more-menu-items").mouseover(function() {
-    $(".subitems").css("display","block");
+  $(".drop-menu-marker").mouseover(function() {
+    $(".drop-menu").css("display","block");
   });
   
-  $(".subitems").mouseover(function() {
-    $(".subitems").css("display","block");
+  $(".drop-menu").mouseover(function() {
+    $(".drop-menu").css("display","block");
   });
   
-  $(".more-menu-items").mouseout(function() {
-    $(".subitems").css("display","none");
+  $(".drop-menu-marker").mouseout(function() {
+    $(".drop-menu").css("display","none");
   });
   
-  $(".subitems").mouseout(function() {
-    $(".subitems").css("display","none");
+  $(".drop-menu").mouseout(function() {
+    $(".drop-menu").css("display","none");
   });
 	
-	$(".subitems__item a").click(function() {
-		$(".subitems").css("display","none");
+	$(".drop-menu__item").click(function() {
+		$(".drop-menu").css("display","none");
 	});
 	
-	$(".burger").click(function() {
-		$(".menu-mob").css("display","block");
+	$(".drop-menu__link").click(function() {
+		$(".drop-menu").css("display","none");
 	});
 	
-	$(".menu-mob a").click(function() {
-		$(".menu-mob").css("display","none");
+	$(".fixed-contacts-item_email").click(function(event) {
+		event.preventDefault();
+		$(".popup-overlay").css("display","block");
 	});
 	
-	$(".fixed-mail").click(function() {
-    $(".modal-contact-block").css("display","block");
+	$(".fixed-contacts-item_email").click(function() {
+		$(".popup-feedback").css("display","block");
+	});
+	
+	$(".close-modal-block").click(function() {
+    $(".popup-overlay").css("display","none");
   });
-  
-  $(".close-modal-block").click(function() {
-    $(".modal-contact-block").css("display","none");
+	
+	$(".close-modal-block").click(function() {
+    $(".popup-feedback").css("display","none");
   });
+	
+	$(".burger-icon").click(function() {
+		$(".mobile-menu").css("display","block");
+	});
+	
+	$(".mobile-menu__item").click(function() {
+		$(".mobile-menu").css("display","none");
+	});
 });
