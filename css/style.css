@@ -1,6 +1,6 @@
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+          box-sizing: border-box;\
 }
 
 .clearfix::after {
@@ -53,7 +53,7 @@ img {
 
 .skill {
   font-size: 24px;
-  color: #70da44; /* yellow #ffc815 */
+  color: #70da44;
 }
 
 .main-info__socials {
@@ -104,6 +104,12 @@ img {
 
 .main-info__social-icon_uw {
   background: url("../img/6a.jpg") no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
+
+.main-info__social-icon_th {
+  background: #ffffff url("../img/8a.png") no-repeat;
   background-size: 100%;
   background-position: center;
 }
@@ -180,6 +186,12 @@ img {
   
   background: #f9f9f9;
   border: 2px solid #f2f2f2;
+  
+  transition: 0.3s;
+}
+
+.portfolio__item:hover {
+  box-shadow: 0 0 0 2px #70da44;
 }
 
 .portfolio__item__img img {
@@ -189,39 +201,6 @@ img {
 
 .portfolio__item__about__content {
   padding: 10px;
-}
-
-.link-block {
-  position: absolute;
-  top: 0;
-  left: 0;
-  
-  display: none;
-  width: 100%;
-  height: 100%;
-  
-  background: #ffffff;
-  
-  opacity: 0.3;
-}
-
-.link-icon {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  z-index: 10;
-  
-  display: none;
-  width: 50px;
-  height: 50px;
-  margin-left: -25px;
-  margin-top: -25px;
-  
-  opacity: 0.9;
-}
-
-.portfolio__item:hover .link-icon {
-  display: block;
 }
 
 .contact {
@@ -251,6 +230,10 @@ img {
     width: 100%;
   }
   
+  .container {
+    padding: 0 25px;
+  }
+  
   .main-info {
     position: static;
     
@@ -260,6 +243,10 @@ img {
 
   .main-wrapper__right-column {
     width: 100%;
+  }
+  
+  .main-info {
+    padding: 15px 50px;
   }
 }
 
