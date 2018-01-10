@@ -64,6 +64,7 @@ img {
 	font-size: 24px;
   line-height: 28px;
 	color: #ea603b;
+	text-transform: lowercase;
 }
 
 .main-menu {
@@ -536,7 +537,7 @@ img {
 .main-contact {
   padding-top: 25px;
   
-  background: #F5F3F1;
+  background: #EBE8DE;
 }
 
 .main-contact__items {
