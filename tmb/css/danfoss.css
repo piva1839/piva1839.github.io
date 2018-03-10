@@ -1,0 +1,100 @@
+/* danfoss */
+
+.danfoss__wrapper {
+	width: 100%;
+	max-width: 1172px;
+
+	margin: 0 auto;
+	padding: 40px 20px;
+}
+
+.block-title {
+	margin-bottom: 30px;
+
+	font-family: "Lato-Bold", "Arial", sans-serif;
+  font-size: 30px;
+  line-height: 36px;
+	color: #4a4b4d;
+}
+
+.danfoss__list {
+	list-style-type: none;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+	margin-left: -5px;
+	margin-right: -5px;
+}
+
+.danfoss__item {
+	width: 275px;
+	margin: 0 5px;
+	margin-bottom: 30px;
+
+	background-color: #ffffff;
+}
+
+.danfoss__img img {
+	max-width: 100%;
+	height: auto;
+	margin-top: 10px;
+}
+
+.danfoss__info {
+	padding: 15px;
+}
+
+.danfoss__title {
+	margin-bottom: 10px;
+
+	font-family: "Lato-Bold", "Arial", sans-serif;
+  font-size: 24px;
+  line-height: 28px;
+	color: #4a4b4d;
+}
+
+.danfoss__description {
+	margin-bottom: 20px;
+
+	font-family: "Lato-Light", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 21px;
+	color: #4a4b4d;
+}
+
+.danfoss__price-list {
+	list-style-type: none;
+}
+
+.danfoss__price-item {
+	margin-bottom: 10px;
+	padding-left: 30px;
+
+	background: url("../img/price-ico.png") no-repeat;
+	background-position: left 3px;
+}
+
+.danfoss__price-item:last-child {
+	margin-bottom: 0;
+}
+
+.danfoss__price {
+	font-family: "Lato-Light", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+	color: #93170a;
+}
+
+.danfoss__content {
+	font-family: "Lato-Light", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+	color: #323335;
+}
+
+@media screen and (max-width: 885px) {
+	.danfoss__list {
+		justify-content: space-around;
+	}
+}

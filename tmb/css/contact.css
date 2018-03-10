@@ -1,0 +1,111 @@
+/* contact */
+
+.contact__wrapper {
+	width: 100%;
+	max-width: 1172px;
+
+	margin: 0 auto;
+	padding: 40px 20px 80px;
+
+	font-family: "Lato-Light", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  color: #323335;
+}
+
+.contact__contacts {
+	display: flex;
+
+	margin-bottom: 40px;
+}
+
+.contact__list {
+	list-style-type: none;
+
+	width: 410px;
+}
+
+.contact__item {
+	margin-bottom: 20px;
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+
+	margin-top: 10px;
+	margin-left: 20px;
+}
+
+.form-button {
+	width: 190px;
+	margin-top: 10px;
+}
+
+.contact__reviews-list {
+	list-style-type: none;
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+	margin-left: -15px;
+	margin-right: -15px;
+	padding-top: 40px;
+}
+
+.contact__reviews-item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	margin: 0 15px;
+	margin-bottom: 40px;
+
+	cursor: pointer;
+}
+
+.contact__reviews-company {
+	margin: auto;
+}
+
+.contact__reviews-sertificate img {
+	margin-top: 30px;
+}
+
+.contact__item--marker {
+	padding-left: 40px;
+
+	background: url("../img/marker.png") no-repeat;
+	background-position: 2px 3px;
+}
+
+.contact__item--mail {
+	padding-left: 40px;
+
+	background: url("../img/mail.png") no-repeat;
+	background-position: left center;
+}
+
+.contact__item--phone {
+	padding-left: 40px;
+
+	background: url("../img/phone.png") no-repeat;
+	background-position: left 5px;
+}
+
+@media screen and (max-width: 650px) {
+	.contact__contacts {
+		display: block;
+	}
+
+	.contact__reviews-list {
+		justify-content: space-around;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.contact__list {
+		width: 100%;
+	}
+}

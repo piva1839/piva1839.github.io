@@ -1,0 +1,79 @@
+/* assembling */
+
+.assembling__wrapper {
+	width: 100%;
+	max-width: 1172px;
+
+	margin: 0 auto;
+	padding: 40px 20px 80px;
+}
+
+.block-title {
+	margin-bottom: 30px;
+
+	font-family: "Lato-Bold", "Arial", sans-serif;
+  font-size: 30px;
+  line-height: 36px;
+	color: #4a4b4d;
+}
+
+.assembling__content {
+	margin-bottom: 50px;
+
+	font-family: "Lato-Light", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+	color: #323335;
+}
+
+.assembling__list {
+	list-style-type: none;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+	margin-left: -5px;
+	margin-right: -5px;
+}
+
+.assembling__item {
+	width: 275px;
+	margin: 0 5px;
+	margin-bottom: 30px;
+
+	background-color: #ffffff;
+}
+
+.assembling__img img {
+	max-width: 100%;
+	height: auto;
+	margin-top: 10px;
+}
+
+.assembling__info {
+	padding: 15px;
+}
+
+.assembling__title {
+	margin-bottom: 30px;
+
+	font-family: "Lato-Bold", "Arial", sans-serif;
+  font-size: 24px;
+  line-height: 28px;
+	color: #4a4b4d;
+}
+
+.assembling__description {
+	margin-bottom: 20px;
+
+	font-family: "Lato-Light", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 21px;
+	color: #4a4b4d;
+}
+
+@media screen and (max-width: 885px) {
+	.assembling__list {
+		justify-content: space-around;
+	}
+}

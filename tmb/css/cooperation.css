@@ -1,0 +1,70 @@
+/* cooperation */
+
+.cooperation__wrapper {
+	width: 100%;
+	max-width: 1172px;
+
+	margin: 0 auto;
+	padding: 50px 20px 100px;
+
+	font-family: "Lato-Light", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  color: #323335;
+}
+
+.cooperation__contacts {
+	display: flex;
+	margin-bottom: 85px;
+}
+
+.cooperation__contact-list {
+	list-style-type: none;
+	width: 30%;
+}
+
+.cooperation__contact-item {
+	margin-bottom: 20px;
+}
+
+.cooperation__contact-form {
+	display: flex;
+	flex-direction: column;
+
+	margin-top: 10px;
+}
+
+.cooperation-form-button {
+	width: 190px;
+	margin-top: 10px;
+}
+
+.cooperation__requisites-list {
+	list-style-type: none;
+	width: 70%;
+	padding-left: 85px;
+}
+
+.map {
+	width: 100%;
+	margin-top: 30px;
+}
+
+@media screen and (max-width: 840px) {
+	.cooperation__contacts {
+		flex-direction: column;
+
+		margin-bottom :40px;
+	}
+
+	.cooperation__contact-list {
+		width: 100%;
+	}
+
+	.cooperation__requisites-list {
+		order: -1;
+		width: 100%;
+		padding-left: 0;
+		margin-bottom: 50px;
+	}
+}

@@ -1,0 +1,32 @@
+/* about */
+
+.about-us__wrapper {
+  width: 100%;
+	max-width: 1172px;
+
+	margin: 0 auto;
+	padding: 10px 20px 40px;
+}
+
+.paragraph-img--right {
+	float: right;
+
+	margin-left: 30px;
+}
+
+.paragraph-img--left {
+	float: left;
+
+	margin-right: 30px;
+}
+
+@media screen and (max-width: 660px) {
+	.paragraph-img {
+		display: block;
+		float: none;
+
+		max-width: 100%;
+		height: auto;
+		margin: 20px auto;
+	}
+}
