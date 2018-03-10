@@ -1,0 +1,181 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.clearfix::after {
+  content: "";
+	display: table;
+	clear: both;
+}
+
+@font-face {
+	font-family: "Rubik-Regular";
+	src: url("../fonts/Rubik-Regular.ttf") format("truetype");
+	src: local("Rubik-Regular"), url("../fonts/Rubik-Regular.ttf") format("truetype"), url("../fonts/Rubik-Regular.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Rubik-Medium";
+	src: url("../fonts/Rubik-Medium.ttf") format("truetype");
+	src: local("Rubik-Medium"), url("../fonts/Rubik-Medium.ttf") format("truetype"), url("../fonts/Rubik-Medium.ttf") format("truetype");
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, li, img {
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+.modal-block {
+	position: fixed;
+	top: 15px;
+	left: 50%;
+	z-index: 1000;
+
+	display: none;
+	flex-direction: column;
+	width: 300px;
+	margin-left: -150px;
+	padding: 10px 20px 30px;
+
+	border: 1px solid #808080;
+	background: #ffffff;
+	box-shadow: 0 0 5px 0 #808080;
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+
+	width: 100%;
+}
+
+.form-title {
+	margin-bottom: 20px;
+
+	font-family: "Rubik-Regular", "Arial", sans-serif;
+  font-size: 28px;
+  line-height: 32px;
+  color: #808080;
+}
+
+.form-field {
+	padding: 10px;
+	margin-bottom: 15px;
+
+	font-family: "Rubik-Regular", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #a6a6a6;
+
+	border: 1px solid #dfdfdf;
+	outline: none;
+}
+
+.form-field:focus::placeholder {
+  color: transparent;
+}
+
+.checkbox-label {
+	margin-bottom: 15px;
+
+	font-family: "Rubik-Regular", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: #808080;
+}
+
+.form-button {
+	width: 100%;
+	padding: 10px;
+
+	border: 1px solid #dfdfdf;
+	background: #ee8917;
+	outline: none;
+
+	color: #ffffff;
+
+	cursor: pointer;
+}
+
+.modal-close {
+	position: absolute;
+	right: 10px;
+
+	width: 16px;
+	height: 16px;
+
+	background: url("../img/p.png") no-repeat;
+	background-size: 100%;
+	background-position: center;
+
+	cursor: pointer;
+	transform: rotate(45deg);
+}
+
+.form-button--white {
+	margin-top: 20px;
+
+	background: #ffffff;
+
+	color: #404d55;
+}
+
+.form-button-link {
+  width: 50%;
+	padding: 5px 10px;
+
+	background: none;
+
+	outline: none;
+
+	font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #808080;
+	text-decoration: none;
+
+  cursor: pointer;
+}
+
+.download-btn {
+  width: 50%;
+	padding: 5px 10px;
+
+	background: none;
+	border: 1px solid #dfdfdf;
+	outline: none;
+
+	font-family: "Rubik-Regular", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  color: #a6a6a6;
+	text-align: left;
+
+	cursor: pointer;
+}
+
+.limitation {
+  width: 50%;
+	margin-left: 20px;
+
+	font-family: "Rubik-Regular", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #181818;
+	text-align: left;
+}
+
+.download-field {
+  display: flex;
+	align-items: center;
+  margin-bottom: 20px;
+}

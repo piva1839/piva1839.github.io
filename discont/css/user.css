@@ -1,0 +1,168 @@
+.user-account {
+  padding: 40px;
+}
+
+.main-header__login-link {
+  font-family: "Rubik-Regular", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: #203540;
+  text-decoration: none;
+
+  position: relative;
+
+  padding-right: 15px;
+}
+
+.main-header__login-link::after {
+  position: absolute;
+  content: "";
+  top: 6px;
+  right: 0;
+
+  display: block;
+  width: 11px;
+  height: 7px;
+
+  background: url("../img/corner.svg") no-repeat;
+  background position: left center;
+  background-size: 100%;
+}
+
+.main-header__login--signed {
+  position: relative;
+  top: 66px;
+  z-index: 100;
+
+  margin-top: -66px;
+  padding: 14px 10px;
+
+  background-color: #ffffff;
+  border: 1px solid #808080;
+}
+
+.main-header__user {
+  display: none;
+}
+
+.main-header__user-item-link {
+  font-family: "Rubik-Regular", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: #808080;
+  text-decoration: none;
+}
+
+.content-first-section {
+  padding-bottom: 30px;
+}
+
+.main-catalog__list {
+  margin-bottom: 10px;
+
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.main-catalog__brends-list {
+  padding: 10px;
+}
+
+.brends-list-title {
+  padding-left: 10px;
+
+  font-family: "Rubik-Regular", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ec6500;
+  text-decoration: none;
+}
+
+.main-catalog__brend-link {
+  font-family: "Rubik-Regular", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #181716;
+  text-decoration: none;
+}
+
+.table {
+  width: 760px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+
+  border: none;
+
+  text-align: center;
+}
+
+.table-title {
+  margin-left: 17px;
+  margin-bottom: 10px;
+
+  font-family: "Rubik-Regular", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: #e74c06;
+
+  text-align: left;
+}
+
+.user-account-order-date {
+  display: block;
+  margin-top: 5px;
+
+  color: #808080;
+}
+
+.table__col {
+  width: calc(760px / 5);
+  padding: 15px 0;
+
+  font-family: "Rubik-Regular", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #001825;
+}
+
+.table__row--border .table__col  {
+  border-bottom: 2px solid #d1d1d1;
+}
+
+.table__col--head {
+  font-family: "Rubik-Medium", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: #001825;
+  text-decoration: none;
+}
+
+.table__item-link {
+  font-family: "Rubik-Regular", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #001825;
+  text-decoration: none;
+
+  border-bottom: 1px solid #d1d1d1;
+}
+
+.table__item-link:hover {
+  border-bottom: 1px solid #001825;
+}
+
+.table__item-link:active {
+  color: #e74c06;
+
+  border-bottom: 1px solid #e74c06;
+}
+
+.table__col--total {
+  font-family: "Rubik-Medium", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: #001825;
+}
+
+.content-second-section {
+  padding-bottom: 30px;
+}
