@@ -1,0 +1,277 @@
+.index-content__wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	width: 100%;
+	max-width: 960px;
+
+	margin: 0 auto;
+	padding: 15px 10px;
+}
+
+.index-content__main-info {
+	width: 680px;
+	margin-right: 40px;
+}
+
+.slider-title {
+	display: block;
+	margin-bottom: 25px;
+
+	font-family: "Segoe UI", "Arial", sans-serif;
+	font-size: 18px;
+	line-height: 18px;
+	color: #6f4834;
+}
+
+.slider {
+	width: 680px;
+
+	outline: none;
+}
+
+.slide {
+	outline: none;
+}
+
+.slide-photo {
+	position: relative;
+}
+
+.slide-photo--1350000::after {
+	position: absolute;
+	content: "1 350 000 руб.";
+	top: 10px;
+	right: -5px;
+
+	display: block;
+	width: 108px;
+	height: 29px;
+	padding: 6px 0 6px 15px;
+
+	background: url("../img/label.png") no-repeat;
+
+	font-family: "Segoe UI", "Arial", sans-serif;
+	font-size: 13px;
+	line-height: 16px;
+	color: #31180e;
+}
+
+.slide-photo--850000::after {
+	position: absolute;
+	content: "850 000 руб.";
+	top: 10px;
+	right: -5px;
+
+	display: block;
+	width: 108px;
+	height: 29px;
+	padding: 6px 0 6px 15px;
+
+	background: url("../img/label.png") no-repeat;
+
+	font-family: "Segoe UI", "Arial", sans-serif;
+	font-size: 13px;
+	line-height: 16px;
+	color: #31180e;
+}
+
+.slide-photo--1550000::after {
+	position: absolute;
+	content: "1 550 000 руб.";
+	top: 10px;
+	right: -5px;
+
+	display: block;
+	width: 108px;
+	height: 29px;
+	padding: 6px 0 6px 15px;
+
+	background: url("../img/label.png") no-repeat;
+
+	font-family: "Segoe UI", "Arial", sans-serif;
+	font-size: 13px;
+	line-height: 16px;
+	color: #31180e;
+}
+
+.slide-description {
+	width: 208px;
+	margin-top: 5px;
+
+	text-align: center;
+}
+
+.slide-description-link {
+	font-family: "Segoe UI", "Arial", sans-serif;
+	font-size: 13px;
+	line-height: 16px;
+	color: #6f4834;
+	text-decoration: underline;
+}
+
+.slide-description-link:hover {
+	color: #b38b58;
+}
+
+.slider-mobile {
+	display: none;
+}
+
+.slider-phone img {
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+}
+
+.about-us {
+	padding: 20px 0 0 0;
+}
+
+.about-us-title {
+	margin-bottom: 10px;
+
+	font-family: "Segoe UI", "Arial", sans-serif;
+	font-size: 24px;
+	line-height: 26px;
+	color: #6f4834 !important;
+}
+
+.about-us-title--little {
+	margin-bottom: 20px;
+
+	font-size: 18px;
+}
+
+.about-us-paragraph {
+	margin-bottom: 20px;
+
+	font-family: "Segoe UI", "Arial", sans-serif;
+	font-size: 14px;
+	line-height: 24px;
+	color: #191717;
+}
+
+.index-content__additional-info {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 220px;
+}
+
+.news-item {
+	width: 220px;
+	margin-bottom: 20px;
+}
+
+.news-list-title {
+	align-self: left;
+	margin-bottom: 25px;
+
+	font-family: "Segoe UI", "Arial", sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	color: #6f4834;
+}
+
+.news-item-date {
+	font-family: "Arial", sans-serif;
+	font-size: 24px;
+	line-height: 26px;
+	color: #6f4834;
+}
+
+.news-item-content {
+	font-family: "Segoe UI", "Arial", sans-serif;
+	font-size: 14px;
+	line-height: 20px;
+	color: #191717;
+}
+
+.news-item-entry {
+	display: block;
+
+	font-family: "Segoe UI", "Arial", sans-serif;
+	font-size: 16px;
+	line-height: 20px;
+	color: #6f4834;
+}
+
+.news-item-link {
+	display: block;
+	font-family: "Segoe UI", "Arial", sans-serif;
+	font-size: 12px;
+	line-height: 20px;
+	color: #6f4834;
+	text-align: right;
+}
+
+.news-item-link:hover {
+	color: #b38b58;
+}
+
+.calculator {
+	padding: 20px 0;
+}
+
+.advertising {
+	padding: 10px 0 30px;
+}
+
+.follow-us-title {
+	display: block;
+	align-self: left;
+	margin-left: 10px;
+	margin-bottom: 10px;
+
+	font-family: "Segoe UI", "Arial", sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	color: #6f4834;
+}
+
+@media screen and (max-width: 960px) {
+	.index-content__additional-info {
+		display: none;
+	}
+
+	.index-content__main-info {
+		margin: 0 auto;
+	}
+}
+
+@media screen and (max-width: 760px) {
+	.slider-title {
+		margin-top: 10px;
+
+		text-align: center;
+	}
+
+	.about-us-title {
+		margin-bottom: 30px;
+
+		text-align: center;
+	}
+
+	.about-us-paragraph {
+		margin-bottom: 30px;
+	}
+}
+
+@media screen and (max-width: 710px) {
+	.index-content__main-info {
+		width: 100%;
+	}
+
+	.slider-descktop {
+		display: none;
+	}
+
+	.slider-mobile {
+		display: block;
+	}
+
+	.slide-description {
+		width: 100%;
+	}
+}

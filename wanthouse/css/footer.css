@@ -1,0 +1,132 @@
+.main-footer {
+	background: #462a1c url("../img/footer-bg.jpg");
+	background-size: cover;
+}
+
+.main-footer__wrapper {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	max-width: 960px;
+
+	margin: 0 auto;
+	padding: 30px 10px;
+}
+
+.main-footer__left-column {
+	width: 650px;
+	margin-right: 40px;
+}
+
+.main-footer__contact {
+	list-style-type: none;
+
+	margin-bottom: 15px;
+}
+
+.main-footer__contact-title {
+	font-family: "Segoe UI", "Arial", sans-serif;
+	font-size: 18px;
+	line-height: 30px;
+	color: #f0e8db;
+}
+
+.main-footer__contact-phone {
+	font-family: "Segoe UI", "Arial", sans-serif;
+	font-size: 24px;
+	line-height: 30px;
+	color: #f0e8db;
+}
+
+.main-footer__contact--email {
+	font-family: "Segoe UI", "Arial", sans-serif;
+	font-size: 14px;
+	line-height: 22px;
+	color: #f9e7bb;
+	text-decoration: underline;
+}
+
+.main-footer__copyright {
+	font-family: "Segoe UI", "Arial", sans-serif;
+	font-size: 11px;
+	line-height: 18px;
+	color: #f0e8db;
+}
+
+.main-footer__copyright-link {
+	font-family: "Segoe UI", "Arial", sans-serif;
+	font-size: 11px;
+	line-height: 18px;
+	color: #f9e7bb;
+	text-decoration: underline;
+}
+
+.main-footer__copyright-link:hover {
+	color: #b38b58;
+}
+
+.main-footer__right-column {
+	width: 250px;
+}
+
+.main-footer__address {
+	list-style-type: none;
+	margin-bottom: 15px;
+
+	font-family: "Segoe UI", "Arial", sans-serif;
+	font-size: 18px;
+	line-height: 22px;
+	color: #f0e8db;
+}
+
+.main-footer__company-name {
+	font-family: "Segoe UI", "Arial", sans-serif;
+	font-size: 18px;
+	line-height: 22px;
+	color: #f0e8db;
+}
+
+.main-footer__company-address {
+	font-family: "Segoe UI", "Arial", sans-serif;
+	font-size: 14px;
+	line-height: 22px;
+	color: #f0e8db;
+}
+
+.main-footer__social {
+	display: block;
+	margin-bottom: 10px;
+
+	font-family: "Segoe UI", "Arial", sans-serif;
+	font-size: 14px;
+	line-height: 22px;
+	font-weight: 400;
+	color: #f0e8db;
+}
+
+@media screen and (max-width: 940px) {
+	.main-footer__left-column,
+	.main-footer__right-column {
+		width: 50%;
+
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 560px) {
+	.main-footer__wrapper {
+		flex-direction: column;
+
+		align-items: center;
+	}
+
+	.main-footer__left-column {
+		width: 300px;
+		margin-right: 0;
+		margin-bottom: 20px;
+	}
+
+	.main-footer__right-column {
+		width: 300px;
+	}
+}

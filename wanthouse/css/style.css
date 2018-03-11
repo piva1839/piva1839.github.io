@@ -1,0 +1,43 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.clearfix::after {
+  content: "";
+	display: block;
+	clear: both;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, li, img {
+	margin: 0;
+	padding: 0;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+@font-face {
+  font-family: "Pfdintextcondpro-Regular";
+  src: url("../fonts/Pfdintextcondpro-Regular.ttf") format("truetype");
+  src: local("Pfdintextcondpro-Regular"), url("../fonts/Pfdintextcondpro-Regular.ttf") format("truetype"), url("../fonts/Pfdintextcondpro-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Peace-Sans";
+  src: url("../fonts/Peace-Sans.otf") format("opentype");
+  src: local("Peace-Sans"), url("../fonts/Peace-Sans.otf") format("opentype"), url("../fonts/Peace-Sans.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/OpenSans.ttf") format("truetype");
+  src: local("OpenSans"), url("../fonts/OpenSans.ttf") format("truetype"), url("../fonts/OpenSans.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Segoe UI";
+  src: url("../fonts/Segoe UI.ttf") format("truetype");
+  src: local("Segoe UI"), url("../fonts/Segoe UI.ttf") format("truetype"), url("../fonts/Segoe UI.ttf") format("truetype");
+}
