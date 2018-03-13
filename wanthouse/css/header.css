@@ -16,7 +16,7 @@
 	font-family: "Segoe UI", "Arial", sans-serif;
 	font-size: 16px;
 	line-height: 22px;
-	color: #432411;
+	color: #432411 !important;
 	text-align: center;
 }
 
@@ -40,7 +40,7 @@
 	color: #54982f;
 }
 
-.main-header__email {
+.main-header__email-link {
 	font-family: "Segoe UI", "Arial", sans-serif;
 	font-size: 18px;
 	line-height: 25px;
