@@ -303,4 +303,9 @@
 	.card-content__product-info-cost {
 		margin-bottom: 0;
 	}
+
+	.card-content__product-info-cost,
+	.card-content__product-info-order {
+		flex: none;
+	}
 }
