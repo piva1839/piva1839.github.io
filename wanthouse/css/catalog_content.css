@@ -1,0 +1,338 @@
+.catalog-content__wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	width: 100%;
+	max-width: 960px;
+
+	margin: 0 auto;
+	padding: 15px 10px;
+}
+
+.catalog-content__main-info {
+	width: 680px;
+	margin-right: 40px;
+}
+
+.catalog-content__title {
+	margin-bottom: 20px;
+
+	font-family: "Segoe UI", "Arial", sans-serif;
+	font-size: 24px;
+	line-height: 22px;
+	color: #6f4834;
+}
+
+.catalog-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 680px;
+}
+
+.catalog-item {
+	width: 213px;
+	padding: 10px;
+
+	border: 1px solid #f2e3d9;
+	border-radius: 5px;
+
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.catalog-pic {
+	margin-bottom: 20px;
+}
+
+.catalog-item-title {
+	font-family: "Segoe UI", "Arial", sans-serif;
+	font-size: 14px;
+	line-height: 22px;
+	color: #6f4834 !important;
+	text-transform: uppercase;
+}
+
+.catalog-item-square,
+.catalog-item-size {
+	font-family: "Segoe UI", "Arial", sans-serif;
+	font-size: 12px;
+	line-height: 21px;
+	color: #191717;
+}
+
+.catalog-item-price {
+	margin-bottom: 10px;
+
+	font-family: "Segoe UI", "Arial", sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	color: #6f4834;
+}
+
+.button {
+	display: inline-block;
+	margin-bottom: 5px;
+	padding: 8px 15px;
+
+	background: linear-gradient(to top, #7f4b23, #b8794a);
+	border: 1px solid #4b2b15;
+	border-radius: 5px;
+
+	font-family: "Segoe UI", "Arial", sans-serif;
+	font-size: 14px;
+	line-height: 16px;
+	color: #ffffff;
+	text-decoration: none;
+
+	cursor: pointer;
+	outline: none;
+}
+
+.catalog-item-info-title {
+	margin-bottom: 20px;
+
+	font-family: "Segoe UI", "Arial", sans-serif;
+	font-size: 24px;
+	line-height: 19px;
+	color: #6f4834;
+}
+
+.catalog-item-info {
+	margin-bottom: 20px;
+
+	font-family: "Segoe UI", "Arial", sans-serif;
+	font-size: 14px;
+	line-height: 24px;
+	color: #191717;
+}
+
+.catalog-content__additional-info {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 220px;
+}
+
+.news-item {
+	width: 220px;
+	margin-bottom: 20px;
+}
+
+.news-list-title {
+	align-self: left;
+	margin-bottom: 25px;
+
+	font-family: "Segoe UI", "Arial", sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	color: #6f4834;
+}
+
+.news-item-date {
+	font-family: "Arial", sans-serif;
+	font-size: 24px;
+	line-height: 26px;
+	color: #6f4834;
+}
+
+.news-item-content {
+	font-family: "Segoe UI", "Arial", sans-serif;
+	font-size: 14px;
+	line-height: 20px;
+	color: #191717;
+}
+
+.news-item-entry {
+	display: block;
+}
+
+.news-item-entry-link {
+	font-family: "Segoe UI", "Arial", sans-serif;
+	font-size: 16px;
+	line-height: 20px;
+	color: #6f4834;
+	text-decoration: none;
+}
+
+.news-item-content:hover .news-item-entry-link {
+	text-decoration: underline;
+}
+
+.news-item-link {
+	display: block;
+	font-family: "Segoe UI", "Arial", sans-serif;
+	font-size: 12px;
+	line-height: 20px;
+	color: #6f4834;
+	text-align: right;
+}
+
+.news-item-link:hover {
+	color: #b38b58;
+}
+
+.more-info-projects-title {
+	margin-bottom: 5px;
+
+	font-family: "Segoe UI", "Arial", sans-serif;
+	font-size: 18px;
+	line-height: 18px;
+	color: #6f4834
+}
+
+.more-info-projects-contact {
+	margin-bottom: 20px;
+
+	font-family: "Segoe UI", "Arial", sans-serif;
+	font-size: 12px;
+	line-height: 18px;
+	color: #191717;
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 10px;
+	padding: 10px 15px;
+	width: 220px;
+
+	background-color: #efeeec;
+	border: 1px solid #cdcdcd;
+	border-radius: 5px;
+}
+
+.field-label {
+	margin-bottom: 5px;
+
+	font-family: "Segoe UI", "Arial", sans-serif;
+	font-size: 12px;
+	line-height: 16px;
+	color: #191717;
+}
+
+.form-field {
+	width: 100%;
+	margin-bottom: 20px;
+	padding: 5px 10px;
+
+	border: 1px solid #cdcdcd;
+	border-radius: 5px;
+
+	outline: none;
+}
+
+.text-field {
+	margin-bottom: 20px;
+	padding: 5px 10px;
+
+	border: 1px solid #cdcdcd;
+	border-radius: 5px;
+
+	outline: none;
+	resize: none;
+}
+
+.confirm {
+	margin-bottom: 5px;
+
+	text-align: center;
+}
+
+
+.calculator {
+	padding: 20px 0;
+}
+
+.advertising {
+	padding: 10px 0 30px;
+}
+
+.follow-us-title {
+	display: block;
+	align-self: left;
+	margin-left: 10px;
+	margin-bottom: 10px;
+
+	font-family: "Segoe UI", "Arial", sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	color: #6f4834;
+}
+
+@media screen and (max-width: 960px) {
+	.catalog-content__additional-info {
+		display: none;
+	}
+
+	.catalog-content__main-info {
+		margin: 0 auto;
+	}
+}
+
+@media screen and (max-width: 890px) {
+	.catalog-content__main-info {
+		width: 100%;
+	}
+
+	.catalog-list {
+		width: 100%;
+	}
+
+	.catalog-item {
+		width: 48%;
+}
+
+@media screen and (max-width: 760px) {
+	.slider-title {
+		margin-top: 10px;
+
+		text-align: center;
+	}
+
+	.about-us-title {
+		margin-bottom: 30px;
+
+		text-align: center;
+	}
+
+	.about-us-paragraph {
+		margin-bottom: 30px;
+	}
+
+	.catalog-content__title {
+		margin-top: 10px;
+	}
+
+	.catalog-content__title,
+	.catalog-item-title {
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 710px) {
+	.catalog-content__main-info {
+		width: 100%;
+	}
+
+	.slider-descktop {
+		display: none;
+	}
+
+	.slider-mobile {
+		display: block;
+	}
+
+	.slide-description {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 620px) {
+	.catalog-list {
+		width: 100%;
+	}
+
+	.catalog-item {
+		width: 100%;
+}
