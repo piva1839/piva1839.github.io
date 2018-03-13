@@ -1,5 +1,6 @@
 .promo {
 	background: #6e8b3e url("../img/promo-bg.jpg") no-repeat;
+	background-position: center;
 	background-size: cover;
 }
 
