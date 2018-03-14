@@ -132,6 +132,10 @@
 	color: #191717;
 }
 
+.card-content__product-plan {
+	margin-bottom: 80px;
+}
+
 .card-content__additional-info {
 	width: 220px;
 }
