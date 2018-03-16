@@ -57,16 +57,19 @@ $(".wrapper .tab").click(function() {
 	$(".wrapper .tab").removeClass("active").eq($(this).index()).addClass("active");
 	$(".tab_item").hide().eq($(this).index()).fadeIn()
 }).eq(0).addClass("active");
- 
 
-/* для формы регистрации
-
-$(".main-header__contact-link").click(function() {
-  $(".modal-block--reg").css("display","flex");
+$('.slider-for').slick({
+ slidesToShow: 1,
+ slidesToScroll: 1,
+ arrows: false,
+ fade: true,
+ asNavFor: '.slider-nav'
 });
-
-$(".modal-close").click(function() {
-  $(".modal-block--reg").css("display","none");
+$('.slider-nav').slick({
+ slidesToShow: 5,
+ slidesToScroll: 1,
+ asNavFor: '.slider-for',
+ dots: false,
+ centerMode: true,
+ focusOnSelect: true
 });
-
-*/
