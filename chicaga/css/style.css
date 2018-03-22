@@ -1,0 +1,114 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.clearfix::after {
+  content: "";
+	display: block;
+	clear: both;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, li, img, span {
+	margin: 0;
+	padding: 0;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+.button {
+  display: inline-block;
+  width: 100%;
+  padding: 10px;
+
+  border: none;
+  outline: none;
+
+  font-family: "SFUIDisplay-Semibold", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: 0.3em;
+  text-align: center;
+
+  cursor: pointer;
+}
+
+@font-face {
+  font-family: "BodoniC";
+  src: url("../fonts/BodoniC.otf") format("opentype");
+  src: local("BodoniC"), url("../fonts/BodoniC.otf") format("opentype"), url("../fonts/BodoniC.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "BodoniC-BoldItalic";
+  src: url("../fonts/BodoniC-BoldItalic.otf") format("opentype");
+  src: local("BodoniC-BoldItalic"), url("../fonts/BodoniC-BoldItalic.otf") format("opentype"), url("../fonts/BodoniC-BoldItalic.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Raleway-Regular";
+  src: url("../fonts/Raleway-Regular.ttf") format("truetype");
+  src: local("Raleway-Regular"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "SFUIDisplay-Black";
+  src: url("../fonts/SFUIDisplay-Black.otf") format("opentype");
+  src: local("SFUIDisplay-Black"), url("../fonts/SFUIDisplay-Black.otf") format("opentype"), url("../fonts/SFUIDisplay-Black.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "SFUIDisplay-Bold";
+  src: url("../fonts/SFUIDisplay-Bold.otf") format("opentype");
+  src: local("SFUIDisplay-Bold"), url("../fonts/SFUIDisplay-Bold.otf") format("opentype"), url("../fonts/SFUIDisplay-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "SFUIDisplay-Heavy";
+  src: url("../fonts/SFUIDisplay-Heavy.otf") format("opentype");
+  src: local("SFUIDisplay-Heavy"), url("../fonts/SFUIDisplay-Heavy.otf") format("opentype"), url("../fonts/SFUIDisplay-Heavy.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "SFUIDisplay-Light";
+  src: url("../fonts/SFUIDisplay-Light.otf") format("opentype");
+  src: local("SFUIDisplay-Light"), url("../fonts/SFUIDisplay-Light.otf") format("opentype"), url("../fonts/SFUIDisplay-Light.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "SFUIDisplay-Medium";
+  src: url("../fonts/SFUIDisplay-Medium.otf") format("opentype");
+  src: local("SFUIDisplay-Medium"), url("../fonts/SFUIDisplay-Medium.otf") format("opentype"), url("../fonts/SFUIDisplay-Medium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "SFUIDisplay-Regular";
+  src: url("../fonts/SFUIDisplay-Regular.otf") format("opentype");
+  src: local("SFUIDisplay-Regular"), url("../fonts/SFUIDisplay-Regular.otf") format("opentype"), url("../fonts/SFUIDisplay-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "SFUIDisplay-Semibold";
+  src: url("../fonts/SFUIDisplay-Semibold.otf") format("opentype");
+  src: local("SFUIDisplay-Semibold"), url("../fonts/SFUIDisplay-Semibold.otf") format("opentype"), url("../fonts/SFUIDisplay-Semibold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "SFUIDisplay-Thin";
+  src: url("../fonts/SFUIDisplay-Thin.otf") format("opentype");
+  src: local("SFUIDisplay-Thin"), url("../fonts/SFUIDisplay-Thin.otf") format("opentype"), url("../fonts/SFUIDisplay-Thin.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "SFUIDisplay-Ultralight";
+  src: url("../fonts/SFUIDisplay-Ultralight.otf") format("opentype");
+  src: local("SFUIDisplay-Ultralight"), url("../fonts/SFUIDisplay-Ultralight.otf") format("opentype"), url("../fonts/SFUIDisplay-Ultralight.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "GothaProReg";
+  src: url("../fonts/GothaProReg.otf") format("opentype");
+  src: local("GothaProReg"), url("../fonts/GothaProReg.otf") format("opentype"), url("../fonts/GothaProReg.otf") format("opentype");
+}

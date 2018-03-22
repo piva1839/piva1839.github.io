@@ -1,0 +1,115 @@
+.reviews__wrapper {
+  width: 100%;
+  max-width: 960px;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 50px 15px 50px 15px;
+}
+
+.reviews__title {
+  margin-bottom: 25px;
+
+  font-family: "SFUIDisplay-Bold", "Arial", sans-serif;
+  font-size: 20px;
+  line-height: 22px;
+  letter-spacing: 0.3em;
+  color: #000000;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.reviews-slider-mobile-v {
+  width: 99.9%;
+}
+
+.reviews-slider__conent {
+  margin: 0 1px;
+}
+
+.reviews-slider__conent-inner {
+  position: relative;
+  margin-top: -60px;
+  padding: 50px 20px 100px;
+
+  border: 1px solid #000000;
+}
+
+.reviews-slider__conent-inner::before {
+  content: "";
+  position: absolute;
+  top: -28px;
+  left: -1px;
+
+  display: block;
+  width: 45px;
+  height: 55px;
+  background: url("../img/quote1.png") no-repeat;
+}
+
+.reviews-slider__conent-inner::after {
+  content: "";
+  position: absolute;
+  bottom: -28px;
+  right: -21px;
+
+  display: block;
+  width: 45px;
+  height: 55px;
+  background: url("../img/quote2.png") no-repeat;
+}
+
+.reviews-slider__photo {
+  position: relative;
+  z-index: 10;
+  margin-bottom: 25px;
+}
+
+.reviews-slider__img {
+  width: 73px;
+  height: 73px;
+}
+
+.reviews-slider__user-name {
+  margin-bottom: 10px;
+
+  font-family: "SFUIDisplay-Bold", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.3em;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.reviews-slider__review-date {
+  display: block;
+  margin-top: 15px;
+
+  font-family: "GothamPro", "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 22px;
+  color: #af7535;
+}
+
+.reviews-slider__user-quote {
+  font-family: "GothamPro", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 22px;
+  color: #000000;
+}
+
+.reviews-slider-descktop-v {
+  display: none;
+}
+
+@media screen and (min-width: 780px) {
+  .reviews-slider-mobile-v {
+    display: none;
+  }
+  .reviews-slider-descktop-v {
+    display: block;
+  }
+
+  .reviews-slider__conent {
+    margin: 0 10px;
+  }
+}

@@ -1,0 +1,50 @@
+.guarantee {
+  background: #4e3824 url("../img/guarantee-bg.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.guarantee__wrapper {
+  width: 100%;
+  max-width: 660px;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 50px 15px 50px 15px;
+
+  text-align: center;
+}
+
+.guarantee__title {
+  position: relative;
+
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+
+  font-family: "SFUIDisplay-Bold", "Arial", sans-serif;
+  font-size: 28px;
+  line-height: 36px;
+  letter-spacing: 0.3em;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.guarantee__title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -9px;
+
+  display: block;
+  width: 18px;
+  height: 3px;
+  background-color: #ffffff;
+}
+
+.guarantee__description {
+  font-family: "SFUIDisplay-Regular", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}

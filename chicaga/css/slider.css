@@ -1,0 +1,14 @@
+.slider {
+  margin-bottom: 15px;
+}
+
+.slider__content {
+  outline: none;
+}
+
+.slider__img {
+  width: 100%;
+  max-width: 960px;
+  height: auto;
+  margin: 0 auto;
+}

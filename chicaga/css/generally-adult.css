@@ -1,0 +1,66 @@
+.generally-adult__wrapper {
+  width: 100%;
+  max-width: 960px;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 50px 15px 15px 15px;
+}
+
+.generally-adult__item {
+  margin-bottom: 30px;
+}
+
+.generally-adult__title {
+  padding-bottom: 20px;
+
+  font-family: "SFUIDisplay-Bold", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.3em;
+  color: #af7535;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.generally-adult__photo {
+  margin-bottom: 10px;
+}
+
+.generally-adult__phto-img {
+  width: 100%;
+  height: auto;
+}
+
+.generally-adult__item-text {
+  font-family: "SFUIDisplay-Regular", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  color: #000000;
+}
+
+@media screen and (min-width: 768px) {
+  .generally-adult__item {
+    display: flex;
+    margin-bottom: 0;
+  }
+
+  .generally-adult__photo {
+    width: 50%;
+    margin-bottom: 0;
+  }
+
+  .generally-adult__phto-img {
+    width: 100%;
+    height: auto;
+    vertical-align: bottom;
+  }
+
+  .generally-adult__item-text {
+    width: 50%;
+    padding: 30px;
+  }
+
+  .generally-adult__item-text-order {
+    order: -1;
+  }
+}

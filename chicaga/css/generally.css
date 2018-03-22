@@ -1,0 +1,124 @@
+.generally__wrapper {
+  width: 100%;
+  max-width: 960px;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 50px 15px;
+}
+
+.generally__logo {
+  position: relative;
+
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+
+  text-align: center;
+}
+
+.generally__logo::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -59px;
+
+  display: block;
+  width: 118px;
+  height: 3px;
+  background-color: #af7535;
+}
+
+.generally__logo-img {
+  width: 100%;
+  height: auto;
+}
+
+.generally__info {
+  text-align: center;
+  font-weight: 600;
+}
+
+.course-duration {
+  font-family: "SFUIDisplay-Medium", "Arial", sans-serif;
+  font-size: 19px;
+  line-height: 24px;
+  letter-spacing: 0.05em;
+  color: #000000;
+}
+
+.course-result {
+  display: block;
+  margin-bottom: 30px;
+
+  font-family: "SFUIDisplay-Medium", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: 0.05em;
+  color: #000000;
+}
+
+.button--black {
+  border: 1px solid #000000;
+
+  font-family: "SFUIDisplay-Semibold", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: 0.3em;
+  font-weight: 600;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.button--size {
+  border: 1px solid #000000;
+
+  font-family: "SFUIDisplay-Semibold", "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.3em;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.button--arrow {
+  padding-left: 20px;
+  padding-right: 55px;
+
+  background: url("../img/button-arrow.png") no-repeat;
+  background-position: 85% center;
+}
+
+@media screen and (min-width: 460px) {
+  .generally__logo-img {
+    width: 70%;
+  }
+
+  .button--size {
+    width: auto;
+  }
+
+  .button--arrow {
+    background-position: 90% center;
+  }
+}
+
+@media screen and (min-width: 780px) {
+  .generally__wrapper {
+    display: flex;
+  }
+
+  .generally__logo {
+    width: 50%;
+    margin-bottom: 0;
+    margin-right: 40px;
+    padding-bottom: 0;
+  }
+
+  .generally__logo-img {
+    width: 100%;
+  }
+
+  .generally__logo::after {
+    display: none;
+  }
+}

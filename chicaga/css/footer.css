@@ -1,0 +1,122 @@
+
+.footer {
+  background-color: #000000;
+}
+
+.footer__wrapper {
+  width: 100%;
+  max-width: 960px;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 35px 15px 35px 15px;
+}
+
+.footer__logo {
+  margin-bottom: 25px;
+}
+
+.footer__social-head {
+  margin-bottom: 10px;
+
+  font-family: "SFUIDisplay-Semibold", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 36px;
+  letter-spacing: 0.3em;
+  color: #af7535;
+  text-transform: uppercase;
+}
+
+.footer__social-links {
+  margin-bottom: 40px;
+}
+
+.footer__social-link {
+  margin-right: 10px;
+}
+
+.footer__address-list {
+  list-style-type: none;
+
+  margin-bottom: 30px;
+}
+
+.footer__address-item {
+  padding-left: 35px;
+}
+
+.footer__address-item--phone {
+  background: url("../img/phone-ico.png") no-repeat;
+  background-position: left top;
+
+  font-family: "SFUIDisplay-Medium", "Arial", sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.075em;
+  color: #ffffff;
+}
+
+.footer__address-item--city {
+  font-family: "SFUIDisplay-Regular", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.3em;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.footer__submenu-list--margin {
+  margin-bottom: 35px;
+}
+
+.footer__submenu-link {
+  font-family: "SFUIDisplay-Regular", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 32px;
+  letter-spacing: 0.01em;
+  color: #af7535;
+  text-decoration: none;
+}
+
+.to-top {
+  margin-bottom: 35px;
+  padding: 0 15px;
+}
+
+.footer__copyright {
+  padding: 0 15px;
+  
+  font-family: "SFUIDisplay-Regular", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 36px;
+  letter-spacing: 0.01em;
+  color: #989898;
+}
+
+@media screen and (min-width: 900px) {
+  .footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer__contact {
+    width: 30%;
+  }
+
+  .footer__submenu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    width: 70%
+  }
+
+  .footer__submenu-list--margin {
+    margin-left: 80px;
+  }
+
+  .to-top,
+  .footer__copyright {
+    padding: 0 15px;
+
+    text-align: center;
+  }
+}

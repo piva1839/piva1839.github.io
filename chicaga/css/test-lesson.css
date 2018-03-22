@@ -1,0 +1,66 @@
+.test-lesson {
+  background: #4e3824 url("../img/test-lesson-bg.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.test-lesson__wrapper {
+  width: 100%;
+  max-width: 414px;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 50px 15px 50px 15px;
+}
+
+.test-lesson__content {
+  padding: 40px 20px;
+
+  border: 1px solid #ffffff;
+
+  text-align: center;
+}
+
+.test-lesson__title {
+  position: relative;
+  margin-bottom: 25px;
+  padding-bottom: 25px;
+
+  font-family: "BodoniC", "Arial", sans-serif;
+  font-size: 28px;
+  line-height: 36px;
+  font-style: italic;
+  letter-spacing: 0.0005em;
+  color: #ffffff;
+  text-align: center;
+}
+
+.test-lesson__title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -9px;
+
+  display: block;
+  width: 18px;
+  height: 3px;
+  background-color: #ffffff;
+}
+
+.test-lesson__description {
+  margin-bottom: 20px;
+
+  font-family: "SFUIDisplay-Regular", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  color: #ffffff;
+}
+
+.test-lesson--free {
+  display: block;
+
+  color: #font-family: "SFUIDisplay-Regular", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  color: #af7535;
+}

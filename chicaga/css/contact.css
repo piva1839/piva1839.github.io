@@ -1,0 +1,102 @@
+.contact__wrapper {
+  width: 100%;
+  max-width: 960px;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 15px 15px 60px 15px;
+}
+
+.contact__list {
+  list-style-type: none;
+
+  margin-bottom: 30px;
+}
+
+.contact__item {
+  margin-bottom: 10px;
+  padding-left: 30px;
+
+  font-family: "SFUIDisplay-Regular", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  color: #000000;
+}
+
+.contact__item--head {
+  margin-bottom: 20px;
+
+  background: url("../img/place.png") no-repeat;
+  background-position: left top;
+
+  font-family: "SFUIDisplay-Semibold", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 600;
+  letter-spacing: 0.3em;
+  color: #af7535;
+  text-transform: uppercase;
+}
+
+.contact__button {
+  text-align: center;
+}
+
+.button--map {
+  width: 100%;
+  border: 1px solid #af7535;
+
+  font-family: "SFUIDisplay-Semibold", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: 0.3em;
+  color: #af7535;
+  text-transform: uppercase;
+}
+
+.modal-map {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+
+.modal-map-close {
+   position: absolute;
+   top: 10px;
+   right: 15px;
+   z-index: 1001;
+
+   cursor: pointer;
+ }
+
+ .static-map {
+   display: none;
+ }
+
+@media screen and (min-width: 780px) {
+  .contact__wrapper {
+    display: flex;
+  }
+
+  .contact__filials {
+    width: 50%;
+    margin-right: 20px;
+  }
+
+  .static-map {
+    width: 50%;
+  }
+
+  .contact__button {
+    display: none;
+  }
+
+  .static-map {
+    display: block;
+  }
+}

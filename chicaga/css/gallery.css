@@ -1,0 +1,46 @@
+.main-gallery {
+  background-color: #f5f5f5;
+}
+
+.main-gallery__wrapper {
+  width: 100%;
+  max-width: 960px;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 50px 15px;
+}
+
+.main-galley__name {
+  margin-bottom: 30px;
+
+  font-family: "SFUIDisplay-Bold", "Arial", sans-serif;
+  font-size: 28px;
+  line-height: 36px;
+  letter-spacing: 0.3em;
+  color: #af7535;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.main-gallery-slider {
+  width: 100%;
+  height: auto;
+}
+
+.main-gallery-slider__conent {
+  padding: 0 3px;
+}
+
+.descktop-slider {
+  display: none;
+}
+
+@media screen and (min-width: 780px) {
+  .mobile-slider {
+    display: none;
+  }
+
+  .descktop-slider {
+    display: block;
+  }
+}

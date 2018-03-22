@@ -1,0 +1,91 @@
+.training-plan {
+  background-color: #f5f5f5;
+}
+
+.training-plan__wrapper {
+  width: 100%;
+  max-width: 960px;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 40px 15px 10px 15px;
+}
+
+.training-plan__title {
+  margin-bottom: 40px;
+
+  font-family: "SFUIDisplay-Bold", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.3em;
+  color: #000000;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.training-plan__item {
+  margin-bottom: 20px;
+  padding: 10px;
+
+  background-color: #ffffff;
+}
+
+.training-plan__item-head {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.training-plan__item-title {
+  margin-left: 15px;
+  margin-bottom: 10px;
+  padding-top: 7px;
+
+  font-family: "SFUIDisplay-Bold", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.3em;
+  color: #af7535 !important;
+  text-transform: uppercase;
+}
+
+.training-plan__item-option {
+  margin-bottom: 30px;
+}
+
+.training-plan__item-option-name {
+  margin-bottom: 10px;
+}
+
+.training-plan__item-option-body {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.training-plan__item-option-text {
+  margin-left: 10px;
+
+  font-family: "SFUIDisplay-Regular", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.training-plan__item-description {
+  margin-bottom: 10px;
+
+  font-family: "SFUIDisplay-Regular", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  color: #000000;
+}
+
+@media screen and (min-width: 768px) {
+  .training-plan__item-options {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .training-plan__item-option {
+    width: 30%;
+    margin-bottom: 0;
+  }
+}

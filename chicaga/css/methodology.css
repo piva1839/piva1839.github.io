@@ -1,0 +1,84 @@
+.methodology__wrapper {
+  width: 100%;
+  max-width: 860px;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 50px 15px 50px 15px;
+}
+
+.methodology__title {
+  margin-bottom: 20px;
+
+  font-family: "SFUIDisplay-Bold", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: 0.3em;
+  color: #af7535;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.methodology__description {
+  font-family: "GothaProReg", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: 0.05em;
+  color: #000000;
+}
+
+.methodology__logo {
+  position: relative;
+
+  padding-bottom: 10px;
+  margin-bottom: 25px;
+
+  text-align: center;
+}
+
+.methodology__logo::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -59px;
+
+  display: block;
+  width: 118px;
+  height: 3px;
+  background-color: #af7535;
+}
+
+.methodology__logo-img {
+  width: 100%;
+  height: auto;
+}
+
+.methodology__graph {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.methodology__diagram-img {
+  width: 100%;
+  height: auto;
+}
+
+.methodology__graph-img {
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (min-width: 780px) {
+  .methodology__content {
+    display: flex;
+  }
+
+  .methodology__logo {
+    width: 30%;
+    margin-right: 20px;
+  }
+
+  .methodology__description {
+    width: 70%;
+  }
+}

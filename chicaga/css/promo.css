@@ -1,0 +1,166 @@
+.promo {
+  background-color: #f5f5f5;
+}
+
+.promo-adult {
+  background: #97a1ae url("../img/adult/adultbg.jpg") no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+
+.promo-teeny
+
+.promo__wrapper {
+  width: 100%;
+  max-width: 960px;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 20px 15px 10px 15px;
+}
+
+.promo-adult__wrapper {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.promo-adult__title {
+  display: none;
+  width: 60%;
+  margin: auto;
+
+  font-family: "SFUIDisplay-Bold", "Arial", sans-serif;
+  font-size: 36px;
+  line-height: 44px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 25px 25px 32px 25px;
+
+  background-color: #ffffff;
+  border: 1px solid #af7535;
+}
+
+.form-name {
+  position: relative;
+
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+
+  font-family: "SFUIDisplay-Semibold", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.3em;
+  color: #000000 !important;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.form-name::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -9px;
+
+  display: block;
+  width: 18px;
+  height: 3px;
+  background-color: #af7535;
+}
+
+.form-field {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px 15px;
+
+  border: 1px solid #a1a1a1;
+
+  font-family: "SFUIDisplay-Regular", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 22px;
+  color: #7d7d7d;
+
+  outline: none;
+}
+
+.form-field:focus::placeholder {
+  color: transparent;
+}
+
+.form-select {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px 15px;
+
+  border: 1px solid #000000;
+
+  font-family: "SFUIDisplay-Regular", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 22px;
+  color: #7d7d7d;
+
+  outline: none;
+}
+
+.checkbox-label {
+  margin-bottom: 20px;
+
+  font-family: "SFUIDisplay-Regular", "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 14px;
+  color: #7d7d7d;
+}
+
+.confirm-terms-link {
+  font-family: "SFUIDisplay-Regular", "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 14px;
+  color: #000000;
+}
+
+.form-confirm {
+  text-align: center;
+}
+
+.button--brown {
+  width: 100%;
+
+  background-color: #af7535;
+
+  font-family: "SFUIDisplay-Semibold", "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.3em;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px) {
+  .promo-adult__title {
+    display: flex;
+  }
+
+  .promo-adult__form {
+    width: 40%;
+  }
+}
+
+@media screen and (min-width: 920px) {
+  .promo__wrapper {
+    display: flex;
+    padding-top: 20px;
+  }
+
+  .promo-slider {
+    width: 55%;
+    margin-right: 20px;
+  }
+}

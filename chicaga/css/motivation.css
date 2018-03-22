@@ -1,0 +1,45 @@
+.motivation__wrapper {
+  width: 100%;
+  max-width: 960px;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 40px 15px 15px 15px;
+}
+
+.motivation__title {
+  margin-bottom: 50px;
+
+  font-family: "SFUIDisplay-Bold", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.3em;
+  color: #af7535;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.motivation__item {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.motivation__item-text {
+  margin-left: 10px;
+
+  font-family: "SFUIDisplay-Regular", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  color: #000000;
+}
+
+@media screen and (min-width: 768px) {
+  .motivation__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .motivation__item {
+    width: 50%;
+    padding: 20px;
+  }
+}
