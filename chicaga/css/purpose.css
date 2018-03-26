@@ -1,6 +1,6 @@
 .purpose__wrapper {
   width: 100%;
-  max-width: 960px;
+  max-width: 1150px;
   min-width: 320px;
   margin: 0 auto;
   padding: 0 15px 0 15px;
@@ -96,8 +96,73 @@
 }
 
 @media screen and (min-width: 780px) {
+  .purpose__title {
+    margin-bottom: 40px;
+    font-family: "SFUIDisplay-Semibold", "Arial", sans-serif;
+    font-size: 22px;
+    line-height: 28px;
+    letter-spacing: 5;
+    color: #af7535;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .purpose__items {
+    display: flex;
+  }
+
+  .purpose__text {
+    margin-right: 50px;
+    width: 69%;
+  }
+
+  .purpose__sapience {
+    width: 30%
+  }
+
+  .purpose__quote {
+    font-family: "SFUIDisplay-Bold", "Arial", sans-serif;
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: 5px;
+    color: #af7535;
+    text-transform: uppercase;
+  }
+
+  .purpose__quote::before {
+    display: none;
+  }
+
+  .purpose__quote::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -50px;
+
+    display: block;
+    width: 3px;
+    height: 100px;
+    background-color: #af7535;
+  }
+
   .purpose__quote::before {
     height: 50px;
     margin-top: -25px;
+  }
+
+  .purpose__item-description {
+    font-family: "SFUIDisplay-Semibold",sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: #333333;
+    text-transform: uppercase;
+  }
+
+  .purpose__item-img {
+    width: 108px;
+    height: 90px;
   }
 }

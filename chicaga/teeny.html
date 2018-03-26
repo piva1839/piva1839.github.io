@@ -28,10 +28,11 @@
     <link href="css/reviews.css" rel="stylesheet">
     <link href="css/contact.css" rel="stylesheet">
     <link href="css/footer.css" rel="stylesheet">
-    <link href="css/generally-adult.css" rel="stylesheet">
+    <link href="css/generally-teeny.css" rel="stylesheet">
     <link href="css/motivation.css" rel="stylesheet">
     <link href="css/training-plan.css" rel="stylesheet">
     <link href="css/rules.css" rel="stylesheet">
+    <link href="css/methodology-teeny.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="slick/slick.css">
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
     <script type="text/javascript" src="js/jquery.js"></script>
@@ -45,10 +46,11 @@
 
     <a name="to-top"></a>
     <header class="main-header">
-      <div class="main-header__wrapper main-header-adult__wrapper">
+      <div class="main-header__wrapper">
         <div class="main-header__nav">
           <div class="main-header__logo">
             <a class="main-header__logo-link" href="index.html"><img class="main-header__logo-img" src="img/header-logo.png" alt="logo" width="139" height="32"></a>
+            <a class="main-header__logo-link" href="index.html"><img class="main-header__desk-logo-img" src="img/header-logo.png" alt="logo" width="175" height="42"></a>
           </div>
           <div class="main-header__title">
             <h1 class="main-header__title-text">Курсы<br>английского языка</h1>
@@ -59,7 +61,8 @@
             <ul class="main-header__address-list">
               <li class="main-header__address-item main-header__address-item--phone">
                 +7 812 242 50 80
-              </li class="main-header__address-item main-header__address-item--city">
+              </li>
+              <li class="main-header__address-item main-header__address-item--city">
                 Санкт-Петербург
               </li>
             </ul>
@@ -80,10 +83,10 @@
             <a class="main-nav__item-link" href="index.html">Главная</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__item-link main-nav__item-link--active" href="#">Курсы для взрослых</a>
+            <a class="main-nav__item-link" href="adult.html">Курсы для взрослых</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__item-link" href="#">Курсы для подростков</a>
+            <a class="main-nav__item-link main-nav__item-link--active" href="#">Курсы для подростков</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__item-link" href="#">Курсы для детей</a>
@@ -122,13 +125,10 @@
             <a class="main-mobile-nav__item-link" href="#to-top">К началу</a>
           </li>
           <li class="main-mobile-nav__item">
-            <a class="main-mobile-nav__item-link" href="index.html">Главная</a>
+            <a class="main-mobile-nav__item-link" href="adult.html">Курсы для взрослых</a>
           </li>
           <li class="main-mobile-nav__item">
-            <a class="main-mobile-nav__item-link main-mobile-nav__item-link--active" href="#">Курсы для взрослых</a>
-          </li>
-          <li class="main-mobile-nav__item">
-            <a class="main-mobile-nav__item-link" href="#teenager">Курсы для подростков</a>
+            <a class="main-mobile-nav__item-link main-mobile-nav__item-link--active" href="#">Курсы для подростков</a>
           </li>
           <li class="main-mobile-nav__item">
             <a class="main-mobile-nav__item-link" href="#child">Курсы для детей</a>
@@ -157,12 +157,12 @@
 
     <!-- promo -->
 
-    <section class="promo promo-adult">
-      <div class="promo__wrapper promo-adult__wrapper">
-        <p class="promo-adult__title">
+    <section class="promo promo-teeny">
+      <div class="promo__wrapper promo-teeny__wrapper">
+        <p class="promo-teeny__title">
           Бесплатные<br>открытые<br>уроки
         </p>
-        <div class="promo__form promo-adult__form">
+        <div class="promo__form promo-teeny__form">
           <form class="form" type="submite">
             <h2 class="form-name">
               Записаться<br>на бесплатный урок
@@ -184,41 +184,115 @@
       </div>
     </section>
 
-    <!-- generally-adult -->
+    <!-- generally-teeny -->
 
-    <section class="generally-adult">
-      <div class="generally-adult__wrapper">
-        <div class="generally-adult__item">
-          <div class="generally-adult__photo">
-            <img class="generally-adult__phto-img" src="img/adult/teen-1-min.png" alt="generally-photo" width="558" height="262">
+    <section class="generally-teeny">
+      <div class="generally-teeny__wrapper">
+        <div class="generally-teeny__items">
+          <div class="generally-teeny__item">
+            <div class="generally-teeny__photo">
+              <img class="generally-teeny__phto-img" src="img/teeny/teen-1-min.jpg" alt="generally-photo" width="558" height="262">
+            </div>
+            <p class="generally-teeny__item-text">
+              Курсы английского языка для взрослых в CHICAGA проходят по подготовленной британскими лингвистами из Оксфордского Университета программе обучения.
+            </p>
           </div>
-          <p class="generally-adult__item-text">
-            Курсы английского языка для взрослых в CHICAGA проходят по подготовленной британскими лингвистами из Оксфордского Университета программе обучения.
-          </p>
+          <div class="generally-teeny__item">
+            <div class="generally-teeny__photo">
+              <img class="generally-teeny__phto-img" src="img/teeny/teeny_img2.png" alt="generally-photo" width="558" height="262">
+            </div>
+            <p class="generally-teeny__item-text generally-teeny__item-text-order">
+              Современная методика изменила само отношение к процессу изучения языка, превратив его в увлекательное, можно даже сказать развлекательное, занятие.
+            </p>
+          </div>
+          <div class="generally-teeny__item">
+            <div class="generally-teeny__photo">
+              <img class="generally-teeny__phto-img" src="img/teeny/teeny_img3.png" alt="generally-photo" width="558" height="262">
+            </div>
+            <p class="generally-teeny__item-text">
+              Ключевая роль в этом процессе принадлежит личности педагога. Поэтому в CHICAGA собраны талантливые, яркие обожатели своего дела. Они зажигают сердца юных студентов своей любовью к английскому.
+            </p>
+          </div>
+          <div class="generally-teeny__item">
+            <div class="generally-teeny__photo">
+              <img class="generally-teeny__phto-img" src="img/teeny/teeny_img4.png" alt="generally-photo" width="558" height="262">
+            </div>
+            <p class="generally-teeny__item-text generally-teeny__item-text-order">
+              Обучение в позитивной атмосфере в 2 раза повышает эффективность усвоения знаний! Подготовка к успешной сдаче экзаменов ОГЭ или ЕГЭ — процесс сложный и трудоемкий.
+              Важно, чтобы молодой студент в трудный момент не потерял мотивацию.
+            </p>
+          </div>
+          <div class="generally-teeny__item">
+            <div class="generally-teeny__photo">
+              <img class="generally-teeny__phto-img" src="img/teeny/teeny_img5.png" alt="generally-photo" width="558" height="262">
+            </div>
+            <p class="generally-teeny__item-text">
+              Заряженные оптимизмом опытные педагоги внимательно следят за настроением и успехами своих подопечных. Ведь для нас успехи наших студентов важны ничуть не меньше, чем для самих учащихся.
+            </p>
+          </div>
         </div>
-        <div class="generally-adult__item">
-          <div class="generally-adult__photo">
-            <img class="generally-adult__phto-img" src="img/adult/adult_img2.jpg" alt="generally-photo" width="558" height="262">
-          </div>
-          <p class="generally-adult__item-text generally-adult__item-text-order">
-            Современная методика изменила само отношение к процессу изучения языка, превратив его в увлекательное, можно даже сказать развлекательное, занятие.
+        <div class="generally-teeny__info">
+          <p class="generally-teeny__info-text">
+            <b>Teen Friends</b> — специальная программа обучения, разработанная нашими методистами для российских подростков от 13 до 17 лет с учетом особенностей сдачи ЕГЭ и ОГЭ. Подростки хотят оставаться на занятиях как можно дольше, ведь наши преподаватели прививают любовь к английскому языку. В Chicaga подростки не только осваивают всевозможные аспекты языка: грамматику, лексику, произношение, но и проводят внеклассные выездные занятия по достопримечательностям города на английском языке, готовят и защищают собственные проекты, смотрят кино и играют настольные игры на английском языке. Все эти мероприятия в комплексе увеличивают эффективность усвоения и применения знаний в несколько раз. И как следствие — английский становится хобби.
           </p>
+          <div class="generally-teeny__info-items">
+            <div class="generally-teeny__info-item">
+              <div class="generally-teeny__info-item-icon">
+                <img class="generally-teeny__info-icon-img" src="img/teeny/gnrl1.png" alt="info-icon" width="94" height="94">
+              </div>
+              <p class="generally-teeny__info-item-text">
+                Занятия проходят 2 раза в неделю по 3 ак. часа с русскоязычными преподавателями и носителями языка.
+              </p>
+            </div>
+            <div class="generally-teeny__info-item">
+              <div class="generally-teeny__info-item-icon">
+                <img class="generally-teeny__info-icon-img" src="img/teeny/gnrl2.png" alt="info-icon" width="94" height="94">
+              </div>
+              <p class="generally-teeny__info-item-text">
+                Каждую неделю студенты могут видеть свой прогресс и двигаться к осуществлению своих целей.
+              </p>
+            </div>
+          </div>
         </div>
-        <div class="generally-adult__item">
-          <div class="generally-adult__photo">
-            <img class="generally-adult__phto-img" src="img/adult/adult_img3.jpg" alt="generally-photo" width="558" height="262">
+      </div>
+    </section>
+
+    <!-- methodology -->
+
+    <a name="methodology-teeny"></a>
+    <section class="methodology-teeny">
+      <div class="methodology-teeny__wrapper">
+        <h3 class="methodology-teeny__title">
+          МЕТОДИКА
+        </h3>
+        <h4 class="methodology-teeny__subtitle">
+          Методика для подростков Teen Friends состоит из 3 компонентов:
+        </h4>
+        <div class="methodology-teeny__components">
+          <div class="methodology-teeny__component">
+            <p class="methodology-teeny__component-number">
+              <b class="component-number">01</b>
+            </p>
+            <p class="methodology-teeny__component-description">
+              Оксфордская коммуникативная методика позволяет закрепить грамматические и лексические знания
+            </p>
           </div>
-          <p class="generally-adult__item-text">
-            Ключевая роль в этом процессе принадлежит личности педагога. Поэтому в CHICAGA собраны талантливые, яркие обожатели своего дела. Они зажигают сердца студентов своей любовью к английскому.
-          </p>
-        </div>
-        <div class="generally-adult__item">
-          <div class="generally-adult__photo">
-            <img class="generally-adult__phto-img" src="img/adult/adult_img4.jpg" alt="generally-photo" width="558" height="262">
+          <div class="methodology-teeny__component">
+            <p class="methodology-teeny__component-number">
+              <b class="component-number">02</b>
+            </p>
+            <p class="methodology-teeny__component-description">
+              Работа с материалами к ЕГЭ и ОГЭ позволяет подросткам обрести уверенность в стенах школы
+            </p>
           </div>
-          <p class="generally-adult__item-text generally-adult__item-text-order">
-            Кстати, исследования давно уже показали, что обучение в позитивной атмосфере в 2 раза повышает эффективность усвоения знаний!
-          </p>
+          <div class="methodology-teeny__component">
+            <p class="methodology-teeny__component-number">
+              <b class="component-number">03</b>
+            </p>
+            <p class="methodology-teeny__component-description">
+              Разговорная практика на выездных занятия дает возможность отрабатывать полученные знания и расширять свой кругозор
+            </p>
+          </div>
         </div>
       </div>
     </section>
@@ -229,563 +303,154 @@
     <section class="main-gallery">
       <div class="main-gallery__wrapper">
         <h3 class="main-galley__name">
-          Наша<br>галерея
+          Наша галерея
         </h3>
-        <div class="main-gallery-slider">
-          <div class="slider__content main-gallery-slider__conent">
-            <img class="slider__img main-gallery-slider__img" src="img/adult/gallery-1.jpg" alt="gallery-1" width="287" height="287">
+        <div class="mobile-slider">
+          <div class="main-gallery-slider">
+            <div class="slider__content main-gallery-slider__conent">
+              <img class="slider__img main-gallery-slider__img" src="img/gallery-1.jpg" alt="gallery-1" width="287" height="287">
+            </div>
+            <div class="slider__content main-gallery-slider__conent">
+              <img class="slider__img main-gallery-slider__img" src="img/gallery-2.jpg" alt="gallery-1" width="287" height="287">
+            </div>
+            <div class="slider__content main-gallery-slider__conent">
+              <img class="slider__img main-gallery-slider__img" src="img/gallery-3.jpg" alt="gallery-1" width="287" height="287">
+            </div>
+            <div class="slider__content main-gallery-slider__conent">
+              <img class="slider__img main-gallery-slider__img" src="img/gallery-4.jpg" alt="gallery-1" width="287" height="287">
+            </div>
+            <div class="slider__content main-gallery-slider__conent">
+              <img class="slider__img main-gallery-slider__img" src="img/gallery-5.jpg" alt="gallery-1" width="287" height="287">
+            </div>
           </div>
-          <div class="slider__content main-gallery-slider__conent">
-            <img class="slider__img main-gallery-slider__img" src="img/adult/gallery-2.jpg" alt="gallery-1" width="287" height="287">
+        </div>
+        <!-- descktop-slider -->
+        <div class="descktop-slider">
+          <div class="slider-for">
+            <div><img class="" src="img/gallery-1b.jpg" alt="gallery-1"></div>
+            <div><img class="" src="img/gallery-2b.jpg" alt="gallery-2"></div>
+            <div><img class="" src="img/gallery-3b.jpg" alt="gallery-3"></div>
+            <div><img class="" src="img/gallery-4b.jpg" alt="gallery-4"></div>
+            <div><img class="" src="img/gallery-3b.jpg" alt="gallery-3"></div>
           </div>
-          <div class="slider__content main-gallery-slider__conent">
-            <img class="slider__img main-gallery-slider__img" src="img/adult/gallery-3.jpg" alt="gallery-1" width="287" height="287">
-          </div>
-          <div class="slider__content main-gallery-slider__conent">
-            <img class="slider__img main-gallery-slider__img" src="img/adult/gallery-4.jpg" alt="gallery-1" width="287" height="287">
-          </div>
-          <div class="slider__content main-gallery-slider__conent">
-            <img class="slider__img main-gallery-slider__img" src="img/adult/gallery-5.jpg" alt="gallery-1" width="287" height="287">
+          <div class="slider-nav">
+            <div class="descktop-slider-item"><img class="descktop-slider-img" src="img/gallery-1.jpg" alt="gallery-1" width="203" height="174"></div>
+            <div class="descktop-slider-item"><img class="descktop-slider-img" src="img/gallery-2.jpg" alt="gallery-2" width="203" height="174"></div>
+            <div class="descktop-slider-item"><img class="descktop-slider-img" src="img/gallery-3.jpg" alt="gallery-3" width="203" height="174"></div>
+            <div class="descktop-slider-item"><img class="descktop-slider-img" src="img/gallery-4.jpg" alt="gallery-4" width="203" height="174"></div>
+            <div class="descktop-slider-item"><img class="descktop-slider-img" src="img/gallery-3.jpg" alt="gallery-3" width="203" height="174"></div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- motivation -->
+    <!-- teachers -->
 
-    <section class="motivation">
-      <div class="motivation__wrapper">
-        <h3 class="motivation__title">
-          Английский с нуля
-        </h3>
-        <div class="motivation__list">
-          <div class="motivation__item">
-            <div class="motivation__item-img">
-              <img class="motivation__item-icon" src="img/adult/adult_icon1.png" alt="motivation" width="60" height="55">
-            </div>
-            <p class="motivation__item-text">
-              Начать учить английский язык совсем не сложно и очень интересно!
-            </p>
-          </div>
-          <div class="motivation__item">
-            <div class="motivation__item-img">
-              <img class="motivation__item-icon" src="img/adult/adult_icon2.png" alt="motivation" width="60" height="55">
-            </div>
-            <p class="motivation__item-text">
-              Освоение английского языка по силам всем желающим, важно просто начать. Это прекрасная тренировка умственных способностей, расширение кругозора, и новые друзья по всему миру.
-            </p>
-          </div>
-          <div class="motivation__item">
-            <div class="motivation__item-img">
-              <img class="motivation__item-icon" src="img/adult/adult_icon3.png" alt="motivation" width="60" height="55">
-            </div>
-            <p class="motivation__item-text">
-              В CHICAGA вы будете обучаться по коммуникативной методике, разработанной британскими лингвистами Оксфордского Университета. Вы начнете изучение с самых простых разговорных грамматических форм, базовой лексики, которые сможете применять не только на уроках, но и в реальной жизни. Вы почувствуете прогресс с первых уроков и с нетерпением будете ждать новых занятий.
-            </p>
-          </div>
-          <div class="motivation__item">
-            <div class="motivation__item-img">
-              <img class="motivation__item-icon" src="img/adult/adult_icon4.png" alt="motivation" width="60" height="55">
-            </div>
-            <p class="motivation__item-text">
-              Кстати, психологи Роджер Крез и Ричард Робертс провели исследование и четко обосновали, что взрослые студенты изучают иностранные языки гораздо быстрее, нежели дети. Ученые разрушают стереотип о том, что у детей все получается легче и быстрее — это не так. Просто обычно дети учат язык годами. А взрослые, имея ясную мотивацию и широкий кругозор, способны всего за несколько месяцев достичь своей цели.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- purpose -->
-
-    <section class="purpose">
-      <div class="purpose__wrapper">
-        <h3 class="purpose__title">
-          Цели наших<br>студентов
-        </h3>
-        <div class="purpose__content">
-          <div class="purpose__text">
-            <p class="purpose__description">
-              Каковы бы не были твои цели — но если они высокие, то английский язык — прекрасный спутник на твоем пути к успеху.
-            </p>
-            <p class="purpose__description">
-              Знание английского языка — индикатор высокой внутренней мотивации личности.
-            </p>
-          </div>
-          <div class="purpose__sapience">
-            <p class="purpose__quote">
-              Если ты хочешь перемену в будущем — стань этой переменой в настоящем.
-            </p>
-            <p class="purpose__quote-autor">
-              Махатма Ганди
-            </p>
-          </div>
-          <ul class="purpose__list">
-            <li class="purpose__item">
-              <img class="purpose__item-img" src="img/ps1.png" alt="purpose" width="83" height="69">
-              <p class="purpose__item-description">
-                Верю в успех моего ребенка
-              </p>
-            </li>
-            <li class="purpose__item">
-              <img class="purpose__item-img" src="img/ps2.png" alt="purpose" width="83" height="69">
-              <p class="purpose__item-description">
-                Карьерный рост
-              </p>
-            </li>
-            <li class="purpose__item">
-              <img class="purpose__item-img" src="img/ps3.png" alt="purpose" width="83" height="69">
-              <p class="purpose__item-description">
-                Планирую учиться за рубежом
-              </p>
-            </li>
-            <li class="purpose__item">
-              <img class="purpose__item-img" src="img/ps4.png" alt="purpose" width="83" height="69">
-              <p class="purpose__item-description">
-                Люблю путе-<br>шествовать
-              </p>
-            </li>
-            <li class="purpose__item">
-              <img class="purpose__item-img" src="img/ps5.png" alt="purpose" width="83" height="69">
-              <p class="purpose__item-description">
-                Готовлюсь сдавать TOEFL или IELTS
-              </p>
-            </li>
-            <li class="purpose__item">
-              <img class="purpose__item-img" src="img/ps6.png" alt="purpose" width="83" height="69">
-              <p class="purpose__item-description">
-                У меня много друзей за рубежом
-              </p>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- training-plan -->
-
-    <section class="training-plan">
-      <div class="training-plan__wrapper">
-        <h3 class="training-plan__title">
-          Формы обучения
-        </h3>
-        <div class="training-plan__item">
-          <div class="training-plan__item-head">
-            <div class="training-plan__item-logo">
-              <img class="training-plan__item-logo-img" src="img/adult/goal-members.png" alt="plan-item-logo" width="66" height="54">
-            </div>
-            <h2 class="training-plan__item-title">
-              ГРУППОВЫЕ ЗАНЯТИЯ
-            </h2>
-          </div>
-          <div class="training-plan__item-options">
-            <div class="training-plan__item-option">
-              <h3 class="training-plan__item-option-name">
-                основная программа
-              </h3>
-              <div class="training-plan__item-option-body">
-                <div class="training-plan__item-option-icon">
-                  <img class="training-plan__item-option-icon-img" src="img/adult/open_book.png" alt="item-option" width="58" heigth="76">
-                </div>
-                <p class="training-plan__item-option-text">
-                  96 ак. часов = 2 раза в неделю<br>по 3 ак. часа
+    <section class="teachers">
+      <h3 class="teachers__title">
+        Наши великолепные учителя
+      </h3>
+      <div class="teachers__wrapper">
+        <div class="teachers-slider__mobile-v">
+          <div class="teachers-slider">
+            <div class="slider__content teachers-slider__conent">
+              <div class="teachers-slider__photo">
+                <img class="slider__img teachers-slider__img" src="img/teacher-1.jpg" alt="gallery-1" width="128" height="128">
+              </div>
+              <div class="teachers-slider__description">
+                <h3 class="teachers-slider__teacher-name">
+                  Тванба<br>Елизавета
+                </h3>
+                <p class="teachers-slider__teacher-rang">Старший педагог</p>
+                <p class="teachers-slider__teacher-quote">
+                  Опытные люди всегда диверсифицируют свои инвестиции: приобретают акции надежных компаний, покупают недвижимость в столицах Европы, осваивают английский...
                 </p>
               </div>
             </div>
-            <div class="training-plan__item-option">
-              <h3 class="training-plan__item-option-name">
-                количество
-              </h3>
-              <div class="training-plan__item-option-body">
-                <div class="training-plan__item-option-icon">
-                  <img class="training-plan__item-option-icon-img" src="img/adult/users.png" alt="item-option" width="58" heigth="76">
-                </div>
-                <p class="training-plan__item-option-text">
-                  4 - 10 студента в группе<br>
-                  2 педагога на группу
+            <div class="slider__content teachers-slider__conent">
+              <div class="teachers-slider__photo">
+                <img class="slider__img teachers-slider__img" src="img/dir.jpeg" alt="gallery-1" width="128" height="128">
+              </div>
+              <div class="teachers-slider__description">
+                <h3 class="teachers-slider__teacher-name">
+                  Соколов<br>Антон
+                </h3>
+                <p class="teachers-slider__teacher-rang">Директор</p>
+                <p class="teachers-slider__teacher-quote">
+                  Социологи отмечают любопытнейший факт: практически все, кто зарабатывает более 250.000 рублей в месяц владеют английским на уровне выше среднего.
                 </p>
               </div>
             </div>
-            <div class="training-plan__item-option">
-              <h3 class="training-plan__item-option-name">
-                разговорный практикум
-              </h3>
-              <div class="training-plan__item-option-body">
-                <div class="training-plan__item-option-icon">
-                  <img class="training-plan__item-option-icon-img" src="img/adult/speech.png" alt="item-option" width="58" heigth="76">
-                </div>
-                <p class="training-plan__item-option-text">
-                  до 60 ак. часов 2 раза в неделю по 2 ак. часа<br>
-                  8 педагогов в т.ч. носители языка
+            <div class="slider__content teachers-slider__conent">
+              <div class="teachers-slider__photo">
+                <img class="slider__img teachers-slider__img" src="img/metod.jpg" alt="gallery-1" width="128" height="128">
+              </div>
+              <div class="teachers-slider__description">
+                <h3 class="teachers-slider__teacher-name">
+                  Игнатенко<br> Марина
+                </h3>
+                <p class="teachers-slider__teacher-rang">Методист</p>
+                <p class="teachers-slider__teacher-quote">
+                  Космонавты осваивают Инглиш<br>
+                  не только потому, что им придется работать с<br>
+                  американскими астронавтами на МКС, но и потому<br>
+                  что это мощнейший инструмент развития интеллекта.
                 </p>
               </div>
             </div>
           </div>
-          <p class="training-plan__item-description">
-            Вы можете выбрать группу, которая занимается в будни или в выходные. В будни есть утренние, дневные и вечерние группы. Только в наших школах в течение одного курса вы сможете заниматься с несколькими преподавателями: как с русскоязычними, так и с носителями языка. Это необходимо для того чтобы избежать привыкания студентов к однотипной манере речи.
-          </p>
         </div>
-        <div class="training-plan__item">
-          <div class="training-plan__item-head">
-            <div class="training-plan__item-logo">
-              <img class="training-plan__item-logo-img" src="img/adult/cooperaton2.png" alt="plan-item-logo" width="66" height="54">
-            </div>
-            <h2 class="training-plan__item-title">
-              ИНДИВИНДУ -<br>АЛЬНЫЕ ЗАНЯТИЯ
-            </h2>
-          </div>
-          <div class="training-plan__item-options">
-            <div class="training-plan__item-option">
-              <h3 class="training-plan__item-option-name">
-                основная программа
-              </h3>
-              <div class="training-plan__item-option-body">
-                <div class="training-plan__item-option-icon">
-                  <img class="training-plan__item-option-icon-img" src="img/adult/open_book.png" alt="item-option" width="58" heigth="76">
-                </div>
-                <p class="training-plan__item-option-text">
-                  Выбор студента
+
+        <div class="teachers-slider__desctop-v">
+          <div class="teachers-slider-descktop">
+            <div class="slider__content teachers-slider__conent">
+              <div class="teachers-slider__photo">
+                <img class="slider__img teachers-slider__img" src="img/teacher-1.jpg" alt="gallery-1" width="128" height="128">
+              </div>
+              <div class="teachers-slider__description">
+                <h3 class="teachers-slider__teacher-name">
+                  Тванба<br>Елизавета
+                </h3>
+                <p class="teachers-slider__teacher-rang">Старший педагог</p>
+                <p class="teachers-slider__teacher-quote">
+                  Опытные люди всегда диверсифицируют свои инвестиции: приобретают акции надежных компаний, покупают недвижимость в столицах Европы, осваивают английский...
                 </p>
               </div>
             </div>
-            <div class="training-plan__item-option">
-              <h3 class="training-plan__item-option-name">
-                количество
-              </h3>
-              <div class="training-plan__item-option-body">
-                <div class="training-plan__item-option-icon">
-                  <img class="training-plan__item-option-icon-img" src="img/adult/users.png" alt="item-option" width="58" heigth="76">
-                </div>
-                <p class="training-plan__item-option-text">
-                  1-2 студента
+            <div class="slider__content teachers-slider__conent">
+              <div class="teachers-slider__photo">
+                <img class="slider__img teachers-slider__img" src="img/dir.jpeg" alt="gallery-1" width="128" height="128">
+              </div>
+              <div class="teachers-slider__description">
+                <h3 class="teachers-slider__teacher-name">
+                  Соколов<br>Антон
+                </h3>
+                <p class="teachers-slider__teacher-rang">Директор</p>
+                <p class="teachers-slider__teacher-quote">
+                  Социологи отмечают любопытнейший факт:<br> практически все, кто зарабатывает<br> более 250.000 рублей в месяц<br> владеют английским на уровне выше среднего.
                 </p>
               </div>
             </div>
-            <div class="training-plan__item-option">
-              <h3 class="training-plan__item-option-name">
-                разговорный практикум
-              </h3>
-              <div class="training-plan__item-option-body">
-                <div class="training-plan__item-option-icon">
-                  <img class="training-plan__item-option-icon-img" src="img/adult/speech.png" alt="item-option" width="58" heigth="76">
-                </div>
-                <p class="training-plan__item-option-text">
-                  до 60 ак. часов 2 раза в неделю по 2 ак. часа<br>
-                  8 педагогов в т.ч. носители языка
+            <div class="slider__content teachers-slider__conent">
+              <div class="teachers-slider__photo">
+                <img class="slider__img teachers-slider__img" src="img/metod.jpg" alt="gallery-1" width="128" height="128">
+              </div>
+              <div class="teachers-slider__description">
+                <h3 class="teachers-slider__teacher-name">
+                  Игнатенко<br> Марина
+                </h3>
+                <p class="teachers-slider__teacher-rang">Методист</p>
+                <p class="teachers-slider__teacher-quote">
+                  Космонавты осваивают Инглиш<br>
+                  не только потому, что им придется работать с<br>
+                  американскими астронавтами на МКС, но и потому<br>
+                  что это мощнейший инструмент развития интеллекта.
                 </p>
               </div>
             </div>
           </div>
-          <p class="training-plan__item-description">
-            Наши опытные преподаватели смогут подготовить вас к любым вызовам, которые ставит перед Вами жизнь: будь то подготовка к публичным выступлениям на англиском языке, прохождение собеседования в международной компании, поездка заграницу, сдача международных экзаменов или освоение общего курса англиского языка в удобном для Вас темпе.
-          </p>
         </div>
-        <div class="training-plan__item">
-          <div class="training-plan__item-head">
-            <div class="training-plan__item-logo">
-              <img class="training-plan__item-logo-img" src="img/adult/adult_forms3.png" alt="plan-item-logo" width="66" height="66">
-            </div>
-            <h2 class="training-plan__item-title">
-              Разговор -<br>ный курс
-            </h2>
-          </div>
-          <div class="training-plan__item-options">
-            <div class="training-plan__item-option">
-              <h3 class="training-plan__item-option-name">
-                разговорный практикум
-              </h3>
-              <div class="training-plan__item-option-body">
-                <div class="training-plan__item-option-icon">
-                  <img class="training-plan__item-option-icon-img" src="img/adult/open_book.png" alt="item-option" width="58" heigth="76">
-                </div>
-                <p class="training-plan__item-option-text">
-                  до 60 ак. часов 2 раза в неделю по 2 ак. часа<br>
-                  8 педагогов в т.ч. носители языка
-                </p>
-              </div>
-            </div>
-            <div class="training-plan__item-option">
-              <h3 class="training-plan__item-option-name">
-                количество
-              </h3>
-              <div class="training-plan__item-option-body">
-                <div class="training-plan__item-option-icon">
-                  <img class="training-plan__item-option-icon-img" src="img/adult/users.png" alt="item-option" width="58" heigth="76">
-                </div>
-                <p class="training-plan__item-option-text">
-                  4-10 студента в группе<br>
-                  8 педагогов на группу
-                </p>
-              </div>
-            </div>
-          </div>
-          <p class="training-plan__item-description">
-            Наши методисты разработали специальную программу Power-Intensive, которая позволяет эффективно развивать разговорные навыки и применять их в повседневной жизни. В ходе этих занятий вы будете обсуждать книги и фильмы на английском языке. Вас ждут увлекательные англоязычные экскурсии по городу и многое-многое другое.Занятия проводят носители языка. Для максимальной эффективности этот курс разработан для 3 уровней владения языком.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- methodology -->
-
-    <a name="methodology"></a>
-    <section class="methodology">
-      <div class="methodology__wrapper">
-        <h3 class="methodology__title">
-          МЕТОДИКА
-        </h3>
-        <div class="methodology__content">
-          <div class="methodology__logo">
-            <img class="methodology__logo-img" src="img/adult/power160.jpg" alt="generally-logo" width="327" height="53">
-          </div>
-          <p class="methodology__description">
-            К фундаментальной программе OXFORD Englih File мы добавляем нашу новейшую программу emotioNess, построенную на синтезе лингвистики в эмоционально заряженной атмосфере способствует несравнимо более легкому усвоению всего нового и быстрому переводу знаний из сознательных в подсознательные с преобразованием в «aquisition» — глубоко усвоенный навык.
-          </p>
-        </div>
-        <div class="methodology__graph">
-          <img class="methodology__graph-img" src="img/adult/skill.gif" alt="graph" width="961" height="485">
-        </div>
-        <div class="methodology__diagram">
-          <img class="methodology__diagram-img" src="img/adult/levels.png" alt="diagram" width="1115" height="429">
-        </div>
-      </div>
-    </section>
-
-    <!-- rules -->
-
-    <section class="rules">
-      <div class="rules__wrapper">
-        <h3 class="rules__title">
-          CHICAGA-ПРАВИЛА
-        </h3>
-        <div class="rules__items">
-        <div class="rules__item">
-          <div class="rules__item-head">
-            <div class="rules__item-head-icon">
-              <img class="rules__item-head-icon-img" src="img/adult/01.png" alt="head-icon" width="157" height="42">
-            </div>
-          </div>
-          <h4 class="rules__item-title">
-            НЕ УВЕРЕН — ДАВАЙ ОБГОНЯЙ
-          </h4>
-          <p class="rules__item-description">
-            Не тормози, если не уверен, правильно ли выразишься. Лучше быстро говорить ощибаясь, чем смущенно молчать размышлясь.
-          </p>
-        </div>
-        <div class="rules__item">
-          <div class="rules__item-head">
-            <div class="rules__item-head-icon">
-              <img class="rules__item-head-icon-img" src="img/adult/02.png" alt="head-icon" width="157" height="42">
-            </div>
-          </div>
-          <h4 class="rules__item-title">
-            ЗАЖИГАЙ + ХВАЛИ СЕБЯ
-          </h4>
-          <p class="rules__item-description">
-            Даже за смелость в ошибках! НЕГАТИВ сокрушителен. Любой ПОЗИТИВ улучшает процесс изучения в 4 раза!
-          </p>
-        </div>
-        <div class="rules__item">
-          <div class="rules__item-head">
-            <div class="rules__item-head-icon">
-              <img class="rules__item-head-icon-img" src="img/adult/03.png" alt="head-icon" width="157" height="42">
-            </div>
-          </div>
-          <h4 class="rules__item-title">
-            ПЛЮНЬ НА ПРОИЗНОШЕНИЕ
-          </h4>
-          <p class="rules__item-description">
-            Сперва научись понимать, потом смело выражаться, а уж затем бейся за красивое произношение... Кстати, чтобы легко и быстро переломить веник, надо разобрать его на веточки и поломать поочередно каждую.
-          </p>
-        </div>
-        <div class="rules__item">
-          <div class="rules__item-head">
-            <div class="rules__item-head-icon">
-              <img class="rules__item-head-icon-img" src="img/adult/04.png" alt="head-icon" width="157" height="42">
-            </div>
-          </div>
-          <h4 class="rules__item-title">
-            ЯЗЫК УЧИ НЕ ГЛАЗАМИ, А УШАМИ
-          </h4>
-          <p class="rules__item-description">
-            Родной язык ты сперва освоил ушами, а потом взялся за чтение. Также делают 100% англичан и американцев. А у них неплохо в итоге получается.
-          </p>
-        </div>
-        <div class="rules__item">
-          <div class="rules__item-head">
-            <div class="rules__item-head-icon">
-              <img class="rules__item-head-icon-img" src="img/adult/05.png" alt="head-icon" width="157" height="42">
-            </div>
-          </div>
-          <h4 class="rules__item-title">
-            ЛУЧШЕ ГЛУБЖЕ, ЧЕМ ШИРЕ
-          </h4>
-          <p class="rules__item-description">
-            Узнал что-то, не рвись за следующим. Рвись за автоматизмом применения на практике уже услышаного. Проверь себя: из того, о чем ты в жизни узнал, многое ли можешь применить на практике легко и непринуждённо
-          </p>
-        </div>
-        <div class="rules__item">
-          <div class="rules__item-head">
-            <div class="rules__item-head-icon">
-              <img class="rules__item-head-icon-img" src="img/adult/06.png" alt="head-icon" width="157" height="42">
-            </div>
-          </div>
-          <h4 class="rules__item-title">
-            СЛОВАРЬ НЕ МОЖЕТ ДАТЬ НОВЫХ СЛОВ
-          </h4>
-          <p class="rules__item-description">
-            Только слушание новых слов в речи в многократном и разноплановом исполнении даёт реальное расширение словарного запаса.
-          </p>
-        </div>
-        <div class="rules__item">
-          <div class="rules__item-head">
-            <div class="rules__item-head-icon">
-              <img class="rules__item-head-icon-img" src="img/adult/07.png" alt="head-icon" width="157" height="42">
-            </div>
-          </div>
-          <h4 class="rules__item-title">
-            ГРАММАТИКА — ДЛЯ ГРАМОТЕЕВ УВЕРЕННАЯ РЕЧЬ —ДЛЯ ОБЩЕНИЯ
-          </h4>
-          <p class="rules__item-description">
-            Уверенная речь не у того, кто покорил грамматику, а утого, кто исполняет Правила №1, 2, 3, 4, 5, 6.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- advice 1 -->
-
-    <section class="advice advice--bg-gray">
-      <div class="advice__wrapper">
-        <div class="advice__content">
-          <div class="advice__order">
-            <img class="advice__order-text" src="img/01.png" alt="advice-order" width="54" height="33">
-          </div>
-          <div class="advice__info">
-            <div class="advice__title">
-              <p class="advice__title-text">
-                КАК НАУЧИТЬСЯ УВЕРЕННО ПОНИМАТь АНГЛИЙСКУЮ РЕЧЬ НА СЛУХ
-                <span class="advice__order-icon"><img src="img/order1.png" alt="order-icon" width="18" height="3"></span>
-              </p>
-            </div>
-            <div class="advice__description">
-              <p class="advice__description-text">
-                Если ты основную часть времени тратишь на то, чтобы научиться читать и писать, когда же ты научишься слышать и понимать?!
-                Начнем с того, что ты изменишь СВОЙ подход к изучению языка.
-                Обычно ты используешь visual-channel (глаза) на 80%, а audio-channel (уши) только на 20%. А надо с точностью до наоборот: audio-channel — 80%, а visual-channel -20%. Вот твой путь к уверенному пониманию речи на слух. Используй курс <span class="advice__description-text--bold">POWER-INTENSIVE/160.</span>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="advice__quote">
-          <div class="advice__quote-photo">
-            <img class="advice__quote-img" src="img/vika.jpg" alt="vika" width="55" height="54">
-          </div>
-          <div class="advice__quote-description">
-            <div class="quote-img">
-              <img class="quote-img-icon" src="img/quote.png" alt="quote" width="16" height="12">
-            </div>
-            <p class="advice__quote-text">
-              И тут я поняла, что самое главное, научиться понимать на слух
-            </p>
-            <p class="advice__quote-text-autor">
-              Виктория Безухова
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- advice 2 -->
-
-    <section class="advice">
-      <div class="advice__wrapper">
-        <div class="advice__content">
-          <div class="advice__order">
-            <img class="advice__order-text" src="img/02.png" alt="advice-order" width="54" height="33">
-          </div>
-          <div class="advice__info">
-            <div class="advice__title">
-              <p class="advice__title-text">
-                КАК НАУЧИТЬСЯ УВЕРЕННО ОБЩАТЬСЯ НА АНГЛИЙСКОМ
-                <span class="advice__order-icon"><img src="img/order2.png" alt="order-icon" width="18" height="10"></span>
-              </p>
-            </div>
-            <div class="advice__description">
-              <p class="advice__description-text">
-                Ну, безусловно, смотри пункт 1-й, это раз. Теперь, если ты спокойно понимаешь услышанное, то твой мозг освобожден для генерации твоих мыслей прямо на английском языке (исключая мысленный перевод с родного языка). Для подавления мысленного перевода обязательно используй курс <span class="advice__description-text--bold">POWER-INTENSIVE/160.</span>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="advice__quote">
-          <div class="advice__quote-photo">
-            <img class="advice__quote-img" src="img/valera.jpg" alt="vika" width="55" height="54">
-          </div>
-          <div class="advice__quote-description">
-            <div class="quote-img">
-              <img class="quote-img-icon" src="img/quote.png" alt="quote" width="16" height="12">
-            </div>
-            <p class="advice__quote-text">
-              ..а потом я осознал, что для уверенности мне не хватает одного...
-            </p>
-            <p class="advice__quote-text-autor">
-              Валерий Знаменский
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- advice 3 -->
-
-    <section class="advice advice--bg-black">
-      <div class="advice__wrapper advice__wrapper--padding">
-        <div class="advice__content">
-          <div class="advice__order">
-            <img class="advice__order-text" src="img/03.png" alt="advice-order" width="54" height="33">
-          </div>
-          <div class="advice__info">
-            <div class="advice__title">
-              <p class="advice__title-text">
-                КАК НАУЧИТЬСЯ ИСПОЛЬЗОВАТЬ ГРАММАТИКУ В ЖИВОЙ РЕЧИ
-                <span class="advice__order-icon"><img src="img/order3.png" alt="order-icon" width="18" height="17"></span>
-              </p>
-            </div>
-            <div class="advice__description">
-              <p class="advice__description-text advice__description-text--white">
-                Перестань заучивать грамматические схемы и конструкции. Не ищи соответствия русских и английских выражений. Английская мысль строится совершенно иначе, чем русская. Поэтому ты должен ощутить, прочувствовать и воспринять их образ мысли без поиска в уме русского аналога – и тогда сможешь использовать грамматику на подсознательном уровне. Для разгона твоей живой речи обязательно используй курс <span class="advice__description-text--bold advice__description-text--white">POWER-INTENSIVE/160</span>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="advice__quote advice__quote--bg-white">
-        <div class="advice-white-block">
-          <div class="advice__quote-photo">
-            <img class="advice__quote-img" src="img/alex.jpg" alt="vika" width="55" height="54">
-          </div>
-          <div class="advice__quote-description">
-            <div class="quote-img">
-              <img class="quote-img-icon" src="img/quote.png" alt="quote" width="16" height="12">
-            </div>
-            <p class="advice__quote-text">
-              казалось бы, я знаю всю граматику от и до...
-            </p>
-            <p class="advice__quote-text-autor">
-              Александра Македонская
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- action -->
-
-    <section class="action">
-      <div class="action__wrapper">
-        <a class="button button--brown">Записаться<br>на бесплатный урок</a>
-      </div>
-    </section>
+      </section>
 
     <!-- guarantee -->
 
@@ -813,64 +478,48 @@
           <div class="reviews-slider">
             <div class="slider__content reviews-slider__conent">
               <div class="reviews-slider__photo">
-                <img class="slider__img reviews-slider__img" src="img/review-1.png" alt="gallery-1" width="73" height="73">
+                <img class="slider__img reviews-slider__img" src="img/teeny/rewiev.png" alt="gallery-1" width="73" height="73">
               </div>
               <div class="reviews-slider__conent-inner">
                 <div class="reviews-slider__description">
                   <h3 class="reviews-slider__user-name">
-                    Алла Зимина
+                    ЕЛЕНА ОРЛОВА
                   </h3>
                   <p class="reviews-slider__user-quote">
-                    Хорошие курсы! Занятия проходят весело и продуктивно! Хочу уже второй месяц и уже получила много новых знаний!
-                    <span class="reviews-slider__review-date">27 марта 2017</span>
+                    Я занимаюсь год в школе Chicaga с преподавателем Лизой, в этом году я стала лучшей ученицей класса по английскому языку и заняла призовые места на Британском Бульдоге у себя в школе, хотя еще в прошлом году у меня была шаткая "4-ка". С нетерпением жду следующего года обучения, хочу сдать экзамены и стать репортером.
+                    <span class="reviews-slider__review-date">24 Июня, 2017</span>
                   </p>
                 </div>
               </div>
             </div>
             <div class="slider__content reviews-slider__conent">
               <div class="reviews-slider__photo">
-                <img class="slider__img reviews-slider__img" src="img/review-1.png" alt="gallery-1" width="73" height="73">
+                <img class="slider__img reviews-slider__img" src="img/teeny/review2.png" alt="gallery-1" width="73" height="73">
               </div>
               <div class="reviews-slider__conent-inner">
                 <div class="reviews-slider__description">
                   <h3 class="reviews-slider__user-name">
-                    Алла Зимина
+                    ОЛЬГА МАКАРОВА
                   </h3>
                   <p class="reviews-slider__user-quote">
-                    Хорошие курсы! Занятия проходят весело и продуктивно! Хочу уже второй месяц и уже получила много новых знаний!
-                    <span class="reviews-slider__review-date">27 марта 2017</span>
+                    Наш сын занимается в Chicaga 3-ий месяц, еще не разу не пропустил ни одного занятия. Я в полном восторге, что удалось найти полезное увлечение. Каждый раз, он приходит и рассказывает, какие новые слова он освоил, старается дома говорить по-английски. Спасибо преподавателям и всей школе за такую работу.
+                    <span class="reviews-slider__review-date">14 Июня, 2016</span>
                   </p>
                 </div>
               </div>
             </div>
             <div class="slider__content reviews-slider__conent">
               <div class="reviews-slider__photo">
-                <img class="slider__img reviews-slider__img" src="img/review-1.png" alt="gallery-1" width="73" height="73">
+                <img class="slider__img reviews-slider__img" src="img/teeny/review3.png" alt="gallery-1" width="73" height="73">
               </div>
               <div class="reviews-slider__conent-inner">
                 <div class="reviews-slider__description">
                   <h3 class="reviews-slider__user-name">
-                    Алла Зимина
+                    ЕВГЕНИЯ ФРОЛОВА
                   </h3>
                   <p class="reviews-slider__user-quote">
-                    Хорошие курсы! Занятия проходят весело и продуктивно! Хочу уже второй месяц и уже получила много новых знаний!
-                    <span class="reviews-slider__review-date">27 марта 2017</span>
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="slider__content reviews-slider__conent">
-              <div class="reviews-slider__photo">
-                <img class="slider__img reviews-slider__img" src="img/review-1.png" alt="gallery-1" width="73" height="73">
-              </div>
-              <div class="reviews-slider__conent-inner">
-                <div class="reviews-slider__description">
-                  <h3 class="reviews-slider__user-name">
-                    Алла Зимина
-                  </h3>
-                  <p class="reviews-slider__user-quote">
-                    Хорошие курсы! Занятия проходят весело и продуктивно! Хочу уже второй месяц и уже получила много новых знаний!
-                    <span class="reviews-slider__review-date">27 марта 2017</span>
+                    Я пришла в школу Chicaga совсем недавно, потому что хотела смотреть фильмы и слушать свои любимые песни без перевода. Я рассказала об этом нашему преподавателю, и после занятий мы разобрали с ней мою любимую песню, теперь я могу ее петь с правильным произношением. Каждый урок мы смеемся и узнаем что-то новое, зубрежки как в школе нет и это круто!
+                    <span class="reviews-slider__review-date">2 Апреля, 2016</span>
                   </p>
                 </div>
               </div>
@@ -881,82 +530,53 @@
           <div class="reviews-slider-descktop">
             <div class="slider__content reviews-slider__conent">
               <div class="reviews-slider__photo">
-                <img class="slider__img reviews-slider__img" src="img/review-1.png" alt="gallery-1" width="73" height="73">
+                <img class="slider__img reviews-slider__img" src="img/teeny/review2.png" alt="gallery-1" width="73" height="73">
               </div>
               <div class="reviews-slider__conent-inner">
                 <div class="reviews-slider__description">
                   <h3 class="reviews-slider__user-name">
-                    Алла Зимина
+                    ЕЛЕНА ОРЛОВА
                   </h3>
                   <p class="reviews-slider__user-quote">
-                    Хорошие курсы! Занятия проходят весело и продуктивно! Хочу уже второй месяц и уже получила много новых знаний!
-                    <span class="reviews-slider__review-date">27 марта 2017</span>
+                    Я занимаюсь год в школе Chicaga с преподавателем Лизой, в этом году я стала лучшей ученицей класса по английскому языку и заняла призовые места на Британском Бульдоге у себя в школе, хотя еще в прошлом году у меня была шаткая "4-ка". С нетерпением жду следующего года обучения, хочу сдать экзамены и стать репортером.
+                    <span class="reviews-slider__review-date">24 Июня, 2017</span>
                   </p>
                 </div>
               </div>
             </div>
             <div class="slider__content reviews-slider__conent">
               <div class="reviews-slider__photo">
-                <img class="slider__img reviews-slider__img" src="img/review-1.png" alt="gallery-1" width="73" height="73">
+                <img class="slider__img reviews-slider__img" src="img/teeny/review3.png" alt="gallery-1" width="73" height="73">
               </div>
               <div class="reviews-slider__conent-inner">
                 <div class="reviews-slider__description">
                   <h3 class="reviews-slider__user-name">
-                    Алла Зимина
+                    ОЛЬГА МАКАРОВА
                   </h3>
                   <p class="reviews-slider__user-quote">
-                    Хорошие курсы! Занятия проходят весело и продуктивно! Хочу уже второй месяц и уже получила много новых знаний!
-                    <span class="reviews-slider__review-date">27 марта 2017</span>
+                    Наш сын занимается в Chicaga 3-ий месяц, еще не разу не пропустил ни одного занятия. Я в полном восторге, что удалось найти полезное увлечение. Каждый раз, он приходит и рассказывает, какие новые слова он освоил, старается дома говорить по-английски. Спасибо преподавателям и всей школе за такую работу.
+                    <span class="reviews-slider__review-date">14 Июня, 2016</span>
                   </p>
                 </div>
               </div>
             </div>
-            <div class="slider__content reviews-slider__conent">
+            <div class="slider__content reviews-slider__conent reviews-slider__conent--teeny">
               <div class="reviews-slider__photo">
                 <img class="slider__img reviews-slider__img" src="img/review-1.png" alt="gallery-1" width="73" height="73">
               </div>
               <div class="reviews-slider__conent-inner">
                 <div class="reviews-slider__description">
                   <h3 class="reviews-slider__user-name">
-                    Алла Зимина
+                    ЕВГЕНИЯ ФРОЛОВА
                   </h3>
                   <p class="reviews-slider__user-quote">
-                    Хорошие курсы! Занятия проходят весело и продуктивно! Хочу уже второй месяц и уже получила много новых знаний!
-                    <span class="reviews-slider__review-date">27 марта 2017</span>
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="slider__content reviews-slider__conent">
-              <div class="reviews-slider__photo">
-                <img class="slider__img reviews-slider__img" src="img/review-1.png" alt="gallery-1" width="73" height="73">
-              </div>
-              <div class="reviews-slider__conent-inner">
-                <div class="reviews-slider__description">
-                  <h3 class="reviews-slider__user-name">
-                    Алла Зимина
-                  </h3>
-                  <p class="reviews-slider__user-quote">
-                    Хорошие курсы! Занятия проходят весело и продуктивно! Хочу уже второй месяц и уже получила много новых знаний!
-                    <span class="reviews-slider__review-date">27 марта 2017</span>
+                    Я пришла в школу Chicaga совсем недавно, потому что хотела смотреть фильмы и слушать свои любимые песни без перевода. Я рассказала об этом нашему преподавателю, и после занятий мы разобрали с ней мою любимую песню, теперь я могу ее петь с правильным произношением. Каждый урок мы смеемся и узнаем что-то новое, зубрежки как в школе нет и это круто!
+                    <span class="reviews-slider__review-date">2 Апреля, 2016</span>
                   </p>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- action -->
-
-    <section class="action">
-      <div class="action__wrapper">
-        <div class="action__photo">
-          <img class="action__img" src="img/promo-banner.png" alt="promo-banner" width="290" height="228">
-        </div>
-        <div class="action__button">
-          <a class="button button--brown">Хочу курс<br>с супер-мотивацией</a>
         </div>
       </div>
     </section>
@@ -1029,9 +649,12 @@
 
     <section class="footer">
       <div class="footer__wrapper">
-        <div class=="footer__contact">
+        <div class="footer__contact">
           <div class="footer__logo">
-            <a class="footer__logo-link" href="#"><img class="footer__logo-img" src="img/footer-logo.png" alt="footer-logo" width="176" height="63"></a>
+            <a class="footer__logo-link" href="index.html">
+            <img class="footer__logo-b-img" src="img/footer-logo-b.png" alt="footer-logo" width="234" height="63"></a>
+            <a class="footer__logo-link" href="index.html">
+            <img class="footer__logo-img" src="img/footer-logo.png" alt="footer-logo" width="176" height="63"></a>
           </div>
           <div class="footer__social">
             <p class="footer__social-head">
@@ -1056,7 +679,7 @@
         <div class="footer__submenu">
           <ul class="footer__submenu-list">
             <li class="footer__submenu-item">
-              <a class="footer__submenu-link" href="index.html">Главная</a>
+              <a class="footer__submenu-link footer__submenu-link--active" href="index.html">Главная</a>
             </li>
             <li class="footer__submenu-item">
               <a class="footer__submenu-link" href="#">Корпоративный английский</a>
@@ -1065,7 +688,7 @@
               <a class="footer__submenu-link" href="#">Курс английского языка для подростков</a>
             </li>
             <li class="footer__submenu-item">
-              <a class="footer__submenu-link" href="#">Курсы английского языка для взрослых</a>
+              <a class="footer__submenu-link" href="adult.html">Курсы английского языка для взрослых</a>
             </li>
             <li class="footer__submenu-item">
               <a class="footer__submenu-link" href="#">Курсы английского языка для детей</a>
@@ -1073,7 +696,7 @@
           </ul>
           <ul class="footer__submenu-list footer__submenu-list--margin">
             <li class="footer__submenu-item">
-              <a class="footer__submenu-link" href="#">Курсы для взрозлых</a>
+              <a class="footer__submenu-link" href="adult.html">Курсы для взрозлых</a>
             </li>
             <li class="footer__submenu-item">
               <a class="footer__submenu-link" href="#">Курсы для подростков</a>
@@ -1100,14 +723,14 @@
               <a class="footer__submenu-link" href="#">Контакты</a>
             </li>
           </ul>
+          <p class="footer__copyright">
+            © 2016 SkillSet. Санкт-Петербург.
+          </p>
+        </div>
+        <div class="to-top">
+          <a href="#to-top"><img class="to-top-button" src="img/to-top.png" alt="to-top" width="127" height="50"></a>
         </div>
       </div>
-      <div class="to-top">
-        <a href="#to-top"><img class="to-top-button" src="img/to-top.png" alt="to-top" width="127" height="50"></a>
-      </div>
-      <p class="footer__copyright">
-        © 2016 SkillSet. Санкт-Петербург.
-      <p>
     </section>
 
   <script type="text/javascript" src="js/script.js">

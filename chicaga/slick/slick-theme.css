@@ -79,8 +79,6 @@
 }
 
 
-
-
 .promo-slider .slick-prev:before
 {
     display: block; /* добавил свои arrows start */
@@ -191,6 +189,11 @@
     left: -15px; /* левый arrow (-25px) */
 }
 
+.descktop-slider .slick-prev
+{
+   left: -40px; /* левый arrow (-25px) */
+}
+
 .teachers-slider .slick-prev
 {
     left: 0; /* левый arrow (-25px) */
@@ -217,6 +220,11 @@
 .slick-next
 {
     right: -3px; /* правый arrow (-25px) */
+}
+
+.descktop-slider .slick-next
+{
+   right: -25px; /* правый arrow (-25px) */
 }
 
 .promo-slider .slick-next
@@ -263,6 +271,12 @@
 
     text-align: center;
 }
+
+ .promo-slider .my-dots
+{
+    bottom: 5px;
+}
+
 .slick-dots li
 {
     position: relative;

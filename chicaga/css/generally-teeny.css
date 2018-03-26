@@ -1,0 +1,110 @@
+.generally-teeny__wrapper {
+  width: 100%;
+  max-width: 1150px;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 50px 15px 15px 15px;
+}
+
+.generally-teeny__items {
+  margin-bottom: 40px;
+}
+
+.generally-teeny__item {
+  margin-bottom: 30px;
+}
+
+.generally-teeny__title {
+  padding-bottom: 20px;
+
+  font-family: "SFUIDisplay-Bold", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.3em;
+  color: #af7535;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.generally-teeny__photo {
+  margin-bottom: 10px;
+}
+
+.generally-teeny__phto-img {
+  width: 100%;
+  height: auto;
+}
+
+.generally-teeny__item-text {
+  font-family: "SFUIDisplay-Regular", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.generally-teeny__info {
+  padding: 20px;
+}
+
+.generally-teeny__info-text {
+  margin-bottom: 40px;
+
+  font-family: "SFUIDisplay-Regular", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.generally-teeny__info-items {
+  display: flex;
+  flex-direction: column;
+}
+
+.generally-teeny__info-item {
+  display: flex;
+  padding: 20px;
+}
+
+.generally-teeny__info-item-icon {
+  margin-right: 20px;
+}
+
+.generally-teeny__info-item-text {
+  margin-bottom: 40px;
+
+  font-family: "SFUIDisplay-Regular", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  color: #000000;
+}
+
+@media screen and (min-width: 768px) {
+  .generally-teeny__item {
+    display: flex;
+    margin-bottom: 0;
+  }
+
+  .generally-teeny__photo {
+    width: 50%;
+    margin-bottom: 0;
+  }
+
+  .generally-teeny__phto-img {
+    width: 100%;
+    height: auto;
+    vertical-align: bottom;
+  }
+
+  .generally-teeny__item-text {
+    width: 50%;
+    padding: 30px;
+  }
+
+  .generally-teeny__item-text-order {
+    order: -1;
+  }
+
+  .generally-teeny__info-items {
+    flex-direction: row;
+  }
+}

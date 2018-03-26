@@ -36,6 +36,7 @@
 {
     cursor: pointer;
     cursor: hand;
+    padding: 0;
 }
 
 .slick-slider .slick-track,

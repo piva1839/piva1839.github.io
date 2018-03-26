@@ -1,6 +1,6 @@
 .reviews__wrapper {
   width: 100%;
-  max-width: 960px;
+  max-width: 1150px;
   min-width: 320px;
   margin: 0 auto;
   padding: 50px 15px 50px 15px;
@@ -28,8 +28,10 @@
 
 .reviews-slider__conent-inner {
   position: relative;
+
+  min-height: 420px;
   margin-top: -60px;
-  padding: 50px 20px 100px;
+  padding: 50px 20px 20px 20px;
 
   border: 1px solid #000000;
 }
@@ -67,6 +69,8 @@
 .reviews-slider__img {
   width: 73px;
   height: 73px;
+
+  border-radius: 50%;
 }
 
 .reviews-slider__user-name {
@@ -111,5 +115,24 @@
 
   .reviews-slider__conent {
     margin: 0 10px;
+  }
+
+  .reviews-slider__conent-inner {
+    min-height: 310px;
+  }
+
+  .reviews__title {
+    font-family: "SFUIDisplay-Regular", "Arial", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 9px;
+    color: #af7535;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .reviews-slider__conent-inner::before,
+  .reviews-slider__conent-inner::after {
+    display: none;
   }
 }

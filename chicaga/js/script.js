@@ -1,7 +1,8 @@
 $('.slider').slick({
-  dots: false,
-  arrows: true,
+  dots: true,
+  arrows: false,
   infinite: true,
+  dotsClass: "my-dots",
 });
 
 $('.main-gallery-mobile-slider').slick({
@@ -15,6 +16,22 @@ $('.main-gallery-slider').slick({
   dots: false,
   arrows: true,
   infinite: true,
+});
+
+$('.slider-for').slick({
+ slidesToShow: 1,
+ slidesToScroll: 1,
+ arrows: false,
+ fade: false,
+ asNavFor: '.slider-nav'
+});
+$('.slider-nav').slick({
+ slidesToShow: 4,
+ slidesToScroll: 1,
+ asNavFor: '.slider-for',
+ dots: false,
+ centerMode: true,
+ focusOnSelect: true
 });
 
 $('.teachers-slider').slick({
@@ -42,6 +59,8 @@ $('.reviews-slider-descktop').slick({
   dots: true,
   arrows: false,
   infinite: true,
+  autoplay: true,
+  autoplaySpeed: 6000,
   slidesToShow: 2,
   slidesToScroll: 1,
   dotsClass: "my-dots",

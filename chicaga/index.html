@@ -8,6 +8,7 @@
 		<meta name="keywords" content="Chicaga">
 		<meta name="author" content="Chicaga">
     <title>Chicaga</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic" rel="stylesheet">
 		<link rel="shortcut icon" href="favicon.ico" type="image/ico">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
@@ -45,6 +46,7 @@
         <div class="main-header__nav">
           <div class="main-header__logo">
             <a class="main-header__logo-link" href="index.html"><img class="main-header__logo-img" src="img/header-logo.png" alt="logo" width="139" height="32"></a>
+            <a class="main-header__logo-link" href="index.html"><img class="main-header__desk-logo-img" src="img/header-logo.png" alt="logo" width="175" height="42"></a>
           </div>
           <div class="main-header__title">
             <h1 class="main-header__title-text">Курсы<br>английского языка</h1>
@@ -80,7 +82,7 @@
             <a class="main-nav__item-link" href="adult.html">Курсы для взрослых</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__item-link" href="#">Курсы для подростков</a>
+            <a class="main-nav__item-link" href="teeny.html">Курсы для подростков</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__item-link" href="#">Курсы для детей</a>
@@ -122,7 +124,7 @@
             <a class="main-mobile-nav__item-link" href="adult.html">Курсы для взрослых</a>
           </li>
           <li class="main-mobile-nav__item">
-            <a class="main-mobile-nav__item-link" href="#teenager">Курсы для подростков</a>
+            <a class="main-mobile-nav__item-link" href="teeny.html">Курсы для подростков</a>
           </li>
           <li class="main-mobile-nav__item">
             <a class="main-mobile-nav__item-link" href="#child">Курсы для детей</a>
@@ -155,16 +157,19 @@
       <div class="promo__wrapper">
         <div class="slider promo-slider">
           <div class="slider__content promo-slider__conent">
-            <img class="slider__img promo-slider__img" src="img/promo-banner.png" alt="banner" width="290" height="228">
+            <img class="slider__img promo-slider__img" src="img/promo-banner.jpg" alt="banner" width="290" height="228">
           </div>
           <div class="slider__content promo-slider__conent">
-            <img class="slider__img promo-slider__img" src="img/promo-banner.png" alt="banner" width="290" height="228">
+            <img class="slider__img promo-slider__img" src="img/promo-banner.jpg" alt="banner" width="290" height="228">
+          </div>
+          <div class="slider__content promo-slider__conent">
+            <img class="slider__img promo-slider__img" src="img/promo-banner.jpg" alt="banner" width="290" height="228">
           </div>
         </div>
         <div class="promo__form">
           <form class="form" type="submite">
             <h2 class="form-name">
-              Записаться<br>на бесплатный урок
+              Записаться на бесплатный урок
             </h2>
             <input class="form-field" type="text" id="name" name="name" placeholder="Ваше имя">
             <input class="form-field" type="tel" id="tel" name="phone" placeholder="Номер телефона*" required>
@@ -210,7 +215,7 @@
     <section class="main-gallery">
       <div class="main-gallery__wrapper">
         <h3 class="main-galley__name">
-          Наша<br>галерея
+          Наша галерея
         </h3>
         <div class="mobile-slider">
           <div class="main-gallery-slider">
@@ -231,23 +236,21 @@
             </div>
           </div>
         </div>
+        <!-- descktop-slider -->
         <div class="descktop-slider">
-          <div class="main-gallery-mobile-slider">
-            <div class="slider__content main-gallery-slider__conent">
-              <img class="slider__img main-gallery-slider__img" src="img/gallery-1.jpg" alt="gallery-1" width="287" height="287">
-            </div>
-            <div class="slider__content main-gallery-slider__conent">
-              <img class="slider__img main-gallery-slider__img" src="img/gallery-2.jpg" alt="gallery-1" width="287" height="287">
-            </div>
-            <div class="slider__content main-gallery-slider__conent">
-              <img class="slider__img main-gallery-slider__img" src="img/gallery-3.jpg" alt="gallery-1" width="287" height="287">
-            </div>
-            <div class="slider__content main-gallery-slider__conent">
-              <img class="slider__img main-gallery-slider__img" src="img/gallery-4.jpg" alt="gallery-1" width="287" height="287">
-            </div>
-            <div class="slider__content main-gallery-slider__conent">
-              <img class="slider__img main-gallery-slider__img" src="img/gallery-5.jpg" alt="gallery-1" width="287" height="287">
-            </div>
+          <div class="slider-for">
+            <div><img class="" src="img/gallery-1b.jpg" alt="gallery-1"></div>
+            <div><img class="" src="img/gallery-2b.jpg" alt="gallery-2"></div>
+            <div><img class="" src="img/gallery-3b.jpg" alt="gallery-3"></div>
+            <div><img class="" src="img/gallery-4b.jpg" alt="gallery-4"></div>
+            <div><img class="" src="img/gallery-3b.jpg" alt="gallery-3"></div>
+          </div>
+          <div class="slider-nav">
+            <div class="descktop-slider-item"><img class="descktop-slider-img" src="img/gallery-1.jpg" alt="gallery-1" width="203" height="174"></div>
+            <div class="descktop-slider-item"><img class="descktop-slider-img" src="img/gallery-2.jpg" alt="gallery-2" width="203" height="174"></div>
+            <div class="descktop-slider-item"><img class="descktop-slider-img" src="img/gallery-3.jpg" alt="gallery-3" width="203" height="174"></div>
+            <div class="descktop-slider-item"><img class="descktop-slider-img" src="img/gallery-4.jpg" alt="gallery-4" width="203" height="174"></div>
+            <div class="descktop-slider-item"><img class="descktop-slider-img" src="img/gallery-3.jpg" alt="gallery-3" width="203" height="174"></div>
           </div>
         </div>
       </div>
@@ -256,8 +259,11 @@
     <!-- advice 1 -->
 
     <section class="advice advice--bg-gray">
+      <h3 class="advice-main-title">
+        ОСНОВНЫЕ ТРУДНОСТИ В ИЗУЧЕНИИ АНГЛИЙСКОГО
+      </h3>
       <div class="advice__wrapper">
-        <div class="advice__content">
+        <div class="advice__content advice__content--gray">
           <div class="advice__order">
             <img class="advice__order-text" src="img/01.png" alt="advice-order" width="54" height="33">
           </div>
@@ -286,7 +292,7 @@
               <img class="quote-img-icon" src="img/quote.png" alt="quote" width="16" height="12">
             </div>
             <p class="advice__quote-text">
-              И тут я поняла, что самое главное, научиться понимать на слух
+              И тут я поняла, что самое главное, научиться понимать на слух...
             </p>
             <p class="advice__quote-text-autor">
               Виктория Безухова
@@ -300,7 +306,7 @@
 
     <section class="advice">
       <div class="advice__wrapper">
-        <div class="advice__content">
+        <div class="advice__content advice__content--parent">
           <div class="advice__order">
             <img class="advice__order-text" src="img/02.png" alt="advice-order" width="54" height="33">
           </div>
@@ -318,7 +324,7 @@
             </div>
           </div>
         </div>
-        <div class="advice__quote">
+        <div class="advice__quote advice__quote--no-bg">
           <div class="advice__quote-photo">
             <img class="advice__quote-img" src="img/valera.jpg" alt="vika" width="55" height="54">
           </div>
@@ -341,7 +347,7 @@
 
     <section class="advice advice--bg-black">
       <div class="advice__wrapper advice__wrapper--padding">
-        <div class="advice__content">
+        <div class="advice__content advice__content--black">
           <div class="advice__order">
             <img class="advice__order-text" src="img/03.png" alt="advice-order" width="54" height="33">
           </div>
@@ -359,8 +365,26 @@
             </div>
           </div>
         </div>
+        <div class="advice__quote advice__quote--bg-white advice__quote-bg-d advice__quote--descktop">
+          <div class="advice-white-block">
+            <div class="advice__quote-photo">
+              <img class="advice__quote-img" src="img/alex.jpg" alt="vika" width="55" height="54">
+            </div>
+            <div class="advice__quote-description">
+              <div class="quote-img">
+                <img class="quote-img-icon" src="img/quote.png" alt="quote" width="16" height="12">
+              </div>
+              <p class="advice__quote-text">
+                казалось бы, я знаю всю граматику от и до...
+              </p>
+              <p class="advice__quote-text-autor">
+                Александра Македонская
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="advice__quote advice__quote--bg-white">
+      <div class="advice__quote advice__quote--bg-white advice__quote-bg-d advice__quote--mobile">
         <div class="advice-white-block">
           <div class="advice__quote-photo">
             <img class="advice__quote-img" src="img/alex.jpg" alt="vika" width="55" height="54">
@@ -382,9 +406,9 @@
 
     <!-- action -->
 
-    <section class="action">
-      <div class="action__wrapper">
-        <a class="button button--brown">Записаться<br>на бесплатный урок</a>
+    <section class="action action--advice">
+      <div class="action__wrapper action--left-side">
+        <a class="button button--brown">Записаться на бесплатный урок</a>
       </div>
     </section>
 
@@ -397,16 +421,21 @@
           Выбери свой курс изучения Английского с командой CHICAGA
         </h3>
         <div class="course__content">
-          <div class="course__logo">
-            <img class="course__logo-img" src="img/child-en.jpg" alt="generally-logo" width="288" height="288">
-          </div>
-          <div class="course__description">
-            <p class="course__description-text">
-              Курсы<br>английского языка<br>для детей
-            </p>
-            <div class="course__description-button">
-              <a class="button button--black">Мне интересно</a>
+          <div class="course__description-border">
+            <div class="course__description">
+              <p class="course__description-text">
+                Курсы английского языка<br>для детей
+              </p>
+              <div class="course__description-button">
+                <a class="button button--black button--course-desk">Мне интересно</a>
+              </div>
             </div>
+          </div>
+          <div class="course__logo course__logo--order">
+            <picture>
+              <source media="(max-width: 414px)" srcset="img/child-en.jpg 1x">
+              <img class="course__logo-img" src="img/pick_course_bg_1.png" alt="generally-logo" width="870" height="470">
+            </picture>
           </div>
         </div>
       </div>
@@ -419,14 +448,19 @@
       <div class="course__wrapper">
         <div class="course__content">
           <div class="course__logo">
-            <img class="course__logo-img" src="img/adult-en.jpg" alt="generally-logo" width="288" height="288">
+            <picture>
+              <source media="(max-width: 414px)" srcset="img/adult-en.jpg 1x">
+              <img class="course__logo-img" src="img/pick_course_bg_2.png" alt="generally-logo" width="870" height="470">
+            </picture>
           </div>
-          <div class="course__description course__description--black">
-            <p class="course__description-text">
-              Курсы<br>английского языка<br>для взрослых
-            </p>
-            <div class="course__description-button">
-              <a class="button button--white" href="adult.html">Мне интересно</a>
+          <div class="course__description-border course__description-border--red">
+            <div class="course__description--black">
+              <p class="course__description-text">
+                Курсы английского языка<br>для взрослых
+              </p>
+              <div class="course__description-button">
+                <a class="button button--white button--course-desk">Мне интересно</a>
+              </div>
             </div>
           </div>
         </div>
@@ -439,16 +473,21 @@
     <section class="course">
       <div class="course__wrapper">
         <div class="course__content">
-          <div class="course__logo">
-            <img class="course__logo-img" src="img/teenager-en.jpg" alt="generally-logo" width="288" height="288">
-          </div>
-          <div class="course__description">
-            <p class="course__description-text">
-              Курсы<br>английского языка<br>для подростков
-            </p>
-            <div class="course__description--button">
-              <a class="button button--black">Мне интересно</a>
+          <div class="course__description-border">
+            <div class="course__description">
+              <p class="course__description-text">
+                Курсы английского языка<br>для подростков
+              </p>
+              <div class="course__description-button">
+                <a class="button button--black button--course-desk">Мне интересно</a>
+              </div>
             </div>
+          </div>
+          <div class="course__logo course__logo--order">
+            <picture>
+              <source media="(max-width: 414px)" srcset="img/teenager-en.jpg 1x">
+              <img class="course__logo-img" src="img/pick_course_bg_3.png" alt="generally-logo" width="870" height="470">
+            </picture>
           </div>
         </div>
       </div>
@@ -461,14 +500,19 @@
       <div class="course__wrapper">
         <div class="course__content">
           <div class="course__logo">
-            <img class="course__logo-img" src="img/corporate-en.jpg" alt="generally-logo" width="288" height="288">
+            <picture>
+              <source media="(max-width: 414px)" srcset="img/corporate-en.jpg 1x">
+              <img class="course__logo-img" src="img/pick_course_bg_4.png" alt="generally-logo" width="870" height="470">
+            </picture>
           </div>
-          <div class="course__description course__description--black course__description--padding">
-            <p class="course__description-text">
-              Корпоративный<br>английский
-            </p>
-            <div class="course__description--button">
-              <a class="button button--white">Мне интересно</a>
+          <div class="course__description-border course__description-border--red">
+            <div class="course__description--black">
+              <p class="course__description-text">
+                Корпоративный<br>английский
+              </p>
+              <div class="course__description-button">
+                <a class="button button--white button--course-desk">Мне интересно</a>
+              </div>
             </div>
           </div>
         </div>
@@ -478,8 +522,10 @@
     <!-- action -->
 
     <section class="action action--bg-gray">
-      <div class="action__wrapper">
-        <a class="button button--brown">Записаться<br>на бесплатный урок</a>
+      <div class="action__wrapper action__call">
+        <p>
+          <a class="button button--brown">Записаться на бесплатный урок</a>
+        </p>
         <p class="action__text">
           ОСТАЛИСЬ ВОПРОСЫ? СПРАШИВАЙ! <span class="action__text--black">+7 812 242 50 03</span>
         </p>
@@ -506,7 +552,7 @@
     <section class="methodology">
       <div class="methodology__wrapper">
         <h3 class="methodology__title">
-          НОВАЯ МЕТОДИКА — СОВЕРШЕННО НОВЫЙ ПОДХОД
+          НОВАЯ МЕТОДИКА — <br>СОВЕРШЕННО НОВЫЙ ПОДХОД
         </h3>
         <div class="methodology__content">
           <div class="methodology__logo">
@@ -527,21 +573,23 @@
           Цели наших студентов
         </h3>
         <div class="purpose__content">
-          <div class="purpose__text">
-            <p class="purpose__description">
-              Каковы бы не были твои цели — но если они высокие, то английский язык — прекрасный спутник на твоем пути к успеху.
-            </p>
-            <p class="purpose__description">
-              Знание английского языка — индикатор высокой внутренней мотивации личности.
-            </p>
-          </div>
-          <div class="purpose__sapience">
-            <p class="purpose__quote">
-              Если ты хочешь перемену в будущем — стань этой переменой в настоящем.
-            </p>
-            <p class="purpose__quote-autor">
-              Махатма Ганди
-            </p>
+          <div class="purpose__items">
+            <div class="purpose__text">
+              <p class="purpose__description">
+                Каковы бы не были твои цели — но если они высокие, то английский язык — прекрасный спутник на твоем пути к успеху.
+              </p>
+              <p class="purpose__description">
+                Знание английского языка — индикатор высокой внутренней мотивации личности.
+              </p>
+            </div>
+            <div class="purpose__sapience">
+              <p class="purpose__quote">
+                Если ты хочешь перемену в будущем — стань этой переменой в настоящем.
+              </p>
+              <p class="purpose__quote-autor">
+                Махатма Ганди
+              </p>
+            </div>
           </div>
           <ul class="purpose__list">
             <li class="purpose__item">
@@ -589,7 +637,7 @@
 
     <section class="action">
       <div class="action__wrapper">
-        <a class="button button--brown">Записаться<br>на бесплатный урок</a>
+        <a class="button button--brown">Записаться на бесплатный урок</a>
       </div>
     </section>
 
@@ -615,7 +663,7 @@
 
     <section class="teachers">
       <h3 class="teachers__title">
-        Наши<br>великолепные учителя
+        Наши великолепные учителя
       </h3>
       <div class="teachers__wrapper">
         <div class="teachers-slider__mobile-v">
@@ -636,43 +684,32 @@
             </div>
             <div class="slider__content teachers-slider__conent">
               <div class="teachers-slider__photo">
-                <img class="slider__img teachers-slider__img" src="img/teacher-1.jpg" alt="gallery-1" width="128" height="128">
+                <img class="slider__img teachers-slider__img" src="img/dir.jpeg" alt="gallery-1" width="128" height="128">
               </div>
               <div class="teachers-slider__description">
                 <h3 class="teachers-slider__teacher-name">
-                  Тванба<br>Елизавета
+                  Соколов<br>Антон
                 </h3>
-                <p class="teachers-slider__teacher-rang">Старший педагог</p>
+                <p class="teachers-slider__teacher-rang">Директор</p>
                 <p class="teachers-slider__teacher-quote">
-                  Опытные люди всегда диверсифицируют свои инвестиции: приобретают акции надежных компаний, покупают недвижимость в столицах Европы, осваивают английский...
+                  Социологи отмечают любопытнейший факт: практически все, кто зарабатывает более 250.000 рублей в месяц владеют английским на уровне выше среднего.
                 </p>
               </div>
             </div>
             <div class="slider__content teachers-slider__conent">
               <div class="teachers-slider__photo">
-                <img class="slider__img teachers-slider__img" src="img/teacher-1.jpg" alt="gallery-1" width="128" height="128">
+                <img class="slider__img teachers-slider__img" src="img/metod.jpg" alt="gallery-1" width="128" height="128">
               </div>
               <div class="teachers-slider__description">
                 <h3 class="teachers-slider__teacher-name">
-                  Тванба<br>Елизавета
+                  Игнатенко<br> Марина
                 </h3>
-                <p class="teachers-slider__teacher-rang">Старший педагог</p>
+                <p class="teachers-slider__teacher-rang">Методист</p>
                 <p class="teachers-slider__teacher-quote">
-                  Опытные люди всегда диверсифицируют свои инвестиции: приобретают акции надежных компаний, покупают недвижимость в столицах Европы, осваивают английский...
-                </p>
-              </div>
-            </div>
-            <div class="slider__content teachers-slider__conent">
-              <div class="teachers-slider__photo">
-                <img class="slider__img teachers-slider__img" src="img/teacher-1.jpg" alt="gallery-1" width="128" height="128">
-              </div>
-              <div class="teachers-slider__description">
-                <h3 class="teachers-slider__teacher-name">
-                  Тванба<br>Елизавета
-                </h3>
-                <p class="teachers-slider__teacher-rang">Старший педагог</p>
-                <p class="teachers-slider__teacher-quote">
-                  Опытные люди всегда диверсифицируют свои инвестиции: приобретают акции надежных компаний, покупают недвижимость в столицах Европы, осваивают английский...
+                  Космонавты осваивают Инглиш<br>
+                  не только потому, что им придется работать с<br>
+                  американскими астронавтами на МКС, но и потому<br>
+                  что это мощнейший инструмент развития интеллекта.
                 </p>
               </div>
             </div>
@@ -697,43 +734,32 @@
             </div>
             <div class="slider__content teachers-slider__conent">
               <div class="teachers-slider__photo">
-                <img class="slider__img teachers-slider__img" src="img/teacher-1.jpg" alt="gallery-1" width="128" height="128">
+                <img class="slider__img teachers-slider__img" src="img/dir.jpeg" alt="gallery-1" width="128" height="128">
               </div>
               <div class="teachers-slider__description">
                 <h3 class="teachers-slider__teacher-name">
-                  Тванба<br>Елизавета
+                  Соколов<br>Антон
                 </h3>
-                <p class="teachers-slider__teacher-rang">Старший педагог</p>
+                <p class="teachers-slider__teacher-rang">Директор</p>
                 <p class="teachers-slider__teacher-quote">
-                  Опытные люди всегда диверсифицируют свои инвестиции: приобретают акции надежных компаний, покупают недвижимость в столицах Европы, осваивают английский...
+                  Социологи отмечают любопытнейший факт:<br> практически все, кто зарабатывает<br> более 250.000 рублей в месяц<br> владеют английским на уровне выше среднего.
                 </p>
               </div>
             </div>
             <div class="slider__content teachers-slider__conent">
               <div class="teachers-slider__photo">
-                <img class="slider__img teachers-slider__img" src="img/teacher-1.jpg" alt="gallery-1" width="128" height="128">
+                <img class="slider__img teachers-slider__img" src="img/metod.jpg" alt="gallery-1" width="128" height="128">
               </div>
               <div class="teachers-slider__description">
                 <h3 class="teachers-slider__teacher-name">
-                  Тванба<br>Елизавета
+                  Игнатенко<br> Марина
                 </h3>
-                <p class="teachers-slider__teacher-rang">Старший педагог</p>
+                <p class="teachers-slider__teacher-rang">Методист</p>
                 <p class="teachers-slider__teacher-quote">
-                  Опытные люди всегда диверсифицируют свои инвестиции: приобретают акции надежных компаний, покупают недвижимость в столицах Европы, осваивают английский...
-                </p>
-              </div>
-            </div>
-            <div class="slider__content teachers-slider__conent">
-              <div class="teachers-slider__photo">
-                <img class="slider__img teachers-slider__img" src="img/teacher-1.jpg" alt="gallery-1" width="128" height="128">
-              </div>
-              <div class="teachers-slider__description">
-                <h3 class="teachers-slider__teacher-name">
-                  Тванба<br>Елизавета
-                </h3>
-                <p class="teachers-slider__teacher-rang">Старший педагог</p>
-                <p class="teachers-slider__teacher-quote">
-                  Опытные люди всегда диверсифицируют свои инвестиции: приобретают акции надежных компаний, покупают недвижимость в столицах Европы, осваивают английский...
+                  Космонавты осваивают Инглиш<br>
+                  не только потому, что им придется работать с<br>
+                  американскими астронавтами на МКС, но и потому<br>
+                  что это мощнейший инструмент развития интеллекта.
                 </p>
               </div>
             </div>
@@ -757,16 +783,32 @@
           <div class="reviews-slider">
             <div class="slider__content reviews-slider__conent">
               <div class="reviews-slider__photo">
-                <img class="slider__img reviews-slider__img" src="img/review-1.png" alt="gallery-1" width="73" height="73">
+                <img class="slider__img reviews-slider__img" src="img/leonid.jpg" alt="gallery-1" width="73" height="73">
               </div>
               <div class="reviews-slider__conent-inner">
                 <div class="reviews-slider__description">
                   <h3 class="reviews-slider__user-name">
-                    Алла Зимина
+                    Леонид Дементьев
                   </h3>
                   <p class="reviews-slider__user-quote">
-                    Хорошие курсы! Занятия проходят весело и продуктивно! Хочу уже второй месяц и уже получила много новых знаний!
+                    ...Уроки структурированные и понятные, полностью вовлекают каждого студента. Время на уроках проходит буквально на одном дыхании, а главное очень продуктивно и в очень дружелюбной атмосфере, поэтому нет страха, что ты можешь как-то ошибиться. Группа небольшая, преподаватель имеет возможность...
                     <span class="reviews-slider__review-date">27 марта 2017</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="slider__content reviews-slider__conent">
+              <div class="reviews-slider__photo">
+                <img class="slider__img reviews-slider__img" src="img/yanag.jpg" alt="gallery-1" width="73" height="73">
+              </div>
+              <div class="reviews-slider__conent-inner">
+                <div class="reviews-slider__description">
+                  <h3 class="reviews-slider__user-name">
+                    Яна Журавель
+                  </h3>
+                  <p class="reviews-slider__user-quote">
+                    Очень довольна!!! Попала по рекомендации знакомой, теперь сама советую эту школу. Видно, что подбору персонала уделяется особое внимание... В самой школе удивительно домашняя и уютная обстановка. Занимаемся с мужем вдвоём в разных группах на разных уровнях - впечатления одинаково хороши)))
+                    <span class="reviews-slider__review-date">30 марта 2017</span>
                   </p>
                 </div>
               </div>
@@ -782,39 +824,57 @@
                   </h3>
                   <p class="reviews-slider__user-quote">
                     Хорошие курсы! Занятия проходят весело и продуктивно! Хочу уже второй месяц и уже получила много новых знаний!
-                    <span class="reviews-slider__review-date">27 марта 2017</span>
+                    <span class="reviews-slider__review-date">10 декабря 2015</span>
                   </p>
                 </div>
               </div>
             </div>
             <div class="slider__content reviews-slider__conent">
               <div class="reviews-slider__photo">
-                <img class="slider__img reviews-slider__img" src="img/review-1.png" alt="gallery-1" width="73" height="73">
+                <img class="slider__img reviews-slider__img" src="img/rewi.png" alt="gallery-1" width="73" height="73">
               </div>
               <div class="reviews-slider__conent-inner">
                 <div class="reviews-slider__description">
                   <h3 class="reviews-slider__user-name">
-                    Алла Зимина
+                    София Мавроди
                   </h3>
                   <p class="reviews-slider__user-quote">
-                    Хорошие курсы! Занятия проходят весело и продуктивно! Хочу уже второй месяц и уже получила много новых знаний!
-                    <span class="reviews-slider__review-date">27 марта 2017</span>
+                    Очень хорошие преподаватели, с которыми хочется заниматься! <br />
+                    Занятия проходят легко, <br />
+                    весело и непринужденно.
+                    <span class="reviews-slider__review-date">01 октября 2015</span>
                   </p>
                 </div>
               </div>
             </div>
             <div class="slider__content reviews-slider__conent">
               <div class="reviews-slider__photo">
-                <img class="slider__img reviews-slider__img" src="img/review-1.png" alt="gallery-1" width="73" height="73">
+                <img class="slider__img reviews-slider__img" src="img/helenacha.jpg" alt="gallery-1" width="73" height="73">
               </div>
               <div class="reviews-slider__conent-inner">
                 <div class="reviews-slider__description">
                   <h3 class="reviews-slider__user-name">
-                    Алла Зимина
+                    Елена Шаманова
                   </h3>
                   <p class="reviews-slider__user-quote">
-                    Хорошие курсы! Занятия проходят весело и продуктивно! Хочу уже второй месяц и уже получила много новых знаний!
-                    <span class="reviews-slider__review-date">27 марта 2017</span>
+                    ...пришла без рекомендаций, выбирала школу возле дома и доступную по цене. Сразу оценила вежливость администраторов, дружелюбную атмосферу, индивидуальный подход в рекомендациях по обучению... Я перестала бояться говорить по-английски... Хочется продолжать изучать английский дальше. Рекомендую!
+                    <span class="reviews-slider__review-date">01 октября 2015</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="slider__content reviews-slider__conent">
+              <div class="reviews-slider__photo">
+                <img class="slider__img reviews-slider__img" src="img/annasok.jpg" alt="gallery-1" width="73" height="73">
+              </div>
+              <div class="reviews-slider__conent-inner">
+                <div class="reviews-slider__description">
+                  <h3 class="reviews-slider__user-name">
+                    Анна Соколова
+                  </h3>
+                  <p class="reviews-slider__user-quote">
+                    ...вообще шла в другую школу, но решила остаться и разузнать все получше. Очень ненавязчивая обстановка, уютный и интересный интерьер.... Сейчас я уже заканчиваю уровень и результатами довольна, не хочется расставаться, но мой тернистый путь к освоению языка продолжится уже в другой стране.
+                    <span class="reviews-slider__review-date">01 октября 2015</span>
                   </p>
                 </div>
               </div>
@@ -825,16 +885,32 @@
           <div class="reviews-slider-descktop">
             <div class="slider__content reviews-slider__conent">
               <div class="reviews-slider__photo">
-                <img class="slider__img reviews-slider__img" src="img/review-1.png" alt="gallery-1" width="73" height="73">
+                <img class="slider__img reviews-slider__img" src="img/leonid.jpg" alt="gallery-1" width="73" height="73">
               </div>
               <div class="reviews-slider__conent-inner">
                 <div class="reviews-slider__description">
                   <h3 class="reviews-slider__user-name">
-                    Алла Зимина
+                    Леонид Дементьев
                   </h3>
                   <p class="reviews-slider__user-quote">
-                    Хорошие курсы! Занятия проходят весело и продуктивно! Хочу уже второй месяц и уже получила много новых знаний!
+                    ...Уроки структурированные и понятные, полностью вовлекают каждого студента. Время на уроках проходит буквально на одном дыхании, а главное очень продуктивно и в очень дружелюбной атмосфере, поэтому нет страха, что ты можешь как-то ошибиться. Группа небольшая, преподаватель имеет возможность...
                     <span class="reviews-slider__review-date">27 марта 2017</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="slider__content reviews-slider__conent">
+              <div class="reviews-slider__photo">
+                <img class="slider__img reviews-slider__img" src="img/yanag.jpg" alt="gallery-1" width="73" height="73">
+              </div>
+              <div class="reviews-slider__conent-inner">
+                <div class="reviews-slider__description">
+                  <h3 class="reviews-slider__user-name">
+                    Яна Журавель
+                  </h3>
+                  <p class="reviews-slider__user-quote">
+                    Очень довольна!!! Попала по рекомендации знакомой, теперь сама советую эту школу. Видно, что подбору персонала уделяется особое внимание... В самой школе удивительно домашняя и уютная обстановка. Занимаемся с мужем вдвоём в разных группах на разных уровнях - впечатления одинаково хороши)))
+                    <span class="reviews-slider__review-date">30 марта 2017</span>
                   </p>
                 </div>
               </div>
@@ -850,39 +926,57 @@
                   </h3>
                   <p class="reviews-slider__user-quote">
                     Хорошие курсы! Занятия проходят весело и продуктивно! Хочу уже второй месяц и уже получила много новых знаний!
-                    <span class="reviews-slider__review-date">27 марта 2017</span>
+                    <span class="reviews-slider__review-date">10 декабря 2015</span>
                   </p>
                 </div>
               </div>
             </div>
             <div class="slider__content reviews-slider__conent">
               <div class="reviews-slider__photo">
-                <img class="slider__img reviews-slider__img" src="img/review-1.png" alt="gallery-1" width="73" height="73">
+                <img class="slider__img reviews-slider__img" src="img/rewi.png" alt="gallery-1" width="73" height="73">
               </div>
               <div class="reviews-slider__conent-inner">
                 <div class="reviews-slider__description">
                   <h3 class="reviews-slider__user-name">
-                    Алла Зимина
+                    София Мавроди
                   </h3>
                   <p class="reviews-slider__user-quote">
-                    Хорошие курсы! Занятия проходят весело и продуктивно! Хочу уже второй месяц и уже получила много новых знаний!
-                    <span class="reviews-slider__review-date">27 марта 2017</span>
+                    Очень хорошие преподаватели, с которыми хочется заниматься! <br />
+                    Занятия проходят легко, <br />
+                    весело и непринужденно.
+                    <span class="reviews-slider__review-date">01 октября 2015</span>
                   </p>
                 </div>
               </div>
             </div>
             <div class="slider__content reviews-slider__conent">
               <div class="reviews-slider__photo">
-                <img class="slider__img reviews-slider__img" src="img/review-1.png" alt="gallery-1" width="73" height="73">
+                <img class="slider__img reviews-slider__img" src="img/helenacha.jpg" alt="gallery-1" width="73" height="73">
               </div>
               <div class="reviews-slider__conent-inner">
                 <div class="reviews-slider__description">
                   <h3 class="reviews-slider__user-name">
-                    Алла Зимина
+                    Елена Шаманова
                   </h3>
                   <p class="reviews-slider__user-quote">
-                    Хорошие курсы! Занятия проходят весело и продуктивно! Хочу уже второй месяц и уже получила много новых знаний!
-                    <span class="reviews-slider__review-date">27 марта 2017</span>
+                    ...пришла без рекомендаций, выбирала школу возле дома и доступную по цене. Сразу оценила вежливость администраторов, дружелюбную атмосферу, индивидуальный подход в рекомендациях по обучению... Я перестала бояться говорить по-английски... Хочется продолжать изучать английский дальше. Рекомендую!
+                    <span class="reviews-slider__review-date">01 октября 2015</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="slider__content reviews-slider__conent">
+              <div class="reviews-slider__photo">
+                <img class="slider__img reviews-slider__img" src="img/annasok.jpg" alt="gallery-1" width="73" height="73">
+              </div>
+              <div class="reviews-slider__conent-inner">
+                <div class="reviews-slider__description">
+                  <h3 class="reviews-slider__user-name">
+                    Анна Соколова
+                  </h3>
+                  <p class="reviews-slider__user-quote">
+                    ...вообще шла в другую школу, но решила остаться и разузнать все получше. Очень ненавязчивая обстановка, уютный и интересный интерьер.... Сейчас я уже заканчиваю уровень и результатами довольна, не хочется расставаться, но мой тернистый путь к освоению языка продолжится уже в другой стране.
+                    <span class="reviews-slider__review-date">01 октября 2015</span>
                   </p>
                 </div>
               </div>
@@ -894,13 +988,10 @@
 
     <!-- action -->
 
-    <section class="action">
+    <section class="action action--banner">
       <div class="action__wrapper last-action">
         <div class="action__photo last-action__photo">
-          <img class="action__img last-action-img" src="img/promo-banner.png" alt="promo-banner" width="290" height="228">
-        </div>
-        <div class="action__button">
-          <a class="button button--brown">Хочу курс<br>с супер-мотивацией</a>
+          <img class="action__img last-action-img" src="img/promo-banner.jpg" alt="promo-banner" width="290" height="228">
         </div>
       </div>
     </section>
@@ -973,9 +1064,12 @@
 
     <section class="footer">
       <div class="footer__wrapper">
-        <div class=="footer__contact">
+        <div class="footer__contact">
           <div class="footer__logo">
-            <a class="footer__logo-link" href="#"><img class="footer__logo-img" src="img/footer-logo.png" alt="footer-logo" width="176" height="63"></a>
+            <a class="footer__logo-link" href="index.html">
+            <img class="footer__logo-b-img" src="img/footer-logo-b.png" alt="footer-logo" width="234" height="63"></a>
+            <a class="footer__logo-link" href="index.html">
+            <img class="footer__logo-img" src="img/footer-logo.png" alt="footer-logo" width="176" height="63"></a>
           </div>
           <div class="footer__social">
             <p class="footer__social-head">
@@ -1000,7 +1094,7 @@
         <div class="footer__submenu">
           <ul class="footer__submenu-list">
             <li class="footer__submenu-item">
-              <a class="footer__submenu-link" href="index.html">Главная</a>
+              <a class="footer__submenu-link footer__submenu-link--active" href="index.html">Главная</a>
             </li>
             <li class="footer__submenu-item">
               <a class="footer__submenu-link" href="#">Корпоративный английский</a>
@@ -1009,7 +1103,7 @@
               <a class="footer__submenu-link" href="#">Курс английского языка для подростков</a>
             </li>
             <li class="footer__submenu-item">
-              <a class="footer__submenu-link" href="#">Курсы английского языка для взрослых</a>
+              <a class="footer__submenu-link" href="adult.html">Курсы английского языка для взрослых</a>
             </li>
             <li class="footer__submenu-item">
               <a class="footer__submenu-link" href="#">Курсы английского языка для детей</a>
@@ -1017,7 +1111,7 @@
           </ul>
           <ul class="footer__submenu-list footer__submenu-list--margin">
             <li class="footer__submenu-item">
-              <a class="footer__submenu-link" href="#">Курсы для взрозлых</a>
+              <a class="footer__submenu-link" href="adult.html">Курсы для взрозлых</a>
             </li>
             <li class="footer__submenu-item">
               <a class="footer__submenu-link" href="#">Курсы для подростков</a>
@@ -1044,14 +1138,14 @@
               <a class="footer__submenu-link" href="#">Контакты</a>
             </li>
           </ul>
+          <p class="footer__copyright">
+            © 2016 SkillSet. Санкт-Петербург.
+          </p>
+        </div>
+        <div class="to-top">
+          <a href="#to-top"><img class="to-top-button" src="img/to-top.png" alt="to-top" width="127" height="50"></a>
         </div>
       </div>
-      <div class="to-top">
-        <a href="#to-top"><img class="to-top-button" src="img/to-top.png" alt="to-top" width="127" height="50"></a>
-      </div>
-      <p class="footer__copyright">
-        © 2016 SkillSet. Санкт-Петербург.
-      <p>
     </section>
 
   <script type="text/javascript" src="js/script.js">

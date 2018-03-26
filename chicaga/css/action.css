@@ -1,6 +1,6 @@
 .action__wrapper {
   width: 100%;
-  max-width: 960px;
+  max-width: 1150px;
   min-width: 320px;
   margin: 0 auto;
   padding: 20px 15px 50px 15px;
@@ -37,26 +37,89 @@
 @media screen and (min-width: 414px) {
   .action .button--brown {
     width: auto;
-    padding-left: 80px;
-    padding-right: 80px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-weight: 600;
   }
 }
 
 @media screen and (min-width: 780px) {
   .last-action {
-    width: 100%;
-    padding: 20px 15px 50px 15px;
+    max-width: 100%;
 
     text-align: center;
   }
 
   .last-action__photo {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
   }
 
   .last-action-img {
     width: 100%;
     height: auto;
+  }
+
+  .action--left-side {
+    padding-top: 50px;
+
+    text-align: left;
+  }
+
+  .action--advice {
+    padding-left: 14%;
+    padding-bottom: 80px;
+
+    background-color: #f5f5f5;
+  }
+
+  .action--banner {
+    max-width: 1150px;
+    margin: 0 auto;
+  }
+
+  .action__call {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .action__text {
+    position: relative;
+
+    width: 320px;
+    margin-top: 0;
+    margin-left: 70px;
+    margin-bottom: 30px;
+    padding-left: 20px;
+
+    font-family: "SFUIDisplay-Semibold", "Arial", sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    text-align: left;
+  }
+
+  .action__text::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -35px;
+
+    display: block;
+    width: 3px;
+    height: 70px;
+    background-color: #af7535;
+  }
+
+  .action__text--black {
+    display: block;
+
+    font-family: "SFUIDisplay-Medium", "Arial", sans-serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: #343333;
   }
 }

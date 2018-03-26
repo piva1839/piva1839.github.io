@@ -16,10 +16,10 @@
 
 .promo__wrapper {
   width: 100%;
-  max-width: 960px;
+  max-width: 1150px;
   min-width: 320px;
   margin: 0 auto;
-  padding: 20px 15px 10px 15px;
+  padding: 20px 15px 20px 15px;
 }
 
 .promo-adult__wrapper {
@@ -30,6 +30,19 @@
 }
 
 .promo-adult__title {
+  display: none;
+  width: 60%;
+  margin: auto;
+
+  font-family: "SFUIDisplay-Bold", "Arial", sans-serif;
+  font-size: 36px;
+  line-height: 44px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.promo-teeny__title {
   display: none;
   width: 60%;
   margin: auto;
@@ -155,6 +168,14 @@
   .promo-adult__form {
     width: 40%;
   }
+
+  .promo-teeny__title {
+    display: flex;
+  }
+
+  .promo-teeny__form {
+    width: 40%;
+  }
 }
 
 @media screen and (min-width: 920px) {
@@ -164,7 +185,11 @@
   }
 
   .promo-slider {
-    width: 55%;
-    margin-right: 20px;
+    width: 67%;
+    margin-right: 30px;
+  }
+
+  .promo__form {
+    width: 32%;
   }
 }

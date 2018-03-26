@@ -1,12 +1,12 @@
 .test-lesson {
-  background: #4e3824 url("../img/test-lesson-bg.jpg") no-repeat;
+  background: #4e3824 url("../img/test-lesson-bg.png") no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .test-lesson__wrapper {
   width: 100%;
-  max-width: 414px;
+  max-width: 786px;
   min-width: 320px;
   margin: 0 auto;
   padding: 50px 15px 50px 15px;
@@ -64,3 +64,30 @@
   line-height: 30px;
   color: #af7535;
 }
+
+@media screen and (min-width: 780px) {
+  .test-lesson {
+    background: none;
+  }
+
+  .test-lesson__wrapper {
+    width: 100%;
+    max-width: 1150px;
+    min-width: 320px;
+    margin: 0 auto;
+    padding: 50px 250px 50px 250px;
+
+    background: #4e3824 url("../img/test-lesson-bg.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .test-lesson__title {
+    font-family: "BodoniC", "Arial", sans-serif;
+    font-size: 38px;
+    line-height: 40px;
+    font-style: italic;
+    letter-spacing: 0;
+    color: #ffffff;
+    text-align: center;
+  }

@@ -1,6 +1,6 @@
 .methodology__wrapper {
   width: 100%;
-  max-width: 860px;
+  max-width: 1150px;
   min-width: 320px;
   margin: 0 auto;
   padding: 50px 15px 50px 15px;
@@ -69,16 +69,58 @@
 }
 
 @media screen and (min-width: 780px) {
+  .methodology__title {
+    margin-bottom: 40px;
+
+    font-family: "SFUIDisplay-Semibold", "Arial", sans-serif;
+    font-size: 22px;
+    line-height: 28px;
+    letter-spacing: 5;
+    color: #af7535;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
   .methodology__content {
     display: flex;
+    margin-bottom: 20px;
   }
 
   .methodology__logo {
-    width: 30%;
-    margin-right: 20px;
+    width: 25%;
+    margin-bottom: 0;
+    margin-right: 40px;
+    padding-bottom: 0;
+  }
+
+  .methodology__logo-img {
+    width: 100%;
+  }
+
+  .methodology__logo::after {
+    display: none;
+  }
+
+  .methodology__logo::before{
+    content: "";
+    position: absolute;
+    right: -15px;
+    top: 50%;
+    margin-top: -50px;
+
+    display: block;
+    width: 3px;
+    height: 100px;
+    background-color: #af7535;
   }
 
   .methodology__description {
     width: 70%;
+
+    font-family: "GothaProReg", "Arial", sans-serif;
+    font-size: 15px;
+    line-height: 24px;
+    color: 333333;
+    text-align: left;
   }
 }
