@@ -29,6 +29,7 @@
     <link href="css/reviews.css" rel="stylesheet">
     <link href="css/contact.css" rel="stylesheet">
     <link href="css/footer.css" rel="stylesheet">
+    <link href="css/seo.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="slick/slick.css">
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
     <script type="text/javascript" src="js/jquery.js"></script>
@@ -75,9 +76,6 @@
     <nav class="main-nav">
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__item-link main-nav__item-link--active" href="index.html">Главная</a>
-          </li>
           <li class="main-nav__item">
             <a class="main-nav__item-link" href="adult.html">Курсы для взрослых</a>
           </li>
@@ -167,7 +165,7 @@
           </div>
         </div>
         <div class="promo__form">
-          <form class="form" type="submite">
+          <form class="form" type="submit">
             <h2 class="form-name">
               Записаться на бесплатный урок
             </h2>
@@ -175,18 +173,60 @@
             <input class="form-field" type="tel" id="tel" name="phone" placeholder="Номер телефона*" required>
             <select class="form-select" size="1" name="school">
               <option class="form-select" disabled selected>Выберите школу</option>
-              <option value="Школа 1">Школа 1</option>
-              <option value="Школа 2">Школа 2</option>
-              <option value="Школа 3">Школа 3</option>
+              <option value="Школа 1">Школа на Академической</option>
+              <option value="Школа 2">Школа на Звездной</option>
+              <option value="Школа 3">Школа на Осипенко</option>
             </select>
             <label class="checkbox-label" for="confirm"><input class="form-checkbox" type="checkbox" id="confirm" name="confirm"> Нажимая кнопку «Оставить заявку», я даю согласие на <span class="confirm-terms"><a class="confirm-terms-link" href="#">обработку персональных данных</a></span></label>
             <div class="form-confirm">
-              <button class="button button--brown" type="submite">Оставить заявку</button>
+              <button class="button button--brown" type="submit">Оставить заявку</button>
             </div>
           </form>
         </div>
       </div>
     </section>
+
+    <div class="terms-popup">
+      <div class="terms-popup-close">
+        <img src="img/close-menu.png" alt="modal-close" width="43" height="43">
+      </div>
+      <div class="privacy-policy">
+        <h4 class="privacy-policy-title">
+          Политика конфиденциальности и использования запрашиваемых данных
+        </h4>
+        <p class="privacy-policy-paragraph">
+          Пользователь, оставляя заявку на сайте chicaga.ru, принимает настоящее Согласие на обработку персональных данных (далее – Согласие). Действуя свободно, своей волей и в своем интересе, а также подтверждая свою дееспособность, Пользователь дает свое согласие Администрации сайта на обработку своих персональных данных со следующими условиями:
+        </p>
+        <p class="privacy-policy-paragraph">
+          1. Данное Согласие дается на обработку персональных данных, как без использования средств автоматизации, так и с их использованием.
+        </p>
+        <p class="privacy-policy-paragraph">
+          2. Согласие дается на обработку следующих моих персональных данных:
+          персональные данные, не являющиеся специальными или биометрическими: имя (или псевдоним) пользователя; номера контактных телефонов; адреса электронной почты; пользовательские данные (тип и версия ОС; тип и версия Браузера; тип устройства и разрешение его экрана; источник откуда пришел на сайт пользователь; с какого сайта или по какой рекламе; язык ОС и Браузера; ip-адрес, поисковые запросы пользователя, интернет-адреса веб-страниц, посещаемых пользователем, тематику информации, размещённой на посещаемых пользователем интернет-ресурсах, идентификатор пользователя, преобразованный при помощи хеш-функции или других модификаций, географический адрес точки подключения пользователя к сети Интернет, информация, не позволяющая однозначно идентифицировать пользователя или конкретное физическое лицо, но обеспечивающая формирование достаточного для предоставления пользователю рекламной информации).Администрация сайта применяет так называемую технологию «cookies». Сookies — это информационные файлы, которые передаются с веб сайта на жесткий диск компьютера Пользователя в целях хранения данной информации. Cookies не сохраняют персональную идентифицирующую информацию, несмотря на то, что они идентифицируют компьютер Пользователя. Администрация Сайта не сопоставляет информацию, полученную посредством использования сookies, с другими персональными данными, для того чтобы выяснить имя Пользователя компьютера или электронный адрес Пользователя. Обращаем внимание Пользователей о наличии возможности отключения cookies, а также о возможности удаления cookies-файлов, отправленных Пользователю с сайта skillset-spb.ru.
+        </p>
+        <p class="privacy-policy-paragraph">
+          3. Персональные данные не являются общедоступными.
+        </p>
+        <p class="privacy-policy-paragraph">
+          4. Цель обработки персональных данных: обработка входящих запросов физических лиц с целью оказания консультирования; аналитики действий физического лица на веб-сайте и функционирования веб-сайта; проведение рекламных и новостных рассылок.
+        </p>
+        <p class="privacy-policy-paragraph">
+          5. Основанием для обработки персональных данных является: ст. 24 Конституции Российской Федерации; ст.6 Федерального закона N152-ФЗ «О персональных данных»; настоящее согласие на обработку персональных данных.
+        </p>
+        <p class="privacy-policy-paragraph">
+          6. В ходе обработки с персональными данными будут совершены следующие действия: сбор; запись; систематизация; накопление; хранение; уточнение (обновление, изменение); извлечение; использование; передача (распространение, предоставление, доступ); блокирование; удаление; уничтожение.
+        </p>
+        <p class="privacy-policy-paragraph">
+          7. Пользователи вправе направлять Администрации сайта свои запросы, в том числе запросы относительно использования их персональных данных в письменной форме по адресу: academ@chicaga.ru.
+        </p>
+        <p class="privacy-policy-paragraph">
+          8. Персональные данные обрабатываются до отписки физического лица от рекламных и новостных рассылок. Также обработка персональных данных может быть прекращена по запросу субъекта персональных данных.
+        </p>
+        <p class="privacy-policy-paragraph">
+          9. Согласие может быть отозвано субъектом персональных данных путем направления письма на адрес email: academ@chicaga.ru
+        </p>
+      </div>
+    </div>
 
     <!-- generally -->
 
@@ -986,6 +1026,22 @@
       </div>
     </section>
 
+    <!-- seo -->
+
+    <section class="seo">
+      <div class="seo__wrapper">
+        <h4 class="seo__title">
+          Коротко о курсах CHICAGA
+        </h4>
+        <p class="seo__content">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <div class="seo__content-more">
+          <a class="button button--brown seo-button" href="#">Подробнее</a>
+        </div>
+      </div>
+    </section>
+
     <!-- action -->
 
     <section class="action action--banner">
@@ -1076,10 +1132,9 @@
               Поделись ссылкой:
             </p>
             <p class="footer__social-links">
-              <a class="footer__social-link" href="#"><img class="footer__social-img" src="img/fb.png" alt="fb" width="43" height="43"></a>
-              <a class="footer__social-link" href="#"><img class="footer__social-img" src="img/vk.png" alt="vk" width="43" height="43"></a>
-              <a class="footer__social-link" href="#"><img class="footer__social-img" src="img/tw.png" alt="tw" width="43" height="43"></a>
-              <a class="footer__social-link" href="#"><img class="footer__social-img" src="img/el.png" alt="el" width="43" height="43"></a>
+              <a class="footer__social-link" href="https://www.facebook.com/chicagaspb/"><img class="footer__social-img" src="img/fb.png" alt="fb" width="43" height="43"></a>
+              <a class="footer__social-link" href="https://vk.com/chicagaru"><img class="footer__social-img" src="img/vk.png" alt="vk" width="43" height="43"></a>
+              <a class="footer__social-link" href="https://www.instagram.com/chicaga_school/"><img class="footer__social-img" src="img/in.png" alt="in" width="43" height="43"></a>
             </p>
           </div>
           <ul class="footer__address-list">
@@ -1093,9 +1148,6 @@
         </div>
         <div class="footer__submenu">
           <ul class="footer__submenu-list">
-            <li class="footer__submenu-item">
-              <a class="footer__submenu-link footer__submenu-link--active" href="index.html">Главная</a>
-            </li>
             <li class="footer__submenu-item">
               <a class="footer__submenu-link" href="#">Корпоративный английский</a>
             </li>
@@ -1139,7 +1191,7 @@
             </li>
           </ul>
           <p class="footer__copyright">
-            © 2016 SkillSet. Санкт-Петербург.
+            © 2014 - 2018 CHICAGA. Санкт-Петербург.
           </p>
         </div>
         <div class="to-top">

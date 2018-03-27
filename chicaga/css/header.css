@@ -2,6 +2,10 @@
   background-color: #f5f5f5;
 }
 
+.adult-main-header {
+  background-color: #ffffff;
+}
+
 .main-header__wrapper {
   display: flex;
   justify-content: space-between;

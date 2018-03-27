@@ -7,11 +7,11 @@
   max-width: 1150px;
   min-width: 320px;
   margin: 0 auto;
-  padding: 40px 15px 10px 15px;
+  padding: 10px 15px;
 }
 
 .training-plan__title {
-  margin-bottom: 40px;
+  padding: 50px 0 20px;
 
   font-family: "SFUIDisplay-Bold", "Arial", sans-serif;
   font-size: 16px;
@@ -22,8 +22,14 @@
   text-transform: uppercase;
 }
 
+.training-plan-block {
+  margin-bottom: 10px;
+  padding: 20px;
+
+  background-color: #ffffff;
+}
+
 .training-plan__item {
-  margin-bottom: 20px;
   padding: 10px;
 
   background-color: #ffffff;
@@ -35,7 +41,6 @@
 }
 
 .training-plan__item-title {
-  margin-left: 15px;
   margin-bottom: 10px;
   padding-top: 7px;
 
@@ -70,22 +75,106 @@
 }
 
 .training-plan__item-description {
-  margin-bottom: 10px;
-
   font-family: "SFUIDisplay-Regular", "Arial", sans-serif;
   font-size: 15px;
   line-height: 24px;
   color: #000000;
 }
 
-@media screen and (min-width: 768px) {
-  .training-plan__item-options {
+@media screen and (min-width: 1010px) {
+  .training-plan__title {
+    font-family: "SFUIDisplay-Bold", "Arial", sans-serif;
+    font-size: 30px;
+    line-height: 44px;
+    letter-spacing: 4px;
+    color: #000000;
+    text-transform: uppercase;
+  }
+
+  .training-plan-block {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 20px 20px 20px 20px;
+
+    background-color: #ffffff;
+  }
+
+  .training-plan__item-logo {
+    width: 9%;
+  }
+
+  .training-plan__item {
+    width: 61%;
+    padding-right: 60px;
+  }
+
+  .training-plan__item-title {
+    margin-left: 0;
+    margin-bottom: 0;
+    font-family: "SFUIDisplay-SemiBold", "Arial", sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 2px;
+    color: #af7535;
+    text-transform: uppercase;
   }
 
   .training-plan__item-option {
-    width: 30%;
     margin-bottom: 0;
+  }
+
+  .training-plan__item-option-name {
+    margin-bottom: 0;
+
+    font-family: "SFUIDisplay-SemiBold", "Arial", sans-serif;
+    font-size: 9px;
+    line-height: 24px;
+    letter-spacing: 2px;
+    color: #767676;
+    text-transform: uppercase;
+  }
+
+  .training-plan__item-option-body {
+    margin-bottom: 0;
+  }
+
+  .training-plan__item-option-icon {
+    margin-bottom: 20px;
+  }
+
+  .training-plan__item-description {
+    width: 27%;
+    margin-bottom: auto;
+    padding-left: 10px;
+
+    border-left: 3px solid #af7535;
+  }
+
+  .training-plan__item-option-text {
+    width: 160px;
+    margin-left: 0;
+
+    font-family: "GothamPro", sans-serif;
+    font-size: 15px;
+    line-height: 24px;
+    color: #333333;
+  }
+
+  .training-plan__item-option-text--indent {
+    display: block;
+
+    border-top: 1px solid #e1e1e1;
+  }
+
+  .training-plan__item-options {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .training-plan__item-option-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 }

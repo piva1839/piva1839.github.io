@@ -81,8 +81,7 @@
   text-decoration: none;
 }
 
-.footer__submenu-link:hover,
-.footer__submenu-link--active {
+.footer__submenu-link:hover {
   color: #ffffff !important;
 }
 

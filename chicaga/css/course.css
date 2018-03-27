@@ -63,6 +63,12 @@
   text-transform: uppercase;
 }
 
+.button--white:hover {
+  background-color: #ffffff;
+
+  color: #000000;
+}
+
 .button--black {
   text-transform: uppercase;
 }

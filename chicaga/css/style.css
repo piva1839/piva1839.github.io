@@ -35,6 +35,12 @@ img {
   cursor: pointer;
 }
 
+.button:hover {
+  background-color: #000000;
+
+  color: #ffffff;
+}
+
 @font-face {
   font-family: "BodoniC";
   src: url("../fonts/BodoniC.otf") format("opentype");
@@ -108,7 +114,7 @@ img {
 }
 
 @font-face {
-  font-family: "GothaProReg";
+  font-family: "GothamProReg";
   src: url("../fonts/GothaProReg.otf") format("opentype");
   src: local("GothaProReg"), url("../fonts/GothaProReg.otf") format("opentype"), url("../fonts/GothaProReg.otf") format("opentype");
 }

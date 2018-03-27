@@ -18,6 +18,10 @@
   text-transform: uppercase;
 }
 
+.purpose__title--adult {
+  padding-top: 50px;
+}
+
 .purpose__description {
   margin-bottom: 20px;
 

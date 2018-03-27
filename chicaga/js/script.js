@@ -85,3 +85,11 @@ $(".button--map").click(function() {
 $(".modal-close").click(function() {
   $(".modal-map").css("display","none");
 });
+
+$(".confirm-terms").click(function() {
+  $(".terms-popup").css("display","block");
+});
+
+$(".terms-popup-close").click(function() {
+  $(".terms-popup").css("display","none");
+});

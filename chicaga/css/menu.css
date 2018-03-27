@@ -58,11 +58,15 @@
 
 .main-mobile-nav__item-link:hover,
 .main-mobile-nav__item-link--active {
-  color: #f47e35;
+  color: #ffffff;
 }
 
 .main-nav {
   background-color: #f5f5f5;
+}
+
+.adult-main-nav {
+  background-color: #ffffff;
 }
 
 .main-nav__list {
@@ -84,4 +88,38 @@
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+.main-nav__bread-crumbs {
+  width: 100%;
+  max-width: 1150px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  padding: 0 15px;
+}
+
+.main-nav__bread-crumbs-list {
+  list-style-type: none;
+}
+
+.main-nav__bread-crumb {
+  display: inline-block;
+}
+
+.main-nav__bread-crumb-link {
+  font-family: "SFUIDisplay-Bold", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 600;
+  color: #af7535;
+  text-decoration: none;
+}
+
+.main-nav__bread-crumb-link--active {
+  font-family: "GothamProReg", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 400;
+  color: #333333;
+  text-decoration: none;
 }

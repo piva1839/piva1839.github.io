@@ -32,6 +32,7 @@
     <link href="css/motivation.css" rel="stylesheet">
     <link href="css/training-plan.css" rel="stylesheet">
     <link href="css/rules.css" rel="stylesheet">
+    <link href="css/seo.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="slick/slick.css">
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
     <script type="text/javascript" src="js/jquery.js"></script>
@@ -44,7 +45,7 @@
     <!-- header -->
 
     <a name="to-top"></a>
-    <header class="main-header">
+    <header class="main-header adult-main-header">
       <div class="main-header__wrapper">
         <div class="main-header__nav">
           <div class="main-header__logo">
@@ -75,42 +76,44 @@
 
     <!-- main-nav -->
 
-    <nav class="main-nav">
+    <nav class="main-nav adult-main-nav">
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a class="main-nav__item-link" href="index.html">Главная</a>
+            <a class="main-nav__item-link" href="#generally">Английский для взрослых</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__item-link main-nav__item-link--active" href="adult.html">Курсы для взрослых</a>
+            <a class="main-nav__item-link" href="#gallery">Галерея</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__item-link" href="teeny.html">Курсы для подростков</a>
+            <a class="main-nav__item-link" href="#motivation">Английский с нуля</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__item-link" href="#">Курсы для детей</a>
+            <a class="main-nav__item-link" href="#training-plan">Форма обучения</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__item-link" href="#">Корпоративный английский</a>
+            <a class="main-nav__item-link" href="#methodology">Методика</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__item-link" href="#">Галерея</a>
+            <a class="main-nav__item-link" href="#reviews">Отзывы</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__item-link" href="#">Методика</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__item-link" href="#">Гарантии</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__item-link" href="#">Отзывы</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__item-link" href="#">Контакты</a>
+            <a class="main-nav__item-link" href="#contact">Наши контакты</a>
           </li>
         </ul>
       </div>
     </nav>
+
+    <div class="main-nav__bread-crumbs">
+      <ul class="main-nav__bread-crumbs-list">
+        <li class="main-nav__bread-crumb">
+          <a class="main-nav__bread-crumb-link" href="index.html">Главная</a>
+        </li>
+        <li class="main-nav__bread-crumb">
+          <a class="main-nav__bread-crumb-link main-nav__bread-crumb-link--active" href="#"> > Курсы английского языка для взрослых</a>
+        </li>
+      </ul>
+    </div>
 
     <!-- mobile-menu -->
 
@@ -121,34 +124,28 @@
         </div>
         <ul class="main-mobile-nav__list">
           <li class="main-mobile-nav__item">
-            <a class="main-mobile-nav__item-link main-mobile-nav__item-link--active" href="#to-top">К началу</a>
+            <a class="main-mobile-nav__item-link" href="#to-top">К началу</a>
           </li>
           <li class="main-mobile-nav__item">
-            <a class="main-mobile-nav__item-link" href="adult.html">Курсы для взрослых</a>
-          </li>
-          <li class="main-mobile-nav__item">
-            <a class="main-mobile-nav__item-link" href="teeny.html">Курсы для подростков</a>
-          </li>
-          <li class="main-mobile-nav__item">
-            <a class="main-mobile-nav__item-link" href="#child">Курсы для детей</a>
-          </li>
-          <li class="main-mobile-nav__item">
-            <a class="main-mobile-nav__item-link" href="#corporate">Корпоративный английский</a>
+            <a class="main-mobile-nav__item-link" href="#generally">Английский для взрослых</a>
           </li>
           <li class="main-mobile-nav__item">
             <a class="main-mobile-nav__item-link" href="#gallery">Галерея</a>
           </li>
           <li class="main-mobile-nav__item">
-            <a class="main-mobile-nav__item-link" href="#methodology">Методика</a>
+            <a class="main-mobile-nav__item-link" href="#motivation">Английский с нуля</a>
           </li>
           <li class="main-mobile-nav__item">
-            <a class="main-mobile-nav__item-link" href="#guarantee">Гарантии</a>
+            <a class="main-mobile-nav__item-link" href="#training-plan">Форма обучения</a>
+          </li>
+          <li class="main-mobile-nav__item">
+            <a class="main-mobile-nav__item-link" href="#methodology">Методика</a>
           </li>
           <li class="main-mobile-nav__item">
             <a class="main-mobile-nav__item-link" href="#reviews">Отзывы</a>
           </li>
           <li class="main-mobile-nav__item">
-            <a class="main-mobile-nav__item-link" href="#contact">Контакты</a>
+            <a class="main-mobile-nav__item-link" href="#contact">Наши контакты</a>
           </li>
         </ul>
       </div>
@@ -157,12 +154,15 @@
     <!-- promo -->
 
     <section class="promo promo-adult">
+      <h1 class="promo-adult__title">
+        Курсы английского языка для взрослых
+      </h1>
       <div class="promo__wrapper promo-adult__wrapper">
-        <p class="promo-adult__title">
+        <p class="promo-adult__text">
           Бесплатные<br>открытые<br>уроки
         </p>
         <div class="promo__form promo-adult__form">
-          <form class="form" type="submite">
+          <form class="form" type="submit">
             <h2 class="form-name">
               Записаться<br>на бесплатный урок
             </h2>
@@ -176,16 +176,62 @@
             </select>
             <label class="checkbox-label" for="confirm"><input class="form-checkbox" type="checkbox" id="confirm" name="confirm"> Нажимая кнопку «Оставить заявку», я даю согласие на <span class="confirm-terms"><a class="confirm-terms-link" href="#">обработку персональных данных</a></span></label>
             <div class="form-confirm">
-              <button class="button button--brown" type="submite">Оставить заявку</button>
+              <button class="button button--brown" type="submit">Оставить заявку</button>
             </div>
           </form>
         </div>
       </div>
     </section>
 
+    <div class="terms-popup">
+      <div class="terms-popup-close">
+        <img src="img/close-menu.png" alt="modal-close" width="43" height="43">
+      </div>
+      <div class="privacy-policy">
+        <h4 class="privacy-policy-title">
+          Политика конфиденциальности и использования запрашиваемых данных
+        </h4>
+        <p class="privacy-policy-paragraph">
+          Пользователь, оставляя заявку на сайте chicaga.ru, принимает настоящее Согласие на обработку персональных данных (далее – Согласие). Действуя свободно, своей волей и в своем интересе, а также подтверждая свою дееспособность, Пользователь дает свое согласие Администрации сайта на обработку своих персональных данных со следующими условиями:
+        </p>
+        <p class="privacy-policy-paragraph">
+          1. Данное Согласие дается на обработку персональных данных, как без использования средств автоматизации, так и с их использованием.
+        </p>
+        <p class="privacy-policy-paragraph">
+          2. Согласие дается на обработку следующих моих персональных данных:
+          персональные данные, не являющиеся специальными или биометрическими: имя (или псевдоним) пользователя; номера контактных телефонов; адреса электронной почты; пользовательские данные (тип и версия ОС; тип и версия Браузера; тип устройства и разрешение его экрана; источник откуда пришел на сайт пользователь; с какого сайта или по какой рекламе; язык ОС и Браузера; ip-адрес, поисковые запросы пользователя, интернет-адреса веб-страниц, посещаемых пользователем, тематику информации, размещённой на посещаемых пользователем интернет-ресурсах, идентификатор пользователя, преобразованный при помощи хеш-функции или других модификаций, географический адрес точки подключения пользователя к сети Интернет, информация, не позволяющая однозначно идентифицировать пользователя или конкретное физическое лицо, но обеспечивающая формирование достаточного для предоставления пользователю рекламной информации).Администрация сайта применяет так называемую технологию «cookies». Сookies — это информационные файлы, которые передаются с веб сайта на жесткий диск компьютера Пользователя в целях хранения данной информации. Cookies не сохраняют персональную идентифицирующую информацию, несмотря на то, что они идентифицируют компьютер Пользователя. Администрация Сайта не сопоставляет информацию, полученную посредством использования сookies, с другими персональными данными, для того чтобы выяснить имя Пользователя компьютера или электронный адрес Пользователя. Обращаем внимание Пользователей о наличии возможности отключения cookies, а также о возможности удаления cookies-файлов, отправленных Пользователю с сайта skillset-spb.ru.
+        </p>
+        <p class="privacy-policy-paragraph">
+          3. Персональные данные не являются общедоступными.
+        </p>
+        <p class="privacy-policy-paragraph">
+          4. Цель обработки персональных данных: обработка входящих запросов физических лиц с целью оказания консультирования; аналитики действий физического лица на веб-сайте и функционирования веб-сайта; проведение рекламных и новостных рассылок.
+        </p>
+        <p class="privacy-policy-paragraph">
+          5. Основанием для обработки персональных данных является: ст. 24 Конституции Российской Федерации; ст.6 Федерального закона N152-ФЗ «О персональных данных»; настоящее согласие на обработку персональных данных.
+        </p>
+        <p class="privacy-policy-paragraph">
+          6. В ходе обработки с персональными данными будут совершены следующие действия: сбор; запись; систематизация; накопление; хранение; уточнение (обновление, изменение); извлечение; использование; передача (распространение, предоставление, доступ); блокирование; удаление; уничтожение.
+        </p>
+        <p class="privacy-policy-paragraph">
+          7. Пользователи вправе направлять Администрации сайта свои запросы, в том числе запросы относительно использования их персональных данных в письменной форме по адресу: academ@chicaga.ru.
+        </p>
+        <p class="privacy-policy-paragraph">
+          8. Персональные данные обрабатываются до отписки физического лица от рекламных и новостных рассылок. Также обработка персональных данных может быть прекращена по запросу субъекта персональных данных.
+        </p>
+        <p class="privacy-policy-paragraph">
+          9. Согласие может быть отозвано субъектом персональных данных путем направления письма на адрес email: academ@chicaga.ru
+        </p>
+      </div>
+    </div>
+
     <!-- generally-adult -->
 
+    <a name="generally"></a>
     <section class="generally-adult">
+      <p class="generally-adult__head">
+        Курсы английского языка<br> для взрослых в Chicaga
+      </p>
       <div class="generally-adult__wrapper">
         <div class="generally-adult__item">
           <div class="generally-adult__photo">
@@ -271,6 +317,7 @@
 
     <!-- motivation -->
 
+    <a name="motivation"></a>
     <section class="motivation">
       <div class="motivation__wrapper">
         <h3 class="motivation__title">
@@ -279,9 +326,9 @@
         <div class="motivation__list">
           <div class="motivation__item">
             <div class="motivation__item-img">
-              <img class="motivation__item-icon" src="img/adult/adult_icon1.png" alt="motivation" width="60" height="55">
+              <img class="motivation__item-icon" src="img/adult/adult_icon1a.png" alt="motivation" width="60" height="55">
             </div>
-            <p class="motivation__item-text">
+            <p class="motivation__item-text motivation__item-text--width-40">
               Начать учить английский язык совсем не сложно и очень интересно!
             </p>
           </div>
@@ -289,7 +336,7 @@
             <div class="motivation__item-img">
               <img class="motivation__item-icon" src="img/adult/adult_icon2.png" alt="motivation" width="60" height="55">
             </div>
-            <p class="motivation__item-text">
+            <p class="motivation__item-text motivation__item-text--width-60">
               Освоение английского языка по силам всем желающим, важно просто начать. Это прекрасная тренировка умственных способностей, расширение кругозора, и новые друзья по всему миру.
             </p>
           </div>
@@ -297,7 +344,7 @@
             <div class="motivation__item-img">
               <img class="motivation__item-icon" src="img/adult/adult_icon3.png" alt="motivation" width="60" height="55">
             </div>
-            <p class="motivation__item-text">
+            <p class="motivation__item-text motivation__item-text--width-80">
               В CHICAGA вы будете обучаться по коммуникативной методике, разработанной британскими лингвистами Оксфордского Университета. Вы начнете изучение с самых простых разговорных грамматических форм, базовой лексики, которые сможете применять не только на уроках, но и в реальной жизни. Вы почувствуете прогресс с первых уроков и с нетерпением будете ждать новых занятий.
             </p>
           </div>
@@ -305,7 +352,7 @@
             <div class="motivation__item-img">
               <img class="motivation__item-icon" src="img/adult/adult_icon4.png" alt="motivation" width="60" height="55">
             </div>
-            <p class="motivation__item-text">
+            <p class="motivation__item-text motivation__item-text--width-100">
               Кстати, психологи Роджер Крез и Ричард Робертс провели исследование и четко обосновали, что взрослые студенты изучают иностранные языки гораздо быстрее, нежели дети. Ученые разрушают стереотип о том, что у детей все получается легче и быстрее — это не так. Просто обычно дети учат язык годами. А взрослые, имея ясную мотивацию и широкий кругозор, способны всего за несколько месяцев достичь своей цели.
             </p>
           </div>
@@ -317,7 +364,7 @@
 
     <section class="purpose">
       <div class="purpose__wrapper">
-        <h3 class="purpose__title">
+        <h3 class="purpose__title purpose__title--adult">
           Цели наших студентов
         </h3>
         <div class="purpose__content">
@@ -383,60 +430,61 @@
 
     <!-- training-plan -->
 
+    <a name="training-plan"></a>
     <section class="training-plan">
+      <h3 class="training-plan__title">
+        Формы обучения
+      </h3>
       <div class="training-plan__wrapper">
-        <h3 class="training-plan__title">
-          Формы обучения
-        </h3>
-        <div class="training-plan__item">
-          <div class="training-plan__item-head">
-            <div class="training-plan__item-logo">
-              <img class="training-plan__item-logo-img" src="img/adult/goal-members.png" alt="plan-item-logo" width="66" height="54">
-            </div>
+        <div class="training-plan-block">
+          <div class="training-plan__item-logo">
+            <img class="training-plan__item-logo-img" src="img/adult/goal-members.png" alt="plan-item-logo" width="66" height="54">
+          </div>
+          <div class="training-plan__item">
             <h2 class="training-plan__item-title">
               ГРУППОВЫЕ ЗАНЯТИЯ
             </h2>
-          </div>
-          <div class="training-plan__item-options">
-            <div class="training-plan__item-option">
-              <h3 class="training-plan__item-option-name">
-                основная программа
-              </h3>
-              <div class="training-plan__item-option-body">
-                <div class="training-plan__item-option-icon">
-                  <img class="training-plan__item-option-icon-img" src="img/adult/open_book.png" alt="item-option" width="58" height="76">
+            <div class="training-plan__item-options">
+              <div class="training-plan__item-option">
+                <h3 class="training-plan__item-option-name">
+                  основная программа
+                </h3>
+                <div class="training-plan__item-option-body">
+                  <div class="training-plan__item-option-icon">
+                    <img class="training-plan__item-option-icon-img" src="img/adult/open_book.png" alt="item-option" width="58" height="76">
+                  </div>
+                  <p class="training-plan__item-option-text">
+                    96 ак. часов = 2 раза в неделю<span class="training-plan__item-option-text--indent">по 3 ак. часа</span>
+                  </p>
                 </div>
-                <p class="training-plan__item-option-text">
-                  96 ак. часов = 2 раза в неделю<br>по 3 ак. часа
-                </p>
               </div>
-            </div>
-            <div class="training-plan__item-option">
-              <h3 class="training-plan__item-option-name">
-                количество
-              </h3>
-              <div class="training-plan__item-option-body">
-                <div class="training-plan__item-option-icon">
-                  <img class="training-plan__item-option-icon-img" src="img/adult/users.png" alt="item-option" width="58" height="76">
+              <div class="training-plan__item-option">
+                <h3 class="training-plan__item-option-name">
+                  количество
+                </h3>
+                <div class="training-plan__item-option-body">
+                  <div class="training-plan__item-option-icon">
+                    <img class="training-plan__item-option-icon-img" src="img/adult/users.png" alt="item-option" width="58" height="76">
+                  </div>
+                  <p class="training-plan__item-option-text">
+                    4 - 10 студента в группе<span class="training-plan__item-option-text--indent">
+                    2 педагога на группу</span>
+                  </p>
                 </div>
-                <p class="training-plan__item-option-text">
-                  4 - 10 студента в группе<br>
-                  2 педагога на группу
-                </p>
               </div>
-            </div>
-            <div class="training-plan__item-option">
-              <h3 class="training-plan__item-option-name">
-                разговорный практикум
-              </h3>
-              <div class="training-plan__item-option-body">
-                <div class="training-plan__item-option-icon">
-                  <img class="training-plan__item-option-icon-img" src="img/adult/speech.png" alt="item-option" width="58" height="76">
+              <div class="training-plan__item-option">
+                <h3 class="training-plan__item-option-name">
+                  разговорный практикум
+                </h3>
+                <div class="training-plan__item-option-body">
+                  <div class="training-plan__item-option-icon">
+                    <img class="training-plan__item-option-icon-img" src="img/adult/speech.png" alt="item-option" width="58" height="76">
+                  </div>
+                  <p class="training-plan__item-option-text">
+                    до 60 ак. часов 2 раза в неделю по 2 ак. часа<span class="training-plan__item-option-text--indent">
+                    8 педагогов в т.ч. носители языка</span>
+                  </p>
                 </div>
-                <p class="training-plan__item-option-text">
-                  до 60 ак. часов 2 раза в неделю по 2 ак. часа<br>
-                  8 педагогов в т.ч. носители языка
-                </p>
               </div>
             </div>
           </div>
@@ -444,54 +492,54 @@
             Вы можете выбрать группу, которая занимается в будни или в выходные. В будни есть утренние, дневные и вечерние группы. Только в наших школах в течение одного курса вы сможете заниматься с несколькими преподавателями: как с русскоязычними, так и с носителями языка. Это необходимо для того чтобы избежать привыкания студентов к однотипной манере речи.
           </p>
         </div>
-        <div class="training-plan__item">
-          <div class="training-plan__item-head">
-            <div class="training-plan__item-logo">
-              <img class="training-plan__item-logo-img" src="img/adult/cooperaton2.png" alt="plan-item-logo" width="66" height="54">
-            </div>
-            <h2 class="training-plan__item-title">
-              ИНДИВИНДУ -<br>АЛЬНЫЕ ЗАНЯТИЯ
-            </h2>
+        <div class="training-plan-block">
+          <div class="training-plan__item-logo">
+            <img class="training-plan__item-logo-img" src="img/adult/cooperaton2.png" alt="plan-item-logo" width="56" height="49">
           </div>
-          <div class="training-plan__item-options">
-            <div class="training-plan__item-option">
-              <h3 class="training-plan__item-option-name">
-                основная программа
-              </h3>
-              <div class="training-plan__item-option-body">
-                <div class="training-plan__item-option-icon">
-                  <img class="training-plan__item-option-icon-img" src="img/adult/open_book.png" alt="item-option" width="58" height="76">
+          <div class="training-plan__item">
+            <h2 class="training-plan__item-title">
+              ИНДИВИНДУАЛЬНЫЕ ЗАНЯТИЯ
+            </h2>
+            <div class="training-plan__item-options">
+              <div class="training-plan__item-option">
+                <h3 class="training-plan__item-option-name">
+                  основная программа
+                </h3>
+                <div class="training-plan__item-option-body">
+                  <div class="training-plan__item-option-icon">
+                    <img class="training-plan__item-option-icon-img" src="img/adult/open_book.png" alt="item-option" width="58" height="76">
+                  </div>
+                  <p class="training-plan__item-option-text">
+                    Выбор студента
+                  </p>
                 </div>
-                <p class="training-plan__item-option-text">
-                  Выбор студента
-                </p>
               </div>
-            </div>
-            <div class="training-plan__item-option">
-              <h3 class="training-plan__item-option-name">
-                количество
-              </h3>
-              <div class="training-plan__item-option-body">
-                <div class="training-plan__item-option-icon">
-                  <img class="training-plan__item-option-icon-img" src="img/adult/users.png" alt="item-option" width="58" height="76">
+              <div class="training-plan__item-option">
+                <h3 class="training-plan__item-option-name">
+                  количество
+                </h3>
+                <div class="training-plan__item-option-body">
+                  <div class="training-plan__item-option-icon">
+                    <img class="training-plan__item-option-icon-img" src="img/adult/users.png" alt="item-option" width="58" height="76">
+                  </div>
+                  <p class="training-plan__item-option-text">
+                    1 - 2 студента
+                  </p>
                 </div>
-                <p class="training-plan__item-option-text">
-                  1-2 студента
-                </p>
               </div>
-            </div>
-            <div class="training-plan__item-option">
-              <h3 class="training-plan__item-option-name">
-                разговорный практикум
-              </h3>
-              <div class="training-plan__item-option-body">
-                <div class="training-plan__item-option-icon">
-                  <img class="training-plan__item-option-icon-img" src="img/adult/speech.png" alt="item-option" width="58" height="76">
+              <div class="training-plan__item-option">
+                <h3 class="training-plan__item-option-name">
+                  разговорный практикум
+                </h3>
+                <div class="training-plan__item-option-body">
+                  <div class="training-plan__item-option-icon">
+                    <img class="training-plan__item-option-icon-img" src="img/adult/speech.png" alt="item-option" width="58" height="76">
+                  </div>
+                  <p class="training-plan__item-option-text">
+                    до 60 ак. часов 2 раза в неделю по 2 ак. часа<span class="training-plan__item-option-text--indent">
+                    8 педагогов в т.ч. носители языка</span>
+                  </p>
                 </div>
-                <p class="training-plan__item-option-text">
-                  до 60 ак. часов 2 раза в неделю по 2 ак. часа<br>
-                  8 педагогов в т.ч. носители языка
-                </p>
               </div>
             </div>
           </div>
@@ -499,42 +547,42 @@
             Наши опытные преподаватели смогут подготовить вас к любым вызовам, которые ставит перед Вами жизнь: будь то подготовка к публичным выступлениям на англиском языке, прохождение собеседования в международной компании, поездка заграницу, сдача международных экзаменов или освоение общего курса англиского языка в удобном для Вас темпе.
           </p>
         </div>
-        <div class="training-plan__item">
-          <div class="training-plan__item-head">
-            <div class="training-plan__item-logo">
-              <img class="training-plan__item-logo-img" src="img/adult/adult_forms3.png" alt="plan-item-logo" width="66" height="66">
-            </div>
-            <h2 class="training-plan__item-title">
-              Разговор -<br>ный курс
-            </h2>
+        <div class="training-plan-block">
+          <div class="training-plan__item-logo">
+            <img class="training-plan__item-logo-img" src="img/adult/adult_forms3.png" alt="plan-item-logo" width="66" height="66">
           </div>
-          <div class="training-plan__item-options">
-            <div class="training-plan__item-option">
-              <h3 class="training-plan__item-option-name">
-                разговорный практикум
-              </h3>
-              <div class="training-plan__item-option-body">
-                <div class="training-plan__item-option-icon">
-                  <img class="training-plan__item-option-icon-img" src="img/adult/open_book.png" alt="item-option" width="58" height="76">
+          <div class="training-plan__item">
+            <h2 class="training-plan__item-title">
+              РАЗГОВОРНЫЙ КУРС
+            </h2>
+            <div class="training-plan__item-options">
+              <div class="training-plan__item-option">
+                <h3 class="training-plan__item-option-name">
+                  разговорный практикум
+                </h3>
+                <div class="training-plan__item-option-body">
+                  <div class="training-plan__item-option-icon">
+                    <img class="training-plan__item-option-icon-img" src="img/adult/speech.png" alt="item-option" width="58" height="76">
+                  </div>
+                  <p class="training-plan__item-option-text">
+                    до 60 ак. часов 2 раза в неделю по 2 ак. часа<span class="training-plan__item-option-text--indent">
+                    8 педагогов в т.ч. носители языка</span>
+                  </p>
                 </div>
-                <p class="training-plan__item-option-text">
-                  до 60 ак. часов 2 раза в неделю по 2 ак. часа<br>
-                  8 педагогов в т.ч. носители языка
-                </p>
               </div>
-            </div>
-            <div class="training-plan__item-option">
-              <h3 class="training-plan__item-option-name">
-                количество
-              </h3>
-              <div class="training-plan__item-option-body">
-                <div class="training-plan__item-option-icon">
-                  <img class="training-plan__item-option-icon-img" src="img/adult/users.png" alt="item-option" width="58" height="76">
+              <div class="training-plan__item-option">
+                <h3 class="training-plan__item-option-name">
+                  количество
+                </h3>
+                <div class="training-plan__item-option-body">
+                  <div class="training-plan__item-option-icon">
+                    <img class="training-plan__item-option-icon-img" src="img/adult/users.png" alt="item-option" width="58" height="76">
+                  </div>
+                  <p class="training-plan__item-option-text">
+                    4 - 10 студента в группе<span class="training-plan__item-option-text--indent">
+                    2 педагога на группу</span>
+                  </p>
                 </div>
-                <p class="training-plan__item-option-text">
-                  4-10 студента в группе<br>
-                  8 педагогов на группу
-                </p>
               </div>
             </div>
           </div>
@@ -1148,10 +1196,9 @@
               Поделись ссылкой:
             </p>
             <p class="footer__social-links">
-              <a class="footer__social-link" href="#"><img class="footer__social-img" src="img/fb.png" alt="fb" width="43" height="43"></a>
-              <a class="footer__social-link" href="#"><img class="footer__social-img" src="img/vk.png" alt="vk" width="43" height="43"></a>
-              <a class="footer__social-link" href="#"><img class="footer__social-img" src="img/tw.png" alt="tw" width="43" height="43"></a>
-              <a class="footer__social-link" href="#"><img class="footer__social-img" src="img/el.png" alt="el" width="43" height="43"></a>
+              <a class="footer__social-link" href="https://www.facebook.com/chicagaspb/"><img class="footer__social-img" src="img/fb.png" alt="fb" width="43" height="43"></a>
+              <a class="footer__social-link" href="https://vk.com/chicagaru"><img class="footer__social-img" src="img/vk.png" alt="vk" width="43" height="43"></a>
+              <a class="footer__social-link" href="https://www.instagram.com/chicaga_school/"><img class="footer__social-img" src="img/in.png" alt="in" width="43" height="43"></a>
             </p>
           </div>
           <ul class="footer__address-list">
@@ -1165,9 +1212,6 @@
         </div>
         <div class="footer__submenu">
           <ul class="footer__submenu-list">
-            <li class="footer__submenu-item">
-              <a class="footer__submenu-link" href="index.html">Главная</a>
-            </li>
             <li class="footer__submenu-item">
               <a class="footer__submenu-link" href="#">Корпоративный английский</a>
             </li>
@@ -1211,7 +1255,7 @@
             </li>
           </ul>
           <p class="footer__copyright">
-            © 2016 SkillSet. Санкт-Петербург.
+            © 2014 - 2018 CHICAGA. Санкт-Петербург.
           </p>
         </div>
         <div class="to-top">
