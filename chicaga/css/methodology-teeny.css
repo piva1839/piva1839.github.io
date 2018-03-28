@@ -4,7 +4,7 @@
 
 .methodology-teeny__wrapper {
   width: 100%;
-  max-width: 960px;
+  max-width: 1150px;
   min-width: 320px;
   margin: 0 auto;
   padding: 50px 15px 1px 15px;
@@ -25,7 +25,12 @@
 .methodology-teeny__subtitle {
   margin-bottom: 40px;
 
+  font-family: "SFUIDisplay-Regular", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 26px;
+  font-weight: 400;
   text-align: center;
+  color: #010101;
 }
 
 .methodology-teeny__component {
@@ -61,17 +66,37 @@
 }
 
 @media screen and (min-width: 768px) {
+  .methodology-teeny__wrapper {
+    padding: 70px 15px 50px 15px;
+  }
+
+  .methodology-teeny__title {
+    font-family: "SFUIDisplay-Regular", "Arial", sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 700;
+    letter-spacing: 9px;
+    text-align: center;
+    color: #000000;
+    text-transform: uppercase;
+  }
+
   .methodology-teeny__components {
     display: flex;
     justify-content: space-between;
   }
 
   .methodology-teeny__component {
+    flex: 1;
     margin-right: 20px;
     margin-bottom: 0;
   }
 
   .methodology-teeny__component:last-child {
     margin-right: 0;
+  }
+
+  .methodology-teeny__component-description {
+    min-height: 180px;
   }
 }

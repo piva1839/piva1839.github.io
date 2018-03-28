@@ -2,7 +2,8 @@
   background-color: #f5f5f5;
 }
 
-.promo-adult {
+.promo-adult,
+.promo-teeny {
   background-color: #ffffff;
 }
 
@@ -17,7 +18,7 @@
   background-size: cover;
 }
 
-.promo-teeny {
+.promo-teeny__wrapper {
   background: #97a1ae url("../img/teeny/teenybg.jpg") no-repeat;
   background-position: center top;
   background-size: cover;
@@ -31,11 +32,14 @@
   padding: 20px 15px 20px 15px;
 }
 
-.promo-adult__title {
+.promo-adult__title,
+.promo-teeny__title {
   width: 100%;
   max-width: 1150px;
   margin: 0 auto;
   margin-bottom: 10px;
+
+  background-color: #ffffff;
 
   font-family: "Arial", sans-serif;
   font-size: 16px;
@@ -46,20 +50,8 @@
   text-align: center;
 }
 
-.promo-adult__text {
-  display: none;
-  width: 60%;
-  margin: auto;
-
-  font-family: "SFUIDisplay-Bold", "Arial", sans-serif;
-  font-size: 36px;
-  line-height: 44px;
-  font-weight: 700;
-  color: #ffffff;
-  text-transform: uppercase;
-}
-
-.promo-teeny__title {
+.promo-adult__text,
+.promo-teeny__text {
   display: none;
   width: 60%;
   margin: auto;
@@ -232,7 +224,7 @@
     width: 40%;
   }
 
-  .promo-teeny__title {
+  .promo-teeny__text {
     display: flex;
   }
 

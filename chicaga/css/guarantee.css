@@ -67,6 +67,11 @@
     text-transform: uppercase;
   }
 
+  .teeny-guarantee-title {
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+  }
+
   .guarantee__description {
     font-family: "SFUIDisplay-Regular", "Arial", sans-serif;
     font-size: 20px;

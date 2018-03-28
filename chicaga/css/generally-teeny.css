@@ -26,6 +26,21 @@
   text-transform: uppercase;
 }
 
+.generally-teeny__head {
+  width: 100%;
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 30px 15px 0 15px;
+
+  font-family: "SFUIDisplay-Bold", "Arial", sans-serif;
+  font-size: 19px;
+  line-height: 28px;
+  font-weight: 600;
+  color: #af7535;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 .generally-teeny__photo {
   margin-bottom: 10px;
 }
@@ -79,6 +94,17 @@
 }
 
 @media screen and (min-width: 768px) {
+  .generally-teeny__head {
+    font-family: "SFUIDisplay-Bold", "Arial", sans-serif;
+    font-size: 29px;
+    line-height: 40px;
+    font-weight: 600;
+    letter-spacing: 6px;
+    color: #af7535;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
   .generally-teeny__item {
     display: flex;
     margin-bottom: 0;
