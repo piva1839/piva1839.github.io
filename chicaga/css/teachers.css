@@ -122,6 +122,169 @@
   display: none;
 }
 
+.kids-teachers-title {
+  background-color: #ffffff;
+  padding: 80px 15px 80px 15px;
+
+  font-family: "SFUIDisplay-Regular", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 9px;
+  text-align: center;
+  color: #19bfe8;
+  text-transform: uppercase;
+}
+
+.head-teacher {
+  position: relative;
+
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 125px;
+  margin-bottom: 70px;
+  padding: 0 35px 50px;
+
+  border: 2px solid #c86fed;
+}
+
+.head-teacher::before {
+  content: "";
+  position: absolute;
+  top: -30px;
+  left: -30px;
+
+  display: block;
+  width: 60px;
+  height: 60px;
+  background: url("../img/kids/quote-b2.png") no-repeat;
+  background-size: 100%;
+}
+
+.head-teacher::after {
+  content: "";
+  position: absolute;
+  bottom: -30px;
+  right: -30px;
+
+  display: block;
+  width: 60px;
+  height: 60px;
+  background: url("../img/kids/quote-b1.png") no-repeat;
+  background-size: 100%;
+}
+
+.head-teacher-photo {
+  width: 128px;
+  height: 128px;
+  margin: -64px auto 25px;
+}
+
+.head-teacher-name {
+  position: relative;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+
+  font-family: "SFUIDisplay-Bold", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #000000;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.head-teacher-name::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -9px;
+
+  display: block;
+  width: 18px;
+  height: 3px;
+  background-color: #c86fed;
+}
+
+.head-teacher-paragraph {
+  font-family: "GothamPro", "Arial", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #000000;
+  text-align: left;
+}
+
+.kids-teachers {
+  background-color: #ffffff;
+}
+
+.other-teachers {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 80px;
+}
+
+.other-teacher {
+  width: 100%;
+  margin-bottom: 80px;
+  padding: 40px;
+
+  background-color: #f5f5f5;
+
+  text-align: center;
+}
+
+.other-teacher:last-child {
+  margin-bottom: 0;
+}
+
+.other-teacher-photo {
+  margin-bottom: 30px;
+}
+
+.other-teacher-img {
+  display: block;
+  margin: -85px auto 0;
+}
+
+.other-teacher-name {
+  margin-bottom: 10px;
+}
+
+.other-teacher-experience {
+  position: relative;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+
+  font-family: "GothamPro", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #19bfe8;
+}
+
+.other-teacher-experience::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -9px;
+
+  display: block;
+  width: 18px;
+  height: 3px;
+  background-color: #c86fed;
+}
+
+.other-teacher-paragraph {
+  font-family: "SFUIDisplay-Regular", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #010101;
+}
+
 @media screen and (min-width: 780px) {
   .teachers {
     background-color: #f5f5f5;
@@ -216,5 +379,88 @@
     line-height: 21px;
     color: #333333;
     text-align: center;
+  }
+
+  .kids-teachers {
+    background-color: #ffffff;
+  }
+
+  .kids-teachers-title {
+    background-color: #ffffff;
+    padding: 80px 0 0 0;
+
+    font-family: "SFUIDisplay-Regular", "Arial", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 9px;
+    text-align: center;
+    color: #19bfe8;
+    text-transform: uppercase;
+  }
+
+  .other-teachers {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 80px;
+  }
+
+  .other-teacher {
+    width: 32%;
+    padding: 40px;
+
+    background-color: #f5f5f5;
+
+    text-align: center;
+  }
+
+  .other-teacher:last-child {
+    margin-right: 0;
+    margin-bottom: 80px;
+  }
+
+  .other-teacher-photo {
+    margin-bottom: 30px;
+  }
+
+  .other-teacher-img {
+    display: block;
+    margin: -85px auto 0;
+  }
+
+  .other-teacher-name {
+    margin-bottom: 10px;
+  }
+
+  .other-teacher-experience {
+    position: relative;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+
+    font-family: "GothamPro", "Arial", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #19bfe8;
+  }
+
+  .other-teacher-experience::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -9px;
+
+    display: block;
+    width: 18px;
+    height: 3px;
+    background-color: #c86fed;
+  }
+
+  .other-teacher-paragraph {
+    font-family: "SFUIDisplay-Regular", "Arial", sans-serif;
+    font-size: 15px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #010101;
   }
 }

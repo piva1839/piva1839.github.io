@@ -22,6 +22,18 @@
   padding-top: 50px;
 }
 
+.purpose__title--kids {
+  margin-bottom: 50px;
+
+  font-family: "SFUIDisplay-Bold", "Arial", sans-serif;
+  font-size: 30px;
+  line-height: 36px;
+  letter-spacing: 9px;
+  color: #19bfe8;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 .purpose__description {
   margin-bottom: 20px;
 
@@ -29,6 +41,10 @@
   font-size: 15px;
   line-height: 22px;
   color: #000000;
+}
+
+.purpose-kids-item-description {
+  text-align: center;
 }
 
 .purpose__quote {
@@ -95,8 +111,40 @@
   margin-bottom: 0;
 }
 
+.kids-purpose-item:last-child {
+  margin-bottom: 50px;
+}
+
 .purpose__item-img {
   margin-bottom: 10px;
+}
+
+.kids-purpose-list {
+  flex-direction: column;
+}
+
+.kids-purpose-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+.purpose-kids-item-description {
+  font-family: "SFUIDisplay-Semibold", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #000000;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.purpose__item-description--padding {
+  padding-left: 10px;
 }
 
 @media screen and (min-width: 780px) {
@@ -111,8 +159,39 @@
     text-transform: uppercase;
   }
 
+  .purpose__title--kids {
+    margin: 80px 0;
+    font-family: "SFUIDisplay-Bold", "Arial", sans-serif;
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: 9px;
+    color: #19bfe8;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
   .purpose__items {
     display: flex;
+  }
+
+  .kids-purpose-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .kids-purpose-item {
+    flex-direction: row;
+    width: 48%;
+    margin-right: 20px;
+    margin-bottom: 100px;
+
+    text-align: left;
+  }
+
+  .purpose__item-img--margin {
+    margin-bottom: 0;
+    margin-right: 30px;
   }
 
   .purpose__text {
@@ -162,6 +241,17 @@
     font-weight: 600;
     letter-spacing: 3px;
     color: #333333;
+    text-transform: uppercase;
+  }
+
+  .purpose-kids-item-description {
+    font-family: "SFUIDisplay-Semibold", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #000000;
+    text-align: left;
     text-transform: uppercase;
   }
 

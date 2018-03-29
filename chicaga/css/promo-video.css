@@ -1,0 +1,43 @@
+
+.promo-video {
+  background: url("../img/kids/bg-reach.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.promo-video__wrapper {
+  width: 100%;
+  max-width: 1150px;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 50px 15px 50px 15px;
+}
+
+.promo-video__title {
+  max-width: 435px;
+
+  font-family: "SFUIDisplay-Bold", "Arial", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 44px;
+  color: #000;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 414px) {
+  .promo-video__title {
+    margin-bottom: 20px;
+
+    font-family: "SFUIDisplay-Bold", "Arial", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    color: #000;
+    text-transform: uppercase;
+  }
+
+  video {
+    width: 100%;
+    height: auto;
+  }
+}

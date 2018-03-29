@@ -22,6 +22,16 @@
   text-transform: uppercase;
 }
 
+.main-galley__name--blue {
+  font-family: "SFUIDisplay-Regular", "Arial", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 9px;
+  text-align: center;
+  color: #19bfe8;
+  text-transform: uppercase;
+}
+
 .main-gallery-slider {
   width: 100%;
   height: auto;
@@ -36,6 +46,18 @@
 }
 
 @media screen and (min-width: 1050px) {
+  .main-galley__name--blue {
+    padding-top: 50px;
+
+    font-family: "SFUIDisplay-Regular", "Arial", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 9px;
+    text-align: center;
+    color: #19bfe8;
+    text-transform: uppercase;
+  }
+
   .main-gallery__wrapper {
     padding-bottom: 70px;
   }

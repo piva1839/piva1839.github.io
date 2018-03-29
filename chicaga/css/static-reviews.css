@@ -1,0 +1,114 @@
+.static-reviews__title {
+  padding: 80px 15px 50px 15px;
+
+  font-family: "SFUIDisplay-Regular", "Arial", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 9px;
+  text-align: center;
+  color: #19bfe8;
+  text-transform: uppercase;
+}
+
+.static-reviews__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 98%;
+  max-width: 1150px;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 50px 15px 50px 15px;
+}
+
+.static-reviews__item {
+  position: relative;
+
+  width: 100%;
+  margin-bottom: 80px;
+  padding: 40px;
+
+  border: 1px solid #c86fed;
+}
+
+.static-reviews__item:last-child {
+  margin-bottom: 0;
+}
+
+.static-reviews__item::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -15px;
+
+  display: block;
+  width: 30px;
+  height: 31px;
+  background: url("../img/kids/quote-m2.png") no-repeat;
+  background-size: 100%;
+}
+
+.static-reviews__item::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  right: -15px;
+
+  display: block;
+  width: 30px;
+  height: 31px;
+  background: url("../img/kids/quote-m1.png") no-repeat;
+  background-size: 100%;
+}
+
+.static-reviews__photo {
+  margin-bottom: 30px;
+}
+
+.static-reviews__img {
+  display: block;
+  margin-top: -78px;
+  margin-left: 35%;
+}
+
+.static-reviews__name {
+  margin-bottom: 10px;
+
+  font-family: "SFUIDisplay-Regular", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  letter-spacing: 5.5px;
+  color: #010101;
+  text-transform: uppercase;
+}
+
+.static-reviews__content {
+  margin-bottom: 10px;
+
+  font-family: "SFUIDisplay-Regular", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #010101;
+}
+
+.static-reviews__date {
+  font-family: "GothamProReg", "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #19bfe8;
+}
+
+@media screen and (min-width: 780px) {
+  .static-reviews__wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .static-reviews__item {
+    width: 32%;
+    margin-bottom: 0;
+  }
+}

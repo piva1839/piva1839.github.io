@@ -24,6 +24,12 @@
   background-size: cover;
 }
 
+.promo-kids__wrapper {
+  background: #97a1ae url("../img/kids/bg-photo-kids.png") no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+
 .promo__wrapper {
   width: 100%;
   max-width: 1150px;

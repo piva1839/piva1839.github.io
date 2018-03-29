@@ -88,6 +88,15 @@
   background-position: 85% center;
 }
 
+.generally-kids__head--blue {
+  color: #19bfe8 !important;
+}
+
+iframe {
+  vertical-align: bottom;
+  width: 100%;
+}
+
 @media screen and (min-width: 460px) {
   .generally__logo-img {
     width: 70%;

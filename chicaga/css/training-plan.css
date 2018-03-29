@@ -52,6 +52,15 @@
   text-transform: uppercase;
 }
 
+.training-plan__item-title--blue {
+  font-family: "SFUIDisplay-Bold", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.3em;
+  color: #19bfe8 !important;
+  text-transform: uppercase;
+}
+
 .training-plan__item-option {
   margin-bottom: 30px;
 }
@@ -79,6 +88,17 @@
   font-size: 15px;
   line-height: 24px;
   color: #000000;
+}
+
+.button--blue {
+  border: none;
+
+  color: #ffffff;
+}
+
+.button--size {
+  width: auto;
+  padding: 10px 20px;
 }
 
 @media screen and (min-width: 1010px) {
@@ -149,6 +169,10 @@
     padding-left: 10px;
 
     border-left: 3px solid #af7535;
+  }
+
+  .training-plan__item-description--border-blue {
+    border-left: 3px solid #19bfe8;
   }
 
   .training-plan__item-option-text {
