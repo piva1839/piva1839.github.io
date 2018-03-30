@@ -30,6 +30,12 @@
   background-size: cover;
 }
 
+.promo-business__wrapper {
+  background: #97a1ae url("../img/business/adult-en.jpg") no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+
 .promo__wrapper {
   width: 100%;
   max-width: 1150px;
@@ -39,7 +45,8 @@
 }
 
 .promo-adult__title,
-.promo-teeny__title {
+.promo-teeny__title,
+.promo-business__title {
   width: 100%;
   max-width: 1150px;
   margin: 0 auto;
@@ -57,7 +64,8 @@
 }
 
 .promo-adult__text,
-.promo-teeny__text {
+.promo-teeny__text,
+.promo-business__text {
   display: none;
   width: 60%;
   margin: auto;
@@ -232,6 +240,42 @@
 
   .promo-teeny__text {
     display: flex;
+  }
+
+  .promo-business__text {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 530px;
+
+    font-family: "SFUIDisplay-Bold", "Arial", sans-serif;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    letter-spacing: 7px;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+
+  .promo-business__text--big {
+    font-family: "SFUIDisplay-Bold", "Arial", sans-serif;
+    font-size: 37px;
+    line-height: 37px;
+    font-weight: 700;
+    letter-spacing: 7px;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+
+  .promo-business__text--remark {
+    display: block;
+    margin-top: 100px;
+
+    font-family: "SFUIDisplay-Bold", "Arial", sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 500;
+    letter-spacing: 0;
+    text-transform: uppercase;
   }
 
   .promo-teeny__form {

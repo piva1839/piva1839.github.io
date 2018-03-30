@@ -14,6 +14,13 @@
   padding: 50px 15px;
 }
 
+.advice__business-wrapper {
+  width: 100%;
+  max-width: 100%;
+  min-width: 320px;
+  margin: 0 auto;
+}
+
 .advice-main-title {
   display: none;
 
@@ -24,6 +31,15 @@
   color: #ffffff;
   text-align: left;
   text-transform: uppercase;
+}
+
+.advice__subtitle {
+  font-family: "SFUIDisplay-Regular", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 26px;
+  font-weight: 400;
+  text-align: center;
+  color: #010101;
 }
 
 .advice__wrapper--padding {
@@ -88,6 +104,15 @@
   width: 23%;
 }
 
+.advice__business-photo {
+  width: 100%;
+}
+
+.advice__business-img {
+  width: 100%;
+  height: auto;
+}
+
 .advice__quote-description {
   width: 77%;
 }
@@ -146,7 +171,41 @@
     display: flex;
     width: 64%;
     margin: 0;
-    padding: 40px;
+    padding: 60px 40px;
+  }
+
+  .advice__business-content {
+    width: 50%;
+  }
+
+  .advice__business-content::before {
+    content: "";
+    position: absolute;
+    right: -20px;
+    top: -20px;
+    z-index: 10;
+
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff;
+
+    transform: rotate(45deg);
+  }
+
+  .advice__business-content::after {
+    content: "";
+    position: absolute;
+    right: -20px;
+    bottom: -20px;
+    z-index: 10;
+
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff;
+
+    transform: rotate(45deg);
   }
 
   .advice__content--gray {
@@ -188,8 +247,41 @@
     background-position: center;
   }
 
+  .advice__business-quote-bg1 {
+    background: url("../img/business/study-program1.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .advice__business-quote-bg2 {
+    background: url("../img/business/study-program2.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .advice__business-quote-bg3 {
+    background: url("../img/business/study-program3.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .advice__business-quote-bg4 {
+    background: url("../img/business/study-program4.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .advice__business-quote {
+    width: 50%;
+    padding: 0;
+  }
+
   .advice__quote-photo {
     margin-bottom: 20px;
+  }
+
+  .advice__business-photo {
+    margin: 0;
   }
 
   .advice__quote-text {
@@ -215,7 +307,7 @@
   }
 
   .advice__quote--no-bg {
-    background: none;
+
   }
 
   .advice__quote-bg-d {
@@ -246,5 +338,23 @@
      width: 140px;
      height: 75px;
      margin-right: 30px;
+   }
+
+   .advice__quote-padding {
+     padding: 0;
+   }
+
+   .advice__business-photo {
+     width: 100%;
+   }
+
+   .advice__business-img {
+     width: 100%;
+     height: auto;
+     vertical-align: bottom;
+   }
+
+   .advice__business-content {
+     position: relative;
    }
 }

@@ -1,0 +1,59 @@
+.motivation-business {
+  background-color: #f5f5f5;
+}
+
+.motivation-business__wrapper {
+  width: 100%;
+  max-width: 1150px;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 40px 15px 15px 15px;
+}
+
+.motivation-business__title {
+  margin-bottom: 50px;
+
+  font-family: "SFUIDisplay-Bold", "Arial", sans-serif;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.3em;
+  color: #af7535;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.motivation-business__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.motivation-business__item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.motivation-business__item-text {
+  max-width: 250px;
+  margin-left: 10px;
+
+  font-family: "SFUIDisplay-Bold", "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+@media screen and (min-width: 768px) {
+  .motivation-business__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .motivation-business__item {
+    width: 50%;
+  }
+}
