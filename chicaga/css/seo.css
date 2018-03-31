@@ -24,6 +24,17 @@
   text-transform: uppercase;
 }
 
+.seo__title--blue {
+  font-family: "SFUIDisplay-bold", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 600;
+  letter-spacing: 0.3em;
+  color: #19bfe8;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 .seo__content {
   margin-bottom: 30px;
 
@@ -48,6 +59,10 @@
   font-weight: 600;
   color: #ffffff;
   text-decoration: none;
+}
+
+.seo-button--blue {
+  background-color: #19bfe8;
 }
 
 .seo-button:hover {

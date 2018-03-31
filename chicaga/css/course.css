@@ -185,5 +185,7 @@
   .button--course-desk {
     width: auto;
     padding: 10px 30px;
+
+    text-decoration: none;
   }
 }

@@ -9,12 +9,13 @@
 .rules__title {
   margin-bottom: 30px;
 
-  font-family: "SFUIDisplay-Bold", "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 0.3em;
-  color: #af7535;
+  font-family: "SFUIDisplay-Regular", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  letter-spacing: 6px;
   text-align: center;
+  color: #af7535;
   text-transform: uppercase;
 }
 
@@ -34,6 +35,20 @@
 }
 
 @media screen and (min-width: 768px) {
+  .rules__title {
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    font-family: "SFUIDisplay-Regular", "Arial", sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 700;
+    letter-spacing: 9px;
+    text-align: center;
+    color: #af7535;
+    text-transform: uppercase;
+  }
+
   .rules__items {
     display: flex;
     flex-wrap: wrap;

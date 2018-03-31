@@ -11,7 +11,7 @@
   max-width: 1360px;
   min-width: 320px;
   margin: 0 auto;
-  padding: 50px 15px;
+  padding: 30px 15px 50px;
 }
 
 .advice__business-wrapper {
@@ -22,8 +22,6 @@
 }
 
 .advice-main-title {
-  display: none;
-
   font-family: "GothamPro", "Arial", sans-serif;
   font-size: 13px;
   line-height: 21px;
@@ -33,17 +31,40 @@
   text-transform: uppercase;
 }
 
+.advice-main-title--display {
+  display: none;
+}
+
+.advice-business-main-title {
+  display: block;
+}
+
+.advice-business-main-title {
+  padding-top: 30px;
+  margin-bottom: 30px;
+
+  font-family: "SFUIDisplay-Regular", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 6px;
+  text-align: center;
+  color: #af7535;
+  text-transform: uppercase;
+}
+
 .advice__subtitle {
+  width: 100%;
+  max-width: 400px;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 0 15px;
+
   font-family: "SFUIDisplay-Regular", "Arial", sans-serif;
   font-size: 15px;
   line-height: 26px;
   font-weight: 400;
   text-align: center;
   color: #010101;
-}
-
-.advice__wrapper--padding {
-  padding-bottom: 0;
 }
 
 .advice__order-text {
@@ -55,6 +76,7 @@
 
   font-family: "SFUIDisplay-Semibold", "Arial", sans-serif;
   font-size: 18px;
+  font-weight: 600;
   line-height: 26px;
   letter-spacing: 0.3em;
   color: #af7535;
@@ -105,6 +127,7 @@
 }
 
 .advice__business-photo {
+  display: block;
   width: 100%;
 }
 
@@ -158,6 +181,39 @@
 
   .advice-main-title {
     display: block;
+  }
+
+  .advice__wrapper--padding {
+    padding-bottom: 0;
+  }
+
+  .advice-business-main-title {
+    padding-top: 0;
+    margin-bottom: 30px;
+
+    font-family: "SFUIDisplay-Regular", "Arial", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 9px;
+    text-align: center;
+    color: #af7535;
+    text-transform: uppercase;
+  }
+
+  .advice__subtitle {
+    width: 100%;
+    max-width: 400px;
+    min-width: 320px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    padding: 0 15px;
+
+    font-family: "SFUIDisplay-Regular", "Arial", sans-serif;
+    font-size: 15px;
+    line-height: 26px;
+    font-weight: 400;
+    text-align: center;
+    color: #010101;
   }
 
   .advice__wrapper {
@@ -281,6 +337,7 @@
   }
 
   .advice__business-photo {
+    display: none;
     margin: 0;
   }
 
@@ -356,5 +413,29 @@
 
    .advice__business-content {
      position: relative;
+   }
+
+   .advice__content--brown {
+     background-color: #af7535;
+   }
+
+   .advice__content--white {
+     background-color: #ffffff;
+   }
+
+   .advice__title-text--black {
+     color: #000000;
+   }
+
+   .advice__title-text--white {
+     color: #ffffff;
+   }
+
+   .advice__description-text {
+     margin-bottom: 0;
+   }
+
+   .advice--bg-white {
+     background-color: #ffffff;
    }
 }

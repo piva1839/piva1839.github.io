@@ -13,20 +13,22 @@
 .main-galley__name {
   margin-bottom: 30px;
 
-  font-family: "SFUIDisplay-Bold", "Arial", sans-serif;
-  font-size: 28px;
-  line-height: 36px;
-  letter-spacing: 0.3em;
-  color: #af7535;
+  font-family: "SFUIDisplay-Regular", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  letter-spacing: 6px;
   text-align: center;
+  color: #af7535;
   text-transform: uppercase;
 }
 
 .main-galley__name--blue {
   font-family: "SFUIDisplay-Regular", "Arial", sans-serif;
-  font-size: 24px;
+  font-size: 18px;
+  line-height: 30px;
   font-weight: 700;
-  letter-spacing: 9px;
+  letter-spacing: 6px;
   text-align: center;
   color: #19bfe8;
   text-transform: uppercase;
@@ -46,11 +48,24 @@
 }
 
 @media screen and (min-width: 1050px) {
-  .main-galley__name--blue {
-    padding-top: 50px;
+  .main-galley__name {
+    margin-top: 50px;
+    margin-bottom: 50px;
 
     font-family: "SFUIDisplay-Regular", "Arial", sans-serif;
     font-size: 30px;
+    line-height: 30px;
+    font-weight: 700;
+    letter-spacing: 9px;
+    text-align: center;
+    color: #af7535;
+    text-transform: uppercase;
+  }
+
+  .main-galley__name--blue {
+    font-family: "SFUIDisplay-Regular", "Arial", sans-serif;
+    font-size: 30px;
+    line-height: 30px;
     font-weight: 700;
     letter-spacing: 9px;
     text-align: center;
