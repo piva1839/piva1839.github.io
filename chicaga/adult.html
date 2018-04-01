@@ -162,7 +162,7 @@
           Бесплатные<br>открытые<br>уроки
         </p>
         <div class="promo__form promo-adult__form">
-          <form class="form" type="submit">
+          <form class="form" method="post">
             <h2 class="form-name">
               Записаться<br>на бесплатный урок
             </h2>
@@ -180,12 +180,36 @@
             </div>
           </form>
         </div>
+
+        <div class="promo__modal-form">
+          <form class="form modal-form" method="post">
+            <div class="modal-form-close">
+              <img src="img/close-menu.png" alt="modal-close" width="23" height="23">
+            </div>
+            <h2 class="form-name">
+              Записаться на бесплатный урок
+            </h2>
+            <input class="form-field" type="text" id="name" name="name" placeholder="Ваше имя">
+            <input class="form-field" type="tel" id="tel" name="phone" placeholder="Номер телефона*" required>
+            <select class="form-select" size="1" name="school">
+              <option class="form-select" disabled selected>Выберите школу</option>
+              <option value="Школа 1">Школа на Академической</option>
+              <option value="Школа 2">Школа на Звездной</option>
+              <option value="Школа 3">Школа на Осипенко</option>
+            </select>
+            <label class="checkbox-label" for="confirm"><input class="form-checkbox" type="checkbox" id="confirm" name="confirm"> Нажимая кнопку «Оставить заявку», я даю согласие на <span class="confirm-terms"><a class="confirm-terms-link" href="#">обработку персональных данных</a></span></label>
+            <div class="form-confirm">
+              <button class="button button--brown" type="submit">Оставить заявку</button>
+            </div>
+          </form>
+        </div>
+
       </div>
     </section>
 
     <div class="terms-popup">
       <div class="terms-popup-close">
-        <img src="img/close-menu.png" alt="modal-close" width="43" height="43">
+        <img src="img/close-menu.png" alt="modal-close" width="23" height="23">
       </div>
       <div class="privacy-policy">
         <h4 class="privacy-policy-title">
@@ -873,7 +897,7 @@
 
     <section class="action action--advice">
       <div class="action__wrapper action--left-side">
-        <a class="button button--brown">Записаться на бесплатный урок</a>
+        <a class="button button--brown open-modal-form">Записаться на бесплатный урок</a>
       </div>
     </section>
 
@@ -1229,30 +1253,30 @@
         <div class="footer__submenu">
           <ul class="footer__submenu-list">
             <li class="footer__submenu-item">
-              <a class="footer__submenu-link" href="#">Корпоративный английский</a>
+              <a class="footer__submenu-link" href="business.html">Корпоративный английский</a>
             </li>
             <li class="footer__submenu-item">
-              <a class="footer__submenu-link" href="#">Курс английского языка для подростков</a>
+              <a class="footer__submenu-link" href="teeny.html">Курс английского языка для подростков</a>
             </li>
             <li class="footer__submenu-item">
-              <a class="footer__submenu-link footer__submenu-link--active" href="adult.html">Курсы английского языка для взрослых</a>
+              <a class="footer__submenu-link footer__submenu-link--active" href="#">Курсы английского языка для взрослых</a>
             </li>
             <li class="footer__submenu-item">
-              <a class="footer__submenu-link" href="#">Курсы английского языка для детей</a>
+              <a class="footer__submenu-link" href="kids.html">Курсы английского языка для детей</a>
             </li>
           </ul>
           <ul class="footer__submenu-list footer__submenu-list--margin">
             <li class="footer__submenu-item">
-              <a class="footer__submenu-link  footer__submenu-link--active" href="#">Курсы для взрозлых</a>
+              <a class="footer__submenu-link  footer__submenu-link--active" href="adult.html">Курсы для взрозлых</a>
             </li>
             <li class="footer__submenu-item">
-              <a class="footer__submenu-link" href="#">Курсы для подростков</a>
+              <a class="footer__submenu-link" href="teeny.html">Курсы для подростков</a>
             </li>
             <li class="footer__submenu-item">
-              <a class="footer__submenu-link" href="#">Курсы для детей</a>
+              <a class="footer__submenu-link" href="kids.html">Курсы для детей</a>
             </li>
             <li class="footer__submenu-item">
-              <a class="footer__submenu-link" href="#">Корпоративный английский</a>
+              <a class="footer__submenu-link" href="business.html">Корпоративный английский</a>
             </li>
             <li class="footer__submenu-item">
               <a class="footer__submenu-link" href="#gallery">Галерея</a>

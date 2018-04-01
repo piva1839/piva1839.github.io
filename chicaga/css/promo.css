@@ -87,6 +87,8 @@
 
   background-color: #ffffff;
   border: 1px solid #af7535;
+
+  outline: none;
 }
 
 .form-name {
@@ -233,6 +235,7 @@
 @media screen and (min-width: 768px) {
   .promo-adult__text {
     display: flex;
+    width: 60%;
   }
 
   .promo-adult__form {

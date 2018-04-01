@@ -199,6 +199,10 @@
     left: 0; /* левый arrow (-25px) */
 }
 
+.teachers-slider-descktop .slick-prev{
+    left: 25px; /* левый arrow (-25px) */
+}
+
 .promo-slider .slick-prev
 {
     left: 10px; /* левый arrow (-25px) */
@@ -235,6 +239,11 @@
 .teachers-slider .slick-next
 {
     right: 8px; /* правый arrow (-25px) */
+}
+
+.teachers-slider-descktop .slick-next
+{
+    right: 33px; /* левый arrow (-25px) */
 }
 [dir='rtl'] .slick-next
 {

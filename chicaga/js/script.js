@@ -93,3 +93,23 @@ $(".confirm-terms").click(function() {
 $(".terms-popup-close").click(function() {
   $(".terms-popup").css("display","none");
 });
+
+$(".generally-modal-open").click(function() {
+  $(".generally-modal-space").css("display","block");
+});
+
+$(".generally-modal-open").click(function() {
+  $(".generally-modal").css("display","block");
+});
+
+$(".generally-modal-close").click(function() {
+  $(".generally-modal-space").css("display","none");
+});
+
+$(".open-modal-form").click(function() {
+  $(".promo__modal-form").css("display","block");
+});
+
+$(".modal-form-close").click(function() {
+  $(".promo__modal-form").css("display","none");
+});

@@ -30,6 +30,7 @@
     <link href="css/contact.css" rel="stylesheet">
     <link href="css/footer.css" rel="stylesheet">
     <link href="css/seo.css" rel="stylesheet">
+    <link href="css/modal.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="slick/slick.css">
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
     <script type="text/javascript" src="js/jquery.js"></script>
@@ -165,7 +166,7 @@
           </div>
         </div>
         <div class="promo__form">
-          <form class="form" type="submit">
+          <form class="form" method="post">
             <h2 class="form-name">
               Записаться на бесплатный урок
             </h2>
@@ -183,12 +184,36 @@
             </div>
           </form>
         </div>
+
+        <div class="promo__modal-form">
+          <form class="form modal-form" method="post">
+            <div class="modal-form-close">
+              <img src="img/close-menu.png" alt="modal-close" width="23" height="23">
+            </div>
+            <h2 class="form-name">
+              Записаться на бесплатный урок
+            </h2>
+            <input class="form-field" type="text" id="name" name="name" placeholder="Ваше имя">
+            <input class="form-field" type="tel" id="tel" name="phone" placeholder="Номер телефона*" required>
+            <select class="form-select" size="1" name="school">
+              <option class="form-select" disabled selected>Выберите школу</option>
+              <option value="Школа 1">Школа на Академической</option>
+              <option value="Школа 2">Школа на Звездной</option>
+              <option value="Школа 3">Школа на Осипенко</option>
+            </select>
+            <label class="checkbox-label" for="confirm"><input class="form-checkbox" type="checkbox" id="confirm" name="confirm"> Нажимая кнопку «Оставить заявку», я даю согласие на <span class="confirm-terms"><a class="confirm-terms-link" href="#">обработку персональных данных</a></span></label>
+            <div class="form-confirm">
+              <button class="button button--brown" type="submit">Оставить заявку</button>
+            </div>
+          </form>
+        </div>
+
       </div>
     </section>
 
     <div class="terms-popup">
       <div class="terms-popup-close">
-        <img src="img/close-menu.png" alt="modal-close" width="43" height="43">
+        <img src="img/close-menu.png" alt="modal-close" width="23" height="23">
       </div>
       <div class="privacy-policy">
         <h4 class="privacy-policy-title">
@@ -231,7 +256,7 @@
     <!-- generally -->
 
     <section class="generally">
-      <section class="generally__wrapper">
+      <div class="generally__wrapper">
         <div class="generally__logo">
           <img class="generally__logo-img" src="img/generally.png" alt="generally-logo" width="318" height="103">
         </div>
@@ -243,10 +268,20 @@
             чтобы ясно воспринимать и по-английски формировать речь без мысленного перевода
           </span>
           <p class="course-about">
-            <a class="button button--black button--size button--arrow">Мне интересно</a>
+            <a class="button button--black button--size button--arrow generally-modal-open">Мне интересно</a>
           </p>
         </div>
-      </section>
+      </div>
+      <div class="generally-modal-space">
+        <div class="generally-modal">
+          <div class="generally-modal-close">
+            <img src="img/close-menu.png" alt="modal-close" width="23" height="23">
+          </div>
+          <p class="generally-modal-content">
+            Основной курс (96 акад.часов по программе OXFORD English File) дает студенту неоходимые теоретический основы с набором необходимых примеров применения. Однако, только в многочисленных развлекательных практических тренингах (+64 акад.часа по программе emotioNess) ты добьешься уверенности и автоматизма применения полученных фундаментальных знаний. Уверенность и автоматизм приходят к тебе по мере избавления от мысленного перевода речи на сознательном уровне. То есть ключевая цель - перевод речи в область эмоционально-подсознательного.
+          </p>
+        </div>
+      </div>
     </section>
 
     <!-- main-gallery -->
@@ -305,7 +340,7 @@
       <div class="advice__wrapper">
         <div class="advice__content advice__content--gray">
           <div class="advice__order">
-            <img class="advice__order-text" src="img/01.png" alt="advice-order" width="54" height="33">
+            <img class="advice__order-text" src="img/01d.png" alt="advice-order" width="54" height="33">
           </div>
           <div class="advice__info">
             <div class="advice__title">
@@ -448,7 +483,7 @@
 
     <section class="action action--advice">
       <div class="action__wrapper action--left-side">
-        <a class="button button--brown">Записаться на бесплатный урок</a>
+        <a class="button button--brown open-modal-form">Записаться на бесплатный урок</a>
       </div>
     </section>
 
@@ -564,7 +599,7 @@
     <section class="action action--bg-gray">
       <div class="action__wrapper action__call">
         <p>
-          <a class="button button--brown">Записаться на бесплатный урок</a>
+          <a class="button button--brown open-modal-form">Записаться на бесплатный урок</a>
         </p>
         <p class="action__text">
           ОСТАЛИСЬ ВОПРОСЫ? СПРАШИВАЙ! <span class="action__text--black">+7 812 242 50 03</span>
@@ -677,7 +712,7 @@
 
     <section class="action">
       <div class="action__wrapper">
-        <a class="button button--brown">Записаться на бесплатный урок</a>
+        <a class="button button--brown open-modal-form">Записаться на бесплатный урок</a>
       </div>
     </section>
 
@@ -693,7 +728,7 @@
             Это позволит нам понять, насколько мы подходим<br>друг другу. <span class="test-lesson--free">Пробный урок бесплатен</span>
           </p>
           <div class="test-lesson__description-button">
-            <a class="button button--white">Мне интересно</a>
+            <a class="button button--white open-modal-form">Мне интересно</a>
           </div>
         </div>
       </div>
@@ -1149,30 +1184,30 @@
         <div class="footer__submenu">
           <ul class="footer__submenu-list">
             <li class="footer__submenu-item">
-              <a class="footer__submenu-link" href="#">Корпоративный английский</a>
+              <a class="footer__submenu-link" href="business.html">Корпоративный английский</a>
             </li>
             <li class="footer__submenu-item">
-              <a class="footer__submenu-link" href="#">Курс английского языка для подростков</a>
+              <a class="footer__submenu-link" href="teeny.html">Курс английского языка для подростков</a>
             </li>
             <li class="footer__submenu-item">
               <a class="footer__submenu-link" href="adult.html">Курсы английского языка для взрослых</a>
             </li>
             <li class="footer__submenu-item">
-              <a class="footer__submenu-link" href="#">Курсы английского языка для детей</a>
+              <a class="footer__submenu-link" href="kids.html">Курсы английского языка для детей</a>
             </li>
           </ul>
           <ul class="footer__submenu-list footer__submenu-list--margin">
             <li class="footer__submenu-item">
-              <a class="footer__submenu-link" href="#">Курсы для взрозлых</a>
+              <a class="footer__submenu-link" href="adult.html">Курсы для взрозлых</a>
             </li>
             <li class="footer__submenu-item">
               <a class="footer__submenu-link" href="teeny.html">Курсы для подростков</a>
             </li>
             <li class="footer__submenu-item">
-              <a class="footer__submenu-link" href="#">Курсы для детей</a>
+              <a class="footer__submenu-link" href="kids.html">Курсы для детей</a>
             </li>
             <li class="footer__submenu-item">
-              <a class="footer__submenu-link" href="#">Корпоративный английский</a>
+              <a class="footer__submenu-link" href="business.html">Корпоративный английский</a>
             </li>
             <li class="footer__submenu-item">
               <a class="footer__submenu-link" href="#gallery">Галерея</a>
@@ -1184,10 +1219,10 @@
               <a class="footer__submenu-link" href="#guarantee">Гарантии</a>
             </li>
             <li class="footer__submenu-item">
-              <a class="footer__submenu-link" href="#">Отзывы</a>
+              <a class="footer__submenu-link" href="#reviews">Отзывы</a>
             </li>
             <li class="footer__submenu-item">
-              <a class="footer__submenu-link" href="#content">Контакты</a>
+              <a class="footer__submenu-link" href="#contact">Контакты</a>
             </li>
           </ul>
           <p class="footer__copyright">

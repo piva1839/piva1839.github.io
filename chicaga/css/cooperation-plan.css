@@ -8,7 +8,7 @@
 
 .cooperation-plan__title {
   margin-bottom: 30px;
-  
+
   font-family: "SFUIDisplay-Regular", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 700;
@@ -19,8 +19,7 @@
 }
 
 .cooperation-plan__pic {
-  width: 80%;
-  margin: 0 auto;
+  width: 100%;
 }
 
 .cooperation-plan__img {
@@ -40,5 +39,10 @@
     text-align: center;
     color: #af7535;
     text-transform: uppercase;
+  }
+
+  .cooperation-plan__pic {
+    width: 80%;
+    margin: 0 auto;
   }
 }
