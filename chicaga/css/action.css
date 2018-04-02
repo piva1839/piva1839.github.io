@@ -122,4 +122,8 @@
     letter-spacing: 1px;
     color: #343333;
   }
+
+  .action--bg-white {
+    background-color: #ffffff;
+  }
 }
