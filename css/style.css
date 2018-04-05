@@ -199,6 +199,29 @@ img {
 	height: auto;
 }
 
+.portfolio__item__pages {
+	list-style-type: none;
+	padding: 10px;
+}
+
+.portfolio__item__pages-header {
+	margin-bottom: 10px;
+}
+
+.portfolio__item__page {
+	display: inline-block;
+	margin-right: 5px;
+}
+
+.portfolio__item__page a {
+	color: #84db64;
+	opacity: 1;
+}
+
+.portfolio__item__page a:hover {
+	opacity: 0.6;
+}
+
 .portfolio__item__about__content {
   padding: 10px;
 }
