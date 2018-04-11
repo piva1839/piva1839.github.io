@@ -45,9 +45,12 @@ img {
 
 .main-header {
 	padding: 20px 0;
-	
+
+  background: url("../img/kampsis1.png") no-repeat;
+  background-position: left top;
+  background-size: 50%;
 	border-bottom: 1px solid #e0e0e0;
-	
+
 	text-align: center;
 }
 
@@ -69,13 +72,13 @@ img {
 
 .main-menu {
 	padding: 25px 0;
-	
+
 	border-bottom: 1px solid #e0e0e0;
 }
 
 .main-menu__burger-menu {
   float: left;
-  
+
   width: 50%;
 }
 
@@ -85,20 +88,20 @@ img {
   width: 14px;
   height: 18px;
   padding-left: 20px;
-  
+
   background: url("../img/menu-lines.svg") no-repeat;
   background-position: 0px 5px;
   background-size: 14px 12px;
-  
+
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   line-height: 22px;
   font-weight: 600;
 	color: #333333;
   text-transform: uppercase;
-  
+
   cursor: pointer;
-  
+
   opacity: 0.8;
 }
 
@@ -106,7 +109,7 @@ img {
   background: url("../img/menu-lines-active2.svg") no-repeat;
   background-position: 0px 5px;
   background-size: 14px 12px;
-  
+
   color: #ea603b;
 }
 
@@ -118,9 +121,9 @@ img {
 
 .main-menu__call {
   float: right;
-  
+
   width: 50%;
-  
+
   text-align: right;
 }
 
@@ -129,9 +132,9 @@ img {
   vertical-align: top;
   width: 20px;
   height: 20px;
-  
+
   font-size: 0px;
-  
+
   opacity: 0.8;
 }
 
@@ -143,7 +146,7 @@ img {
 
 .main-menu__call__link_map-icon {
   margin-left: 10px;
-  
+
   background: url("../img/map.svg") no-repeat;
   background-position: center;
   background-size: 100%;
@@ -151,9 +154,9 @@ img {
 
 .main-menu__nav__items {
   display: block;
-	
+
 	width: 100%;
-  
+
   list-style-type: none;
 }
 
@@ -169,7 +172,7 @@ img {
 .main-menu__nav__social {
   display: block;
   padding: 15px 0;
-  
+
   font-family: "Roboto", sans-serif;
   font-size: 12px;
   line-height: 17px;
@@ -270,10 +273,10 @@ img {
   position: absolute;
   left: 0;
   bottom: 0;
-  
+
   width: 100%;
   padding: 15px;
-  
+
   text-align: left;
 }
 
@@ -281,9 +284,9 @@ img {
   display: inline-block;
   margin-bottom: 20px;
   padding: 5px 10px;
-  
+
   background: #000000;
-  
+
   font-family: "Roboto", sans-serif;
   font-size: 12px;
   line-height: 17px;
@@ -293,7 +296,7 @@ img {
 
 .main-slider__item__item-content__hotel {
   margin-bottom: 25px;
-  
+
   font-family: "Roboto", sans-serif;
   font-size: 28px;
   line-height: 39px;
@@ -303,7 +306,7 @@ img {
 
 .main-slider__item__item-content__description {
   margin-bottom: 25px;
-  
+
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   line-height: 18px;
@@ -313,7 +316,7 @@ img {
 
 .main-slider__item__item-content__price {
   margin-bottom: 20px;
-  
+
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   line-height: 18px;
@@ -324,10 +327,10 @@ img {
 .main-slider__item__item-content__rooms {
   margin-bottom: 60px;
 }
-  
+
 .section-title {
   margin-bottom: 25px;
-  
+
   font-family: "Roboto", sans-serif;
   font-size: 34px;
   line-height: 48px;
@@ -338,11 +341,15 @@ img {
 
 .resort-about {
   margin-bottom: 25px;
+
+  background: url("../img/3605700.png") no-repeat;
+  background-position: right top;
+  background-size: 98%;
 }
 
 .resort-about__resort-description {
   margin-bottom: 25px;
-  
+
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   line-height: 20px;
@@ -356,7 +363,7 @@ img {
 
 .resort-about-slider__img {
 	display: block;
-	
+
   width: 100%;
   height: auto;
 }
@@ -365,10 +372,10 @@ img {
   position: absolute;
   left: 0;
   top: 0;
-  
+
   width: 100%;
   padding: 10px;
-  
+
 	font-family: "Roboto", sans-serif;
   font-size: 14px;
   line-height: 20px;
@@ -379,12 +386,16 @@ img {
 
 .cottage-about {
   margin-bottom: 25px;
+
+  background: url("../img/kampsis1.png") no-repeat;
+  background-position: left top;
+  background-size: 50%;
 }
 
 .cottage-about__cottage-description {
   margin-top: 25px;
 	margin-bottom: 25px;
-  
+
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   line-height: 20px;
@@ -398,7 +409,7 @@ img {
 
 .cottage-about-slider__img {
 	display: block;
-	
+
   width: 100%;
   height: auto;
 }
@@ -407,10 +418,10 @@ img {
   position: absolute;
   left: 0;
   top: 0;
-  
+
   width: 100%;
   padding: 10px;
-  
+
 	font-family: "Roboto", sans-serif;
   font-size: 14px;
   line-height: 20px;
@@ -426,7 +437,7 @@ img {
 .rooms-about__item__title {
   margin-top: 25px;
   margin-bottom: 25px;
-  
+
   font-family: "Roboto", sans-serif;
   font-size: 22px;
   line-height: 31px;
@@ -440,7 +451,7 @@ img {
 
 .rooms-about__item__details {
   margin-bottom: 25px;
-  
+
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 22px;
@@ -450,7 +461,7 @@ img {
 
 .rooms-about__item__price {
   margin-bottom: 25px;
-  
+
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 22px;
@@ -464,7 +475,7 @@ img {
 
 .rooms-about-slider__img {
 	display: block;
-	
+
   width: 100%;
   height: auto;
 }
@@ -473,10 +484,10 @@ img {
   position: absolute;
   left: 0;
   top: 0;
-  
+
   width: 100%;
   padding: 10px;
-  
+
 	font-family: "Roboto", sans-serif;
   font-size: 14px;
   line-height: 20px;
@@ -492,23 +503,23 @@ img {
 
 .main-button_green {
 	margin-right: 20px;
-	
+
 	background: #ea603b;
-	
+
   font-size: 14px;
 	color: #ffffff;
 	font-weight: 600;
 	text-decoration: none;
 	text-transform: uppercase;
 }
-	
+
 .main-button_white {
 	position: relative;
-	
+
 	padding: 0;
-	
+
 	background: #ffffff;
-	
+
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   line-height: 22px;
@@ -526,46 +537,88 @@ img {
 	position: absolute;
 	left: 0;
 	bottom: -5px;
-	
+
 	display: block;
 	width: 100%;
 	height: 1px;
-	
+
 	border-bottom: 1px dashed #000000;
+}
+
+.reserv-details {
+	position: fixed;
+	top: 0;
+	left: 0;
+
+	display: none;
+	width: 100%;
+	height: 100%;
+
+	background: #ffffff;
+
+	font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+	color: #333333;
+
+	overflow: scroll;
+}
+
+.reserv-details__content {
+	padding: 60px 15px 15px;
+}
+
+.reserv-details__content_close {
+	position: fixed;
+	top: 0;
+	left: 0;
+
+	width: 100%;
+	padding: 15px;
+
+	background: #f2f2f2;
+
+	font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 600;
+	color: #ea603b;
+	text-transform: uppercase;
 }
 
 .main-contact {
   padding-top: 25px;
-  
+
   background: #EBE8DE;
 }
 
 .main-contact__items {
   list-style-type: none;
-  
+
   margin-bottom: 25px;
-  
+
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
 	color: #333333;
 }
-	
+
 .social-icon {
 	display: inline-block;
-	
+
 	width: 35px;
 	height: 35px;
-	
+
 	font-size: 0;
 }
 
 .main-address__items {
   list-style-type: none;
-  
+
   margin-bottom: 25px;
-  
+
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   line-height: 20px;
@@ -579,7 +632,7 @@ img {
 
 .copyright {
 	padding: 10px 0;
-	
+
 	font-family: "Roboto", sans-serif;
   font-size: 14px;
   line-height: 18px;
@@ -605,7 +658,7 @@ img {
 		left: 0;
 		top: 0;
 		z-index: 999;
-		
+
 		width: 100%;
 		height: 100%;
 	}
