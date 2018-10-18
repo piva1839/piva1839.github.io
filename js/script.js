@@ -1,68 +1,29 @@
-$(document).ready(function(){
-	$(".main-header__menu").on("click", "a", function(){
-		if ($(".main-header__menu a").hasClass("active")) {
-			$(".main-header__menu a").removeClass("active");
-		}
-		$(this).addClass("active");
-	});
+var writeToUsBtn = document.querySelector(".btn-adress");
+var modalContactBlock = document.querySelector(".modal-contact-block");
+var closeModalBlock = document.querySelector(".close-modal-block");
+var map = document.querySelector(".map");
+var modalMap = document.querySelector(".modal-map");
+var closeModalMap = document.querySelector(".close-modal-map");
+var popupOverlay = document.querySelector(".popup-overlay");
+var contactForm = document.querySelector(".contact-form");
+var name = document.querySelector("[name=name]");
+var email = document.querySelector("[name=email");
 
-  $(".main-nav__burger-menu-list").click(function() {
-    $(".main-nav__burger-menu-list").css("display","none");
-  });
-
-  $(".main-nav__burger-menu-icon").click(function() {
-    $(".main-nav__burger-menu-list").css("display","block");
-  });
-
-  $(".main-nav__burger-menu-item-link").click(function() {
-    $(".main-nav__burger-menu-list").css("display","none");
-  });
-
-  $(".item-card__slider").slick({
-    dots: true,
-    dotsClass: "my-dots",
-    arrows: true,
-    // prevArrow: '<img src="img/left_arrow/back_64.png">',
-	  // nextArrow: '<img src="img/right_arrow/right-arrow_64.png">'
-  });
-
-	$(".main-mobile-slider").slick({
-		dots: true,
-		dotsClass: "my-mobile-dots",
-		arrows: false,
-		prevArrow: '<img src="img/arrowleft.png">',
-		nextArrow: '<img src="img/arrowright.png">'
-	});
-
-	$(".more-menu-items").click(function(event) {
+	writeToUsBtn.addEventListener("click", function(event) {
 		event.preventDefault();
-  });
-
-  $(".more-menu-items").mouseover(function() {
-    $(".subitems").css("display","block");
-  });
-
-  $(".subitems").mouseover(function() {
-    $(".subitems").css("display","block");
-  });
-
-  $(".more-menu-items").mouseout(function() {
-    $(".subitems").css("display","none");
-  });
-
-  $(".subitems").mouseout(function() {
-    $(".subitems").css("display","none");
-  });
-
-	$(".subitems__item a").click(function() {
-		$(".subitems").css("display","none");
+		modalContactBlock.classList.add("modal-contact-block-open");
+		popupOverlay.classList.add("popup-overlay-open");
+	});
+	
+	closeModalBlock.addEventListener("click", function(event) {
+		event.preventDefault();
+		modalContactBlock.classList.remove("modal-contact-block-open");
+		popupOverlay.classList.remove("popup-overlay-open");
 	});
 
-	$(".fixed-mail").click(function() {
-    $(".modal-contact-block").css("display","block");
-  });
-
-  $(".close-modal-block").click(function() {
-    $(".modal-contact-block").css("display","none");
-  });
-});
+	contactForm.addEventListener("submit", function(event) {
+		if(!name || !email) {
+			event.preventDefault();
+			alert("ВЫ НЕ ВВЕЛИ ДАННЫЕ");
+		}
+	});	
