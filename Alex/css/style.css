@@ -2267,6 +2267,16 @@ h1, h2, h3, h4, h5, h6, p, ul, li, img, span {
 	cursor: text;
 }
 
+	input[type="date"]:before {
+    content: attr(placeholder) !important;
+    color: #aaa;
+    margin-right: 0.5em;
+  }
+  input[type="date"]:focus:before,
+  input[type="date"]:valid:before {
+    content: "";
+  }
+
 .form-field:hover,
 .form-textarea:hover,
 .form-field:focus,
