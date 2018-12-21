@@ -553,9 +553,9 @@ h1, h2, h3, h4, h5, h6, p, ul, li, img, span {
 		margin-top: -250px;
 
 		font-family: "Roboto-Regular", "arial", sans-serif;
-		font-size: 39px;
+		font-size: 28px;
 		font-weight: 600;
-		line-height: 47px;
+		line-height: 37px;
 		color: #ffffff;
 		text-align: center;
 	}
@@ -1717,6 +1717,14 @@ h1, h2, h3, h4, h5, h6, p, ul, li, img, span {
 	background-size: cover;
 }
 
+.infrastructure-page__background-img {
+	vertical-align: bottom;
+
+	display: none;
+	width: 100%;
+	height: auto;
+}
+
 .infrastructure-page__content {
 	position: fixed;
 	overflow-y: auto;
@@ -1808,13 +1816,27 @@ h1, h2, h3, h4, h5, h6, p, ul, li, img, span {
 }
 
 @media screen and (max-width: 780px) {
+	.infrastructure-page {
+		flex-direction: column;
+	}
+
+	.infrastructure-page__content {
+		width: 100%;
+		padding-top: 30px;
+	}
+
 	.infrastructure-page__sight {
 		display: flex;
 		flex-direction: column;
 	}
 
 	.infrastructure-page__background {
-		display: none;
+		width: 100%;
+		height: auto;
+	}
+
+	.infrastructure-page__background-img {
+		display: block;
 	}
 
 	.infrastructure-page__content {
@@ -1844,6 +1866,12 @@ h1, h2, h3, h4, h5, h6, p, ul, li, img, span {
 
 	background: #c1d1e5 url("../img/3.jpg") no-repeat;
 	background-size: cover;
+}
+
+.leisure-page__background-img {
+	display: none;
+	width: 100%;
+	height: auto;
 }
 
 .leisure-page__content {
@@ -1937,19 +1965,29 @@ h1, h2, h3, h4, h5, h6, p, ul, li, img, span {
 }
 
 @media screen and (max-width: 780px) {
+	.leisure-page {
+		flex-direction: column;
+	}
+
 	.leisure-page__sight {
 		display: flex;
 		flex-direction: column;
 	}
 
 	.leisure-page__background {
-		display: none;
+		width: 100%;
+		height: auto;
+	}
+
+	.leisure-page__background-img {
+		display: block;
 	}
 
 	.leisure-page__content {
 		position: relative;
 
 		width: 100%;
+		padding-top: 30px;
 		padding-left: 15px;
 		padding-right: 15px;
 	}
