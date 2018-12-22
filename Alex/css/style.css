@@ -46,6 +46,7 @@ h1, h2, h3, h4, h5, h6, p, ul, li, img, span {
 }
 
 .page-inner {
+	position: absolute;
 	width: 100%;
 	height: 100%;
 
@@ -977,6 +978,10 @@ h1, h2, h3, h4, h5, h6, p, ul, li, img, span {
 		padding: 15px;
 	}
 
+	.reserv-bar--cootage-mobile-page {
+		bottom: 20vh;
+	}
+
 	.reserv-bar__info {
 		flex-wrap: wrap;
 		width: 100%;
@@ -1219,8 +1224,19 @@ h1, h2, h3, h4, h5, h6, p, ul, li, img, span {
 		position: relative;
 
 		width: 100%;
+		padding-top: 30px;
 		padding-left: 15px;
 		padding-right: 15px;
+	}
+
+	.cottage-page__title {
+		margin-bottom: 30px;
+
+		font-family: "Roboto-Bold", "arial", sans-serif;
+		font-size: 31px;
+		font-weight: 600;
+		line-height: 31px;
+		color: #000000;
 	}
 
 	.cottage-page__description {
@@ -1228,12 +1244,39 @@ h1, h2, h3, h4, h5, h6, p, ul, li, img, span {
 		flex-direction: column-reverse;
 	}
 
+	.cottage-page__paragraph {
+		margin-bottom: 30px;
+
+		font-family: "Roboto-Regular", "arial", sans-serif;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 21px;
+		color: #000000;
+	}
+
 	.page__copyright {
-		padding-bottom: 50px;
+		padding-top: 30px;
+		padding-bottom: 30px;
 	}
 
 	.cottage-page__media {
 		margin-bottom: 30px;
+	}
+
+	.page__copyright {
+		font-family: "Roboto-Regular", "arial", sans-serif;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 21px;
+		color: #000000;
+	}
+
+	.page__copyright a {
+		font-family: "Roboto-Bold", "arial", sans-serif;
+		font-size: 14px;
+		font-weight: 600;
+		line-height: 21px;
+		color: #000000;
 	}
 }
 
@@ -1498,15 +1541,57 @@ h1, h2, h3, h4, h5, h6, p, ul, li, img, span {
 	.rooms-page__background {
 		display: none;
 		width: 100%;
-
 	}
 
 	.rooms-page__content {
 		position: relative;
 
 		width: 100%;
+		padding-top: 100px;
 		padding-left: 15px;
 		padding-right: 15px;
+	}
+
+	.room-service-list {
+		margin-top: 0;
+		margin-bottom: 20px;
+
+		font-family: "Roboto-Regular", "arial", sans-serif;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 21px;
+		color: #000000;
+	}
+
+	.room-class-name {
+		font-family: "Roboto-Bold", "arial", sans-serif;
+		font-size: 31px;
+		font-weight: 600;
+		line-height: 31px;
+		color: #000000;
+	}
+
+	.room-cost {
+		margin-top: 0;
+		padding-top: 0;
+	}
+
+	.room-price--currensy {
+		font-family: "Roboto-Regular", "arial", sans-serif;
+		font-size: 22px;
+		font-weight: 400;
+		line-height: 0px;
+		color: #000000;
+		vertical-align: top;
+	}
+
+	.room-price--font {
+		font-family: "Roboto-Bold", "arial", sans-serif;
+		font-size: 31px;
+		font-weight: 600;
+		line-height: 31px;
+		color: #000000;
+		text-decoration: none;
 	}
 }
 
@@ -1552,7 +1637,6 @@ h1, h2, h3, h4, h5, h6, p, ul, li, img, span {
 .room-page__description {
 	display: flex;
 	justify-content: center;
-	margin-bottom: 70px;
 }
 
 .room-page__text {
@@ -1650,7 +1734,8 @@ h1, h2, h3, h4, h5, h6, p, ul, li, img, span {
 }
 
 .room-photos {
-	margin-bottom: 80px;
+	margin-top: 70px;
+	margin-bottom: 70px;
 }
 
 .room-photos img {
@@ -1706,6 +1791,18 @@ h1, h2, h3, h4, h5, h6, p, ul, li, img, span {
 		flex-direction: column;
 	}
 
+	.room-class {
+		margin-bottom: 30px;
+	}
+
+	.room-price--currensy {
+		font-family: "Roboto-Regular", "arial", sans-serif;
+		font-size: 20px;
+		font-weight: 400;
+		line-height: 0px;
+		color: #000000;
+	}
+
 	.room-page__text {
 		width: 100%;
 		padding-right: 0;
@@ -1720,12 +1817,34 @@ h1, h2, h3, h4, h5, h6, p, ul, li, img, span {
 		padding-left: 0;
 	}
 
-	.room-cost {
+	.room-service-item {
+		font-family: "Roboto-Regular", "arial", sans-serif;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 21px;
+		color: #000000;
+	}
+
+	.room-description__paragraph {
+		font-family: "Roboto-Regular", "arial", sans-serif;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 21px;
+		color: #000000;
+	}
+
+	.room-photos {
 		margin-top: 30px;
+		margin-bottom: 40px;
 	}
 
 	.room-photos img {
 		width: 100%
+	}
+
+	.room-reserv-buton {
+		margin-top: 30px;
+		margin-bottom: 30px;
 	}
 }
 
@@ -1819,6 +1938,11 @@ h1, h2, h3, h4, h5, h6, p, ul, li, img, span {
 	color: #000000;
 }
 
+.infrastructure-page__sight-title {
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+
 @media screen and (max-width: 1860px) {
 	.infrastructure-page__background {
 		width: 38%;
@@ -1843,11 +1967,6 @@ h1, h2, h3, h4, h5, h6, p, ul, li, img, span {
 		flex-direction: column;
 	}
 
-	.infrastructure-page__content {
-		width: 100%;
-		padding-top: 30px;
-	}
-
 	.infrastructure-page__sight {
 		display: flex;
 		flex-direction: column;
@@ -1866,8 +1985,29 @@ h1, h2, h3, h4, h5, h6, p, ul, li, img, span {
 		position: relative;
 
 		width: 100%;
+		padding-top: 30px;
 		padding-left: 15px;
 		padding-right: 15px;
+	}
+
+	.infrastructure-page__title {
+		font-family: "Roboto-Bold", "arial", sans-serif;
+		font-size: 31px;
+		font-weight: 600;
+		line-height: 31px;
+		color: #000000;
+	}
+
+	.infrastructure-page__description {
+		margin-bottom: 0;
+	}
+
+	.infrastructure-page__paragraph {
+		font-family: "Roboto-Regular", "arial", sans-serif;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 21px;
+		color: #000000;
 	}
 
 	.infrastructure-page__sight-picture {
@@ -1958,6 +2098,11 @@ h1, h2, h3, h4, h5, h6, p, ul, li, img, span {
 	width: 70%;
 }
 
+.leisure-page__sight-title {
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+
 .leisure-page__paragraph {
 	margin-bottom: 30px;
 
@@ -2013,6 +2158,26 @@ h1, h2, h3, h4, h5, h6, p, ul, li, img, span {
 		padding-top: 30px;
 		padding-left: 15px;
 		padding-right: 15px;
+	}
+
+	.leisure-page__title {
+		font-family: "Roboto-Bold", "arial", sans-serif;
+		font-size: 31px;
+		font-weight: 600;
+		line-height: 31px;
+		color: #000000;
+	}
+
+	.leisure-page__description {
+		margin-bottom: 0;
+	}
+
+	.leisure-page__paragraph {
+		font-family: "Roboto-Regular", "arial", sans-serif;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 21px;
+		color: #000000;
 	}
 
 	.leisure-page__sight-picture {
@@ -2206,9 +2371,33 @@ h1, h2, h3, h4, h5, h6, p, ul, li, img, span {
 		padding-right: 15px;
 	}
 
+	.contact-page__content::before {
+		content: "";
+		position: absolute;
+		top: 10px;
+		left: 50%;
+
+		display: block;
+		width: 11px;
+		height: 24px;
+		margin-left: -5.5px;
+
+		background: url("../img/up_contact.png") repeat-y;
+		background-position: center;
+	}
+
+	.contact-page__title {
+		font-family: "Roboto-Bold", "arial", sans-serif;
+		font-size: 31px;
+		font-weight: 600;
+		line-height: 31px;
+		color: #000000;
+	}
+
 	.contact-page__description {
 		display: flex;
 		flex-direction: column;
+		margin-bottom: 20px;
 	}
 
 	.contact-page__background {
@@ -2225,6 +2414,22 @@ h1, h2, h3, h4, h5, h6, p, ul, li, img, span {
 	.contact-page__media {
 		width: 100%;
 		padding-left: 0;
+	}
+
+	.conact-page__item {
+		font-family: "Roboto-Regular", "arial", sans-serif;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 21px;
+		color: #000000;
+	}
+
+	.contact-page__item--title {
+		font-family: "Roboto-Bold", "arial", sans-serif;
+		font-size: 24px;
+		font-weight: 600;
+		line-height: 29px;
+		color: #000000;
 	}
 }
 
