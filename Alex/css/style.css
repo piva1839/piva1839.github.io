@@ -2369,23 +2369,9 @@ h1, h2, h3, h4, h5, h6, p, ul, li, img, span {
 		position: relative;
 
 		width: 100%;
+		padding-top: 30px;
 		padding-left: 15px;
 		padding-right: 15px;
-	}
-
-	.contact-page__content::before {
-		content: "";
-		position: absolute;
-		top: 2%;
-		left: 50%;
-
-		display: block;
-		width: 11px;
-		height: 24px;
-		margin-left: -5.5px;
-
-		background: url("../img/up_contact.png") repeat-y;
-		background-position: center;
 	}
 
 	.contact-page__title {
@@ -2404,7 +2390,7 @@ h1, h2, h3, h4, h5, h6, p, ul, li, img, span {
 
 	.contact-page__background {
 		width: 100%;
-		height: 85vh;
+		height: 518px;
 	}
 
 	.contact-page__text {
@@ -2432,6 +2418,32 @@ h1, h2, h3, h4, h5, h6, p, ul, li, img, span {
 		font-weight: 600;
 		line-height: 29px;
 		color: #000000;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.contact-page__background {
+		width: 100%;
+		height: 518px;
+	}
+
+	.contact-page__content {
+		padding-top: 50px;
+	}
+
+	.contact-page__content::before {
+		content: "";
+		position: absolute;
+		top: 12.5px;
+		left: 50%;
+
+		display: block;
+		width: 11px;
+		height: 24px;
+		margin-left: -5.5px;
+
+		background: url("../img/up_contact.png") repeat-y;
+		background-position: center;
 	}
 }
 
