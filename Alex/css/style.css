@@ -1541,6 +1541,7 @@ h1, h2, h3, h4, h5, h6, p, ul, li, img, span {
 	.rooms-page__background {
 		display: none;
 		width: 100%;
+		background: none;
 	}
 
 	.rooms-page__content {
@@ -1772,6 +1773,7 @@ h1, h2, h3, h4, h5, h6, p, ul, li, img, span {
 	.room-page__background {
 		width: 100%;
 		height: auto;
+		background: none;
 	}
 
 	.room-page__background-img {
@@ -1975,6 +1977,7 @@ h1, h2, h3, h4, h5, h6, p, ul, li, img, span {
 	.infrastructure-page__background {
 		width: 100%;
 		height: auto;
+		background: none;
 	}
 
 	.infrastructure-page__background-img {
@@ -2145,6 +2148,7 @@ h1, h2, h3, h4, h5, h6, p, ul, li, img, span {
 	.leisure-page__background {
 		width: 100%;
 		height: auto;
+		background: none;
 	}
 
 	.leisure-page__background-img {
