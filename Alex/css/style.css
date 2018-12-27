@@ -979,7 +979,7 @@ h1, h2, h3, h4, h5, h6, p, ul, li, img, span {
 	}
 
 	.reserv-bar--cootage-mobile-page {
-		bottom: 20vh;
+		bottom: 0px;
 	}
 
 	.reserv-bar__info {
@@ -1216,6 +1216,7 @@ h1, h2, h3, h4, h5, h6, p, ul, li, img, span {
 	}
 
 	.cottage-page__background {
+		position: relative;
 		width: 100%;
 		height: 80vh;
 	}
