@@ -545,6 +545,7 @@ h1, h2, h3, h4, h5, h6, p, ul, li, img, span {
 @media screen and (max-width: 780px) {
 	.main-page-content {
 		justify-content: center;
+		height: 100%;
 	}
 
 	.main-page-content__title {
