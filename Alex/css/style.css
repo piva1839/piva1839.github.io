@@ -257,10 +257,10 @@ h1, h2, h3, h4, h5, h6, p, ul, li, img, span {
 	height: 50px;
 	padding: 9px;
 
-	background-color: #f2f2f2;
+	background: #f2f2f2 url("../img/burger.png") no-repeat;
+	background-size: 50%;
+	background-position: center;
 	border-radius: 50px;
-
-	text-align: center;
 
 	cursor: pointer;
 }
@@ -296,6 +296,11 @@ h1, h2, h3, h4, h5, h6, p, ul, li, img, span {
 		right: 15px;
 
 		background-color: #ffffff;
+	}
+
+	.burger {
+		width: 45px;
+		height: 45px;
 	}
 }
 
@@ -1489,7 +1494,27 @@ h1, h2, h3, h4, h5, h6, p, ul, li, img, span {
 
 @media screen and (max-width: 1200px) {
 	.room {
+		position: relative;
 		flex-direction: column;
+	}
+
+	.room::after {
+		content: "";
+		position: absolute;
+		left: 50%;
+		bottom: -15px;
+
+		display: inline-block;
+		width: 10px;
+		height: 10px;
+		margin-left: -5px;
+
+		background-color: #FED31E;
+		box-shadow: 5px 5px 0px 0px #000000;
+	}
+
+	.room:last-child::after {
+		display: none;
 	}
 
 	.room-picture {
@@ -1549,9 +1574,13 @@ h1, h2, h3, h4, h5, h6, p, ul, li, img, span {
 }
 
 @media screen and (max-width: 780px) {
+	.rooms-page {
+		flex-direction: column;
+	}
+
 	.rooms-page__background {
-		display: none;
 		width: 100%;
+		height: auto;
 		background: none;
 	}
 
@@ -1559,7 +1588,7 @@ h1, h2, h3, h4, h5, h6, p, ul, li, img, span {
 		position: relative;
 
 		width: 100%;
-		padding-top: 100px;
+		padding-top: 30px;
 		padding-left: 15px;
 		padding-right: 15px;
 	}
@@ -1577,9 +1606,9 @@ h1, h2, h3, h4, h5, h6, p, ul, li, img, span {
 
 	.room-class-name {
 		font-family: "Roboto-Bold", "arial", sans-serif;
-		font-size: 31px;
+		font-size: 26px;
 		font-weight: 600;
-		line-height: 31px;
+		line-height: 33px;
 		color: #000000;
 	}
 
