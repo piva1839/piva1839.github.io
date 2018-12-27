@@ -1142,6 +1142,14 @@ h1, h2, h3, h4, h5, h6, p, ul, li, img, span {
 	color: #000000;
 }
 
+.cottage-page__paragraph a {
+	font-family: "Roboto-Regular", "arial", sans-serif;
+	font-size: 15px;
+	font-weight: 600;
+	line-height: 23px;
+	color: #000000;
+}
+
 .page__copyright {
 	padding-top: 50px;
 	padding-bottom: 160px;
