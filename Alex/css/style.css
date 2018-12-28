@@ -1389,7 +1389,7 @@ h1, h2, h3, h4, h5, h6, p, ul, li, img, span {
 	filter: brightness(85%);
 }
 
-.room-info {
+.rooms-page__room-info {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -1524,7 +1524,7 @@ h1, h2, h3, h4, h5, h6, p, ul, li, img, span {
 		margin-bottom: 30px;
 	}
 
-	.room-info {
+	.rooms-page__room-info {
 		flex-direction: row;
 		flex-wrap: wrap;
 		align-items: flex-start;
@@ -1682,6 +1682,15 @@ h1, h2, h3, h4, h5, h6, p, ul, li, img, span {
 	justify-content: center;
 }
 
+.room-info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-end;
+	width: 50%;
+	margin-left: 15px;
+}
+
 .room-page__text {
 	width: 50%;
 	padding-right: 25px;
@@ -1753,8 +1762,8 @@ h1, h2, h3, h4, h5, h6, p, ul, li, img, span {
 	cursor: pointer;
 }
 
-.room-reserv-buton {
-	margin-top: 50px;
+.room-reserv-button {
+	margin-top: 40px;
 }
 
 .button:active {
@@ -1807,7 +1816,7 @@ h1, h2, h3, h4, h5, h6, p, ul, li, img, span {
 	}
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 1200px) {
 	.room-page {
 		flex-direction: column;
 	}
@@ -1886,9 +1895,9 @@ h1, h2, h3, h4, h5, h6, p, ul, li, img, span {
 		width: 100%
 	}
 
-	.room-reserv-buton {
-		margin-top: 30px;
-		margin-bottom: 30px;
+	.room-reserv-button {
+		margin-top: 40px;
+		margin-bottom: 40px;
 	}
 }
 
