@@ -1991,6 +1991,16 @@ h1, h2, h3, h4, h5, h6, p, ul, li, img, span {
 	color: #000000;
 }
 
+.infrastructure-page__paragraph a {
+	margin-bottom: 30px;
+
+	font-family: "Roboto-Regular", "arial", sans-serif;
+	font-size: 15px;
+	font-weight: 600;
+	line-height: 23px;
+	color: #000000;
+}
+
 .infrastructure-page__sight-title {
 	margin-top: 5px;
 	margin-bottom: 10px;
