@@ -168,17 +168,20 @@
           </h1>
         </div>
         <div class="booking-page__description">
-          <p class="booking-page__paragraph">
-            Rose green tea, Anastasia, The vert au iasmin
-          </p>
+          <h2 class="booking-page__paragraph">
+            Забронировать номер в гостевом коттедже У Алексея в Каролино-Бугазе
+          </h2>
           <div class="booking-page__form-wrapper">
             <form class="contact-form" action="send.php" method="post">
               <div class="form-inner">
                 <div class="form-field__wrapper">
-                  <input class="form-field" type="text" name="name" placeholder="Ваше имя...">
+                  <input class="form-field" type="text" name="name" placeholder="*Ваше имя..." required>
                 </div>
                 <div class="form-field__wrapper">
-                  <input class="form-field" type="email" name="mail" placeholder="Ваш email...">
+                  <input class="form-field" type="email" name="mail" placeholder="*Ваш email..." required>
+                </div>
+                <div class="form-field__wrapper  form-field__wrapper-tel-width">
+                  <input class="form-field" type="tel" name="tel" placeholder="*Ваш телефон">
                 </div>
                 <div class="form-field__wrapper">
                   <input class="form-field" type="date" name="calendar" max="2019-09-15" min="2019-06-01" placeholder="Дата заселения">

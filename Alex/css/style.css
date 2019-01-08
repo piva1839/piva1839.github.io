@@ -2586,6 +2586,10 @@ h1, h2, h3, h4, h5, h6, p, ul, li, img, span {
 	width: 49%;
 }
 
+.form-field__wrapper-tel-width {
+	width: 100%;
+}
+
 .form-field__wrapper--age {
 	width: 32%;
 }
