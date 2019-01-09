@@ -1075,6 +1075,14 @@ h1, h2, h3, h4, h5, h6, p, ul, li, img, span {
 	background-size: cover;
 }
 
+.index-page__background {
+	width: 50%;
+	height: 100vh;
+
+	background: #c1d1e5 url("../img/sea.jpg") no-repeat;
+	background-size: cover;
+}
+
 .cottage-page__content {
 	position: fixed;
 	overflow-y: auto;
