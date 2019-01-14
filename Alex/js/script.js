@@ -17,4 +17,12 @@ $(document).ready(function(){
   $(".mobile-nav").css("display","none");
   });
 
+  $(".calendar-in--open").click(function() {
+  $(".calendar-in").css("display","block");
+  });
+
+  $(".calendar-out--open").click(function() {
+  $(".calendar-out").css("display","block");
+  });
+
 });
