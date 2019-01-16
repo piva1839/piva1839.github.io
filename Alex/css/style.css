@@ -687,84 +687,6 @@ h1, h2, h3, h4, h5, h6, p, ul, li, img, span {
 	}
 }
 
-/* reserve-bar contact-form */
-
-.reserve-bar__contact-form-wrapper {
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	z-index: 1000;
-
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 75%;
-	height: 110px;
-	max-width: 1000px;
-
-	background-color: #ffffff;
-	box-shadow: 15px 0 20px 0 rgba(0, 0, 0, .05);
-}
-
-.contact-form-inner {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 110px;
-}
-
-.contact-form-field__wrapper {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100%;
-
-	border-right: 3px solid #f2f2f2;
-}
-
-.contact-form-field__wrapper--no-right-border {
-	border-right: none;
-}
-
-.contact-form-field {
-	height: 100%;
-	padding: 42px 5px;
-
-	border: none;
-	outline: none;
-
-	cursor: pointer;
-}
-
-.contact-form-button__wrapper {
-	height: 100%;
-}
-
-.contact-form-button {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100%;
-	margin-right: 0;
-	padding: 10px;
-
-	background-color: #FED31E;
-	border: none;
-	outline: none;
-	box-shadow: 15px 0 20px 0 rgba(0, 0, 0, .05);
-
-	font-family: "Roboto-Bold", "arial", sans-serif;
-	font-size: 15px;
-	font-weight: 600;
-	line-height: 23px;
-	color: #000000;
-	text-align: center;
-	text-decoration: none;
-
-	cursor: pointer;
-}
-
-
 /* Reserv bar */
 
 .reserv-bar {
@@ -773,249 +695,15 @@ h1, h2, h3, h4, h5, h6, p, ul, li, img, span {
 	bottom: 0;
 	z-index: 100;
 
-	display: none;
-	width: 75%;
-	max-width: 1000px;
-
-	box-shadow: 15px 0 20px 0 rgba(0, 0, 0, .05);
-}
-
-.reserv-bar__info {
-	display: flex;
-	width: 78%;
-	height: auto;
-	padding: 30px 5px;
-
-	background-color: #ffffff;
-}
-
-.reserv-bar__item {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	width: calc(100% / 5);
-	padding: 0 30px 0 10px;
-
-	border-right: 3px solid #f1f1f1;
-
-	font-family: "Roboto-Regular", "arial", sans-serif;
-	font-size: 12px;
-	font-weight: 400;
-	line-height: 18px;
-	color: #c1c1c1;
-
-	cursor: pointer;
-}
-
-.reserv-bar__item--calendar {
-	position: relative;
-
-	background: url("../img/calendar-icon.png") no-repeat;
-	background-position: 90% center;
-
-	transition: 0.3s;
-}
-
-.reserv-bar__item--calendar:hover {
-	background: url("../img/calendar-icon-hover.png") no-repeat;
-	background-position: 90% center;
-}
-
-.calendar {
-	position: absolute;
-	top: -300px;
-	left: -5px;
-
-	padding: 20px;
-
-	background-color: #ffffff;
-	box-shadow: 0 -5px 10px 0 rgba(0, 0, 0, .05);
-
-	color: #000000;
-}
-
-.calendar-in {
-	display: none; /* delete */
-}
-
-.calendar-out {
-	display: none; /* delete */
-}
-
-.calendar__table {
-	border-collapse: collapse;
-
-	font-family: "Roboto-Regular", "arial", sans-serif;
-	font-size: 14px;
-	font-weight: 400;
-	line-height: 23px;
-	color: #000000;
-	text-align: center;
-}
-
-.calendar__table-col {
-	padding: 5px 8px;
-
-	border-bottom: 1px solid #f1f1f1;
-}
-
-.calendar__table-col:hover {
-	background-color: #f1f1f1;
-}
-
-.calendar__table-col:active,
-.calendar__table-col--active {
-	background-color: #FED31E;
-
-	font-family: "Roboto-Bold", "arial", sans-serif;
-	font-weight: 600;
-	color: #000000;
-}
-
-.calendar__table-col--past-date {
-	cursor: default;
-	color: #a2a2a2;
-}
-
-.calendar__table-col--past-date:active,
-.calendar__table-col--past-date:hover {
-	cursor: default;
-	background-color: #ffffff;
-
-	font-family: "Roboto-Regular", "arial", sans-serif;
-	font-weight: 400;
-	color: #a2a2a2;
-}
-
-.calendar__table-col-month {
-	padding-bottom: 20px;
-
-	font-family: "Roboto-Bold", "arial", sans-serif;
-	font-size: 17px;
-	font-weight: 600;
-	line-height: 15px;
-	color: #000000;
-}
-
-.calendar__table-col-month:hover {
-	background-color: #ffffff;
-}
-
-.calendar__table-col-month-prev {
-	background: url("../img/left-arrow.png") no-repeat;
-	background-position: center 5px;
-}
-
-.calendar__table-col-month-prev:hover {
-	background: url("../img/left-arrow.png") no-repeat;
-	background-position: center 5px;
-}
-
-.calendar__table-col-month-next {
-	background: url("../img/right-arrow.png") no-repeat;
-	background-position: center 5px;
-}
-
-.calendar__table-col-month-next:hover {
-	background: url("../img/right-arrow.png") no-repeat;
-	background-position: center 5px;
-}
-
-.calendar__table-col-name {
-	padding: 5px 8px;
-
-	border-bottom: 1px solid #f1f1f1;
-
-	font-family: "Roboto-Bold", "arial", sans-serif;
-	font-size: 15px;
-	font-weight: 600;
-	line-height: 23px;
-	color: #000000;
-}
-
-.reserv-bar__item--guest {
-	position: relative;
-
-	background: url("../img/up.png") no-repeat;
-	background-position: 85% center;
-
-	transition: 0.3s;
-}
-
-.reserv-bar__item--guest:hover {
-	background: url("../img/up-hover.png") no-repeat;
-	background-position: 85% center;
-}
-
-.guest-quantity {
-	position: absolute;
-	top: -300px;
-	left: -3px;
-
-	display: none; /* delete */
-	width: 105%;
-
-	background-color: #ffffff;
-
-	color: #000000;
-}
-
-.guest-quantity__list {
-	list-style-type: none;
-
-	padding-top: 12px;
-}
-
-.guest-quantity__item {
-	padding: 11px 30px;
-
-	font-family: "Roboto-Regular", "arial", sans-serif;
-	font-size: 15px;
-	font-weight: 400;
-	line-height: 23px;
-	color: #000000;
-}
-
-.guest-quantity__item:hover {
-	background-color: #f1f1f1;
-}
-
-.guest-quantity__item:active,
-.guest-quantity__item--active {
-	background-color: #FED31E;
-
-	font-family: "Roboto-Bold", "arial", sans-serif;
-	font-size: 15px;
-	font-weight: 600;
-	line-height: 23px;
-	color: #000000;
-}
-
-.reserv-bar__item--subtext {
-	margin-top: 10px;
-
-	font-family: "Roboto-Bold", "arial", sans-serif;
-	font-size: 18px;
-	font-weight: 600;
-	line-height: 21px;
-	color: #000000;
-}
-
-.reserv-bar__item--no-botrders {
-	border: none;
-}
-
-.reserv-bar__action {
-	width: 22%;
+	padding: 15px;
 }
 
 .reserv-bar__button {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 100%;
-	height: 100%;
+	margin-top: auto;
+	padding: 30px 50px;
 
 	border: none;
 	outline: none;
@@ -1026,6 +714,7 @@ h1, h2, h3, h4, h5, h6, p, ul, li, img, span {
 	font-weight: 600;
 	line-height: 21px;
 	color: #000000;
+	text-align: center;
 	text-transform: uppercase;
 	text-decoration: none;
 
@@ -1051,63 +740,18 @@ h1, h2, h3, h4, h5, h6, p, ul, li, img, span {
 }
 
 @media screen and (max-width: 1200px) {
-	.reserv-bar {
-		width: 100%;
-		max-width: 100%;
-	}
+
 }
 
 @media screen and (max-width: 780px) {
 	.reserv-bar {
-		flex-direction: column;
-		padding: 15px;
-	}
-
-	.reserv-bar--cootage-mobile-page {
-		bottom: 0px;
-	}
-
-	.reserv-bar__info {
-		flex-wrap: wrap;
-		width: 100%;
-		padding: 15px;
-	}
-
-	.reserv-bar__item {
-		align-items: flex-start;
-	}
-
-	.reserv-bar__item--calendar {
-		width: 50%;
-		padding-top: 5px;
-		padding-bottom: 15px;
-
-		border-bottom: 3px solid #f2f2f2;
-	}
-
-	.reserv-bar__item--mobile-no-botrders {
-		border-right: none;
-	}
-
-	.reserv-bar__item--guest {
-		width: 33.3%;
-		padding-top: 15px;
-		padding-bottom: 10px;
-	}
-
-	.reserv-bar__item--subtext {
-		font-family: "Roboto-Bold", "arial", sans-serif;
-		font-size: 16px;
-		font-weight: 600;
-		line-height: 21px;
-		color: #000000;
-	}
-
-	.reserv-bar__action {
+		display: flex;
+		margin-top: auto;
 		width: 100%;
 	}
 
 	.reserv-bar__button {
+		width: 100%;
 		padding: 25px;
 
 		font-family: "Roboto-Bold", "arial", sans-serif;
@@ -1115,24 +759,6 @@ h1, h2, h3, h4, h5, h6, p, ul, li, img, span {
 		font-weight: 600;
 		line-height: 21px;
 		color: #000000;
-	}
-}
-
-@media screen and (max-width: 580px) {
-	.reserv-bar__info {
-		padding: 0 15px;
-	}
-
-	.reserv-bar__item--calendar {
-		width: 100%;
-		padding: 15px 0;
-
-		border-right: none;
-		background-position: 100% center;
-	}
-
-	.reserv-bar__item--calendar:hover {
-		background-position: 100% center;
 	}
 }
 
@@ -1145,6 +771,8 @@ h1, h2, h3, h4, h5, h6, p, ul, li, img, span {
 }
 
 .cottage-page__background {
+	position: relative;
+
 	width: 50%;
 	height: 100vh;
 
@@ -1153,6 +781,8 @@ h1, h2, h3, h4, h5, h6, p, ul, li, img, span {
 }
 
 .index-page__background {
+	position: relative;
+
 	width: 50%;
 	height: 100vh;
 
@@ -1243,7 +873,7 @@ h1, h2, h3, h4, h5, h6, p, ul, li, img, span {
 
 .page__copyright {
 	padding-top: 50px;
-	padding-bottom: 160px;
+	padding-bottom: 50px;
 
 	border-top: 3px solid #f2f2f2;
 
