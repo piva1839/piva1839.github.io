@@ -318,6 +318,8 @@ h1, h2, h3, h4, h5, h6, p, ul, li, img, span {
 	height: 100%;
 
 	background-color: #ffffff;
+
+	overflow: auto;
 }
 
 .mobile-nav__head {
