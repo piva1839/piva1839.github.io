@@ -1,12 +1,22 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-64999147-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-64999147-1');
+    </script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Гостевой коттедж У Алексея. Отдых в Каролино-Бугазе">
-    <meta name="keywords" content="Каролино-Бугаз, Затока, в Каролино-Бугазе, в Затоке, Бугаз, на Бугазе, Грибовка, в Грибоаке, Санжейка, в Санжейке, Черное море, на Черном море, Одесса, в Одессе, гостевой коттедж У Алексея, гостиница, забронировать номер">
+    <meta name="keywords" content="Каролино-Бугаз, Кароліно-Бугаз, Затока, в Каролино-Бугазе, в Затоке, Бугаз, на Бугазе, Грибовка, в Грибоаке, Санжейка, в Санжейке, Черное море, на Черном море, Одесса, в Одессе, гостевой коттедж У Алексея, гостиница, забронировать номер">
     <title>Забронировать номер в Каролино-Бугазе У Алексея</title>
+    <link rel="canonical" href="https://bugazua.com/booking.html">
     <link rel="shortcut icon" href="favicon.png">
     <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
     <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
@@ -20,6 +30,25 @@
     <script type="text/javascript" src="slick/jquery-migrate-1.4.1.min.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/jquery.form.js"></script>
+    <script type="text/javascript" src="js/sweetalert.min.js"></script>
+
+    <script>
+        // wait for the DOM to be loaded
+        $(document).ready(function() {
+            // bind 'myForm' and provide a simple callback function
+            $('#contactform').ajaxForm(function() {
+                swal("ЗАПИТ ВІДПРАВЛЕНО. Ми зв'яжемося з вами в найближчий час.");
+                $('#contactform').trigger('reset');
+            });
+        });
+    </script>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({
+              google_ad_client: "ca-pub-4519849879241609",
+              enable_page_level_ads: true
+         });
+    </script>
   </head>
 	<body>
 
@@ -29,15 +58,15 @@
 
       <div class="header__info">
         <div class="header__logo">
-          <a class="header__logo-link" href="index.html"><img class="header__logo-image" src="img/logo_h_w.png" alt="logo" width="241" height="40"></a>
+          <a class="header__logo-link" href="https://bugazua.com"><img class="header__logo-image" src="img/logo_h_w.png" alt="logo" width="241" height="40"></a>
         </div>
         <div class="header__site-language">
           <ul class="header__site-language-list">
             <li class="header__site-language-item">
-              <a class="header__site-language-item-link  header__site-language-item-link--active" href="#">Ru</a>
+              <a class="header__site-language-item-link  header__site-language-item-link--active" href="#">Ua</a>
             </li>
             <li class="header__site-language-item">
-              <a class="header__site-language-item-link" href="#">Ua</a>
+              <a class="header__site-language-item-link" href="#">Ru</a>
             </li>
             <li class="header__site-language-item">
               <a class="header__site-language-item-link" href="#">En</a>
@@ -49,22 +78,22 @@
       <nav class="header__nav  header__nav--black">
         <ul class="header__nav-list">
           <li class="header__nav-item">
-            <a class="header__nav-item-link  header__nav-item-link--black" href="index.html">Каролино-Буаз</a>
+            <a class="header__nav-item-link  header__nav-item-link--black" href="https://bugazua.com">Кароліно-Бугаз</a>
           </li>
           <li class="header__nav-item">
-            <a class="header__nav-item-link  header__nav-item-link--black" href="cottage.html">Коттедж</a>
+            <a class="header__nav-item-link  header__nav-item-link--black" href="cottage.html">Котедж</a>
           </li>
           <li class="header__nav-item">
             <a class="header__nav-item-link  header__nav-item-link--black" href="rooms.html">Номера</a>
           </li>
           <li class="header__nav-item">
-            <a class="header__nav-item-link  header__nav-item-link--black" href="infrastructure.html">Инфраструктура</a>
+            <a class="header__nav-item-link  header__nav-item-link--black" href="infrastructure.html">Інфраструктура</a>
           </li>
           <li class="header__nav-item">
             <a class="header__nav-item-link  header__nav-item-link--black" href="leisure.html">Досуг</a>
           </li>
           <li class="header__nav-item">
-            <a class="header__nav-item-link  header__nav-item-link--black" href="contact.html">Контакты</a>
+            <a class="header__nav-item-link  header__nav-item-link--black" href="contact.html">Зв`язок</a>
           </li>
         </ul>
       </nav>
@@ -81,9 +110,6 @@
         <li class="pad-nav__social-item">
           <a class="pad-nav__social-item-link  social__item-link--fb  social__item-link--gray-bg" href="http://facebook.com/bugazua" target="_blank">facebook</a>
         </li>
-        <li class="pad-nav__social-item">
-          <a class="pad-nav__social-item-link  social__item-link--vk  social__item-link--gray-bg" href="http://vk.com/bugazua" target="_blank">vk</a>
-        </li>
       </ul>
     </div>
     <div class="burger">
@@ -96,15 +122,15 @@
 
         <div class="mobile-nav__info">
           <div class="mobile-nav__logo">
-            <a class="mobile-nav__logo-link" href="index.html"><img class="mobile-nav__logo-image" src="img/logo_v_mb.png" alt="logo" width="77" height="46"></a>
+            <a class="mobile-nav__logo-link" href="https://bugazua.com"><img class="mobile-nav__logo-image" src="img/logo_v_mb.png" alt="logo" width="77" height="46"></a>
           </div>
           <div class="mobile-nav__site-language">
             <ul class="mobile-nav__site-language-list">
               <li class="mobile-nav__site-language-item">
-                <a class="mobile-nav__site-language-item-link  mobile-nav__site-language-item-link--active" href="#">Ru</a>
+                <a class="mobile-nav__site-language-item-link  mobile-nav__site-language-item-link--active" href="#">Ua</a>
               </li>
               <li class="mobile-nav__site-language-item">
-                <a class="mobile-nav__site-language-item-link" href="#">Ua</a>
+                <a class="mobile-nav__site-language-item-link" href="#">Ru</a>
               </li>
               <li class="mobile-nav__site-language-item">
                 <a class="mobile-nav__site-language-item-link" href="#">En</a>
@@ -124,9 +150,6 @@
             <li class="mobile-nav__social-item">
               <a class="mobile-nav__social-item-link  social__item-link--fb  social__item-link--gray-bg" href="http://facebook.com/bugazua" target="_blank">facebook</a>
             </li>
-            <li class="mobile-nav__social-item">
-              <a class="mobile-nav__social-item-link  social__item-link--vk  -link--gray-bg" href="http://vk.com/bugazua" target="_blank">vk</a>
-            </li>
           </ul>
         </div>
 
@@ -134,22 +157,25 @@
 
       <ul class="mobile-nav__list">
         <li class="mobile-nav__item">
-          <a class="mobile-nav__item-link" href="index.html">Каролино-Буаз</a>
+          <a class="mobile-nav__item-link" href="https://bugazua.com">Кароліно-Бугаз</a>
         </li>
         <li class="mobile-nav__item">
-          <a class="mobile-nav__item-link" href="cottage.html">Коттедж</a>
+          <a class="mobile-nav__item-link" href="cottage.html">Котедж</a>
         </li>
         <li class="mobile-nav__item">
           <a class="mobile-nav__item-link" href="rooms.html">Номера</a>
         </li>
         <li class="mobile-nav__item">
-          <a class="mobile-nav__item-link" href="infrastructure.html">Инфраструктура</a>
+          <a class="mobile-nav__item-link" href="infrastructure.html">Інфраструктура</a>
         </li>
         <li class="mobile-nav__item">
           <a class="mobile-nav__item-link" href="leisure.html">Досуг</a>
         </li>
         <li class="mobile-nav__item">
-          <a class="mobile-nav__item-link" href="contact.html">Контакты</a>
+          <a class="mobile-nav__item-link" href="contact.html">Зв`язок</a>
+        </li>
+        <li class="mobile-nav__item">
+          <a class="mobile-nav__item-link" href="#">Бронювати</a>
         </li>
         <li class="mobile-nav__item">
           <a class="call-button" href="tel:+380674851839">+38 067-485-18-39</a>
@@ -170,34 +196,35 @@
       <div class="booking-page__content">
         <div class="booking-page__head">
           <h1 class="booking-page__title">
-            Забронировать номер
+            Забронювати номер
           </h1>
         </div>
         <div class="booking-page__description">
           <h2 class="booking-page__paragraph">
-            Забронировать номер в гостевом коттедже У Алексея в Каролино-Бугазе
+            Забронювати номер у гостьовому котеджі У Олексія в Кароліно-Бугазі<br>
+            <img src="img/rules.png" alt="Правила и порядок бронирования"> <a class="booking-page-doc" href="booking.pdf">Правила і порядок бронювання</a>
           </h2>
           <div class="booking-page__form-wrapper">
-            <form class="contact-form" action="send.php" role="form" method="post">
+            <form class="contact-form" id="contactform" action="send.php" role="form" method="post">
               <div class="form-inner">
                 <div class="form-field__wrapper">
-                  <input class="form-field" type="text" name="name" placeholder="*Ваше имя..." required>
+                  <input class="form-field" type="text" name="name" placeholder="*Ваше им'я..." required>
                 </div>
                 <div class="form-field__wrapper">
                   <input class="form-field" type="email" name="mail" placeholder="*Ваш email..." required>
                 </div>
                 <div class="form-field__wrapper  form-field__wrapper-tel-width">
-                  <input class="form-field" type="tel" name="tel" placeholder="*Ваш телефон">
+                  <input class="form-field" type="tel" name="tel" placeholder="*Ваш телефон" required>
                 </div>
                 <div class="form-field__wrapper">
-                  <input class="form-field" type="date" name="calendarin" max="2019-09-15" min="2019-06-01" placeholder="Дата заселения">
+                  <input class="form-field" type="date" name="calendarin" max="2019-09-15" min="2019-06-01" placeholder="*Дата заселення" required>
                 </div>
                 <div class="form-field__wrapper">
-                  <input class="form-field" type="date" name="calendarout" max="2019-09-15" min="2019-06-01" placeholder="Дата выселения">
+                  <input class="form-field" type="date" name="calendarout" max="2019-09-15" min="2019-06-01" placeholder="*Дата виселення" required>
                 </div>
                 <div class="form-field__wrapper  form-field__wrapper--age">
-                  <select class="form-field" name="adults">
-                    <option default>Взрослые</option>
+                  <select class="form-field" name="adults" required>
+                    <option value="">*Дорослі</option>
                     <option value="0">0</option>
                     <option value="1">1</option>
                     <option value="4">2</option>
@@ -212,8 +239,8 @@
                   </select>
                 </div>
                 <div class="form-field__wrapper  form-field__wrapper--age">
-                  <select class="form-field" name="teen">
-                    <option default>Дети старше 7 лет</option>
+                  <select class="form-field" name="teen" required>
+                    <option value="">*Діти старші 7 років</option>
                     <option value="0">0</option>
                     <option value="1">1</option>
                     <option value="4">2</option>
@@ -228,8 +255,8 @@
                   </select>
                 </div>
                 <div class="form-field__wrapper  form-field__wrapper--age">
-                  <select class="form-field" name="children">
-                    <option default>Дети младше 7 лет</option>
+                  <select class="form-field" name="children" required>
+                    <option value="">*Діти молодші 7 років</option>
                     <option value="0">0</option>
                     <option value="1">1</option>
                     <option value="4">2</option>
@@ -244,17 +271,17 @@
                   </select>
                 </div>
                 <div class="form-field__wrapper">
-                  <select class="form-field" name="room">
-                    <option value="select-room" default>Тип номера</option>
-                    <option value="econom">Эконом (макс. 4 чел.)</option>
-                    <option value="standart">Стандарт (макс. 4 чел.)</option>
-                    <option value="family">Семейный (макс. 6 чел.)</option>
-                    <option value="compact">Компакт (макс. 2 чел.)</option>
+                  <select class="form-field" name="room" required>
+                    <option value="">*Тип номера</option>
+                    <option value="econom">Економ (макс. 4 люд.)</option>
+                    <option value="standart">Стандарт (макс. 4 люд.)</option>
+                    <option value="family">Сімейний (макс. 6 люд.)</option>
+                    <option value="compact">Компакт (макс. 2 люд.)</option>
                   </select>
                 </div>
                 <div class="form-field__wrapper">
-                  <select class="form-field" name="roomsquantity">
-                    <option value="select-quantity" default>Количество номеров</option>
+                  <select class="form-field" name="roomsquantity" required>
+                    <option value="">*Кількість номерів</option>
                     <option value="0">0</option>
                     <option value="1">1</option>
                     <option value="4">2</option>
@@ -272,7 +299,7 @@
                 </div>
                 <div class="form-button__wrapper">
                   <button class="form-button" type="submit">
-                    Запрос на бронирование
+                    Запит на бронювання
                   </button>
                 </div>
               </div>
@@ -280,7 +307,18 @@
         </div>
         <div class="page__footer">
           <p class="page__copyright">
-            © 2019 <a href="index.html">Гостевой коттедж У Алексея</a>. Все права защищены. <a href="index.html">Политика конфиденциальности</a>.
+            © 2024 <a href="https://bugazua.com">Гостьовий котедж У Олексія</a>. Всі права захищені. <a href="#">Політика конфіденційності</a>.<br><br>
+            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <!-- bugazua -->
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-4519849879241609"
+                 data-ad-slot="4225082988"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
           </p>
         </div>
       </div>
@@ -295,9 +333,6 @@
         </li>
         <li class="social__item">
           <a class="social__item-link  social__item-link--fb" href="http://facebook.com/bugazua" target="_blank">facebook</a>
-        </li>
-        <li class="social__item">
-          <a class="social__item-link  social__item-link--vk" href="http://vk.com/bugazua" target="_blank">vk</a>
         </li>
       </ul>
     </div>

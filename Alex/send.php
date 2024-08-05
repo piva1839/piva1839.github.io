@@ -50,8 +50,8 @@ $roomsquantity = trim($roomsquantity);
 //echo "<br>";
 //echo $mail;
 
-if (mail("bugazua@gmail.com", "ЗАПРОС БРОНИРОВАНИЯ", "Имя:".$name.". E-mail: ".$mail.". Телефон: ".$tel.". Заселение: ".$calendarin.". Выселение: ".$calendarout.". Взрослые: ".$adults.". Подростки: ".$teen.". Дети: ".$children.". Номер: ".$room.". Количество номеров: ".$roomsquantity.". Сообщение: ".$text, "From: info@bugazua.com \r\n"))
- {     echo "СООБЩЕНИЕ УСПЕШНО ОТПРАВЛЕНО";
+if (mail("bugazua@gmail.com", "ЗАПИТ БРОНЮВАННЯ", "Им'я:".$name.". E-mail: ".$mail.". Телефон: ".$tel.". Заселення: ".$calendarin.". Выселення: ".$calendarout.". Дорослі: ".$adults.". Підлітки: ".$teen.". Діти: ".$children.". Номер: ".$room.". Кількість номерів: ".$roomsquantity.". Повідомлення: ".$text, "From: info@bugazua.com \r\n"))
+ {     echo "ПОВІДОМЛЕННЯ УСПІШНО ВІДПРАВЛЕНО";
 } else {
-    echo "при отправке сообщения возникли ошибки";
+    echo "при надсиланні повідомлення виникли помилки";
 }?>

@@ -14,8 +14,8 @@ $text = trim($text);
 //echo $name;
 //echo "<br>";
 //echo $mail;
-if (mail("bugazua@gmail.com", "ВОПРОС С САЙТА", "Имя:".$name.". E-mail: ".$mail.". Сообщение: ".$text, "From: info@bugazua.com \r\n"))
- {     echo "СООБЩЕНИЕ УСПЕШНО ОТПРАВЛЕНО";
+if (mail("bugazua@gmail.com", "ПИТАННЯ З САЙТУ", "Им'я:".$name.". E-mail: ".$mail.". Повідомлення: ".$text, "From: info@bugazua.com \r\n"))
+ {     echo "ПОВІДОМЛЕННЯ УСПІШНО ВІДПРАВЛЕНО";
 } else {
-    echo "при отправке сообщения возникли ошибки";
+    echo "при надсиланні повідомлення виникли помилки";
 }?>
