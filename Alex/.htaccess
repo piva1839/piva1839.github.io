@@ -1,0 +1,33 @@
+# кодировка
+AddDefaultCharset UTF-8
+
+# старт
+Options +FollowSymLinks
+RewriteEngine On
+
+# убрал www у http
+RewriteCond %{SERVER_PORT} ^80$ [OR]
+RewriteCond %{HTTP} =on
+RewriteRule ^(.*)$ https://bugazua.com/$1 [R=301,L]
+
+# перенос сайта на версию с HTTPS
+RewriteCond %{SERVER_PORT} ^80$ [OR]
+RewriteCond %{HTTP} =on
+RewriteRule ^(.*)$ https://bugazua.com/$1 [R=301,L]
+
+# убрал www у https
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
+
+# удалил слэш в конце
+RewriteCond %{HTTP_HOST} (.*)
+RewriteCond %{REQUEST_URI} /$ [NC]
+RewriteRule ^(.*)(/)$ $1 [L,R=301]
+
+# index.html перенаправлен на https://bugazua.com
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /([^/]+/)*(default|index|main)\.(html|php|htm)\ HTTP/ [NC]
+RewriteRule ^(([^/]+/)*)(default|main|index)\.(html|php|htm)$ https://bugazua.com/$1 [L,R=301]
+
+<FilesMatch "robots.txt$">
+RewriteEngine off
+</FilesMatch>
