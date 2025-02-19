@@ -2159,12 +2159,28 @@ h1, h2, h3, h4, h5, h6, p, ul, li, img, span {
 	color: #ffffff;
 	text-decoration: none;
 }
+
 .call-button-telegram {
 	display: inline-block;
 	margin-bottom: 10px;
 	padding: 10px 20px;
 
 	background-color: #229ED9;
+
+	font-family: "Roboto-Bold", "arial", sans-serif;
+	font-size: 15px;
+	font-weight: 600;
+	line-height: 23px;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.call-button-whatsapp {
+	display: inline-block;
+	margin-bottom: 10px;
+	padding: 10px 20px;
+
+	background-color: #25D366;
 
 	font-family: "Roboto-Bold", "arial", sans-serif;
 	font-size: 15px;
