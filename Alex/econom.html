@@ -225,36 +225,57 @@
       e.preventDefault();
 
       const currentUrl = encodeURIComponent(window.location.href);
-      const shareWindow = document.createElement("div");
 
+      // Удаляем предыдущее окно, если оно было
+      const existing = document.getElementById("sharePopup");
+      if (existing) existing.remove();
+
+      const shareWindow = document.createElement("div");
+      shareWindow.id = "sharePopup";
       shareWindow.innerHTML = `
         <div style="
           position: fixed;
           top: 50%;
           left: 50%;
           transform: translate(-50%, -50%);
-          background: white;
+          width: 90%;
+          max-width: 320px;
+          background: #fff;
           border: 1px solid #ccc;
-          border-radius: 10px;
+          border-radius: 12px;
           padding: 20px;
           z-index: 9999;
-          box-shadow: 0 0 10px rgba(0,0,0,0.3);
+          box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+          text-align: center;
+          font-family: sans-serif;
         ">
-          <h3 style="margin-top: 0;">Поділитися</h3>
-          <div style="display: flex; gap: 10px; flex-direction: column;">
-            <a href="https://t.me/share/url?url=${currentUrl}" target="_blank">Telegram</a>
-            <a href="viber://forward?text=${currentUrl}" target="_blank">Viber</a>
-            <a href="https://api.whatsapp.com/send?text=${currentUrl}" target="_blank">WhatsApp</a>
+          <h3 style="margin-top: 0; font-size: 18px;">Поділитися посиланням</h3>
+          <div style="display: flex; justify-content: space-around; margin: 20px 0;">
+            <a href="https://t.me/share/url?url=${currentUrl}" target="_blank" title="Telegram">
+              <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/telegram.svg" alt="Telegram" width="40" height="40" />
+            </a>
+            <a href="viber://forward?text=${currentUrl}" target="_blank" title="Viber">
+              <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/viber.svg" alt="Viber" width="40" height="40" />
+            </a>
+            <a href="https://api.whatsapp.com/send?text=${currentUrl}" target="_blank" title="WhatsApp">
+              <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/whatsapp.svg" alt="WhatsApp" width="40" height="40" />
+            </a>
           </div>
-          <button style="margin-top: 15px;" id="closeShare">Закрити</button>
+          <button id="closeShare" style="
+            background: #eee;
+            border: none;
+            padding: 8px 14px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+          ">Закрити</button>
         </div>
       `;
 
-      shareWindow.id = "sharePopup";
       document.body.appendChild(shareWindow);
 
       document.getElementById("closeShare").addEventListener("click", function () {
-        document.getElementById("sharePopup").remove();
+        shareWindow.remove();
       });
     });
   });
