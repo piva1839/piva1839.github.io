@@ -216,6 +216,50 @@
               </div>
               <div class="room-reserv-button">
                 <a class="button" href="booking.html">Запит</a><a class="button--share"></a>
+
+                <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const shareBtn = document.querySelector(".button--share");
+
+    shareBtn.addEventListener("click", function (e) {
+      e.preventDefault();
+
+      const currentUrl = encodeURIComponent(window.location.href);
+      const shareWindow = document.createElement("div");
+
+      shareWindow.innerHTML = `
+        <div style="
+          position: fixed;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          background: white;
+          border: 1px solid #ccc;
+          border-radius: 10px;
+          padding: 20px;
+          z-index: 9999;
+          box-shadow: 0 0 10px rgba(0,0,0,0.3);
+        ">
+          <h3 style="margin-top: 0;">Поділитися</h3>
+          <div style="display: flex; gap: 10px; flex-direction: column;">
+            <a href="https://t.me/share/url?url=${currentUrl}" target="_blank">Telegram</a>
+            <a href="viber://forward?text=${currentUrl}" target="_blank">Viber</a>
+            <a href="https://api.whatsapp.com/send?text=${currentUrl}" target="_blank">WhatsApp</a>
+          </div>
+          <button style="margin-top: 15px;" id="closeShare">Закрити</button>
+        </div>
+      `;
+
+      shareWindow.id = "sharePopup";
+      document.body.appendChild(shareWindow);
+
+      document.getElementById("closeShare").addEventListener("click", function () {
+        document.getElementById("sharePopup").remove();
+      });
+    });
+  });
+</script>
+
               </div>
             </div>
           </div>
