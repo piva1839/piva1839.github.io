@@ -38,8 +38,6 @@
          });
     </script>
 
-    <script> const shareUrl = encodeURIComponent(window.location.href); const shareText = encodeURIComponent("Смотри, что я нашел!"); document.getElementById("telegramShare").href = https://t.me/share/url?url=${shareUrl}&text=${shareText}; document.getElementById("whatsappShare").href = https://wa.me/?text=${shareText}%20${shareUrl}; document.getElementById("viberShare").href = viber://forward?text=${shareText}%20${shareUrl}; function openShareModal(event) { event.preventDefault(); document.getElementById("shareModal").style.display = "block"; } function closeShareModal() { document.getElementById("shareModal").style.display = "none"; } </script>
-
   </head>
 	<body>
 
@@ -217,10 +215,7 @@
                 </p>
               </div>
               <div class="room-reserv-button">
-                <a class="button" href="booking.html">Запит</a><!--<a class="button--share"></a>-->
-
-                  <a class="button--share" href="#" onclick="openShareModal(event)">Поделиться</a> <div id="shareModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); z-index:100;"> <div style="background:#fff; margin:15% auto; padding:20px; width:300px; border-radius:10px; text-align:center;"> <h3>Поделиться через:</h3> <a href="#" id="telegramShare" target="_blank">Telegram</a><br> <a href="#" id="whatsappShare" target="_blank">WhatsApp</a><br> <a href="#" id="viberShare" target="_blank">Viber</a><br> <button onclick="closeShareModal()">Закрыть</button> </div> </div>
-
+                <a class="button" href="booking.html">Запит</a><a class="button--share"></a>
               </div>
             </div>
           </div>
