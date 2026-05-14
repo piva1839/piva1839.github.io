@@ -1479,6 +1479,12 @@ h1, h2, h3, h4, h5, h6, p, ul, li, img, span {
 	cursor: pointer;
 }
 
+.instavid-button {
+	display: inline-block;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
 .room-reserv-button {
 	margin-top: 40px;
 }
